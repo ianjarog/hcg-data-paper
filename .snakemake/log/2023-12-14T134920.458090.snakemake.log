@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+tex2pdf_with_bib        1
+total                   2
+
+Select jobs to execute...
+
+[Thu Dec 14 13:49:20 2023]
+rule tex2pdf_with_bib:
+    input: workflow/src/hcg_paper.tex
+    output: results/publication/hcg_paper.pdf
+    jobid: 1
+    reason: Missing output files: results/publication/hcg_paper.pdf
+    wildcards: name=hcg_paper
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Thu Dec 14 13:49:21 2023]
+Error in rule tex2pdf_with_bib:
+    jobid: 1
+    input: workflow/src/hcg_paper.tex
+    output: results/publication/hcg_paper.pdf
+    shell:
+        
+        tectonic -o results/publication workflow/src/hcg_paper.tex
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-14T134920.458090.snakemake.log

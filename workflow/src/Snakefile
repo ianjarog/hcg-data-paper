@@ -1,0 +1,15 @@
+#configfile: "config/config.yaml"
+
+rule all:
+    input:
+        "results/publication/hcg_paper.pdf",
+
+rule tex2pdf_with_bib:
+    input:
+        "workflow/src/{name}.tex",
+    output:
+        "results/publication/{name}.pdf",
+    shell:
+        """
+        tectonic -o results/publication workflow/src/{wildcards.name}.tex
+        """

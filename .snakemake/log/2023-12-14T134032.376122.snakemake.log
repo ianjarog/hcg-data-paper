@@ -1,0 +1,3 @@
+WorkflowError in file /data/workflow/src/Snakefile, line 1:
+Config file must be given as JSON or YAML with keys at top level.
+  File "/data/workflow/src/Snakefile", line 1, in <module>
