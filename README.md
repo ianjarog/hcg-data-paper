@@ -11,7 +11,7 @@ specifying the required inputs, expected outputs, and the set of Snakemake rules
 
 Requirements
 ------------
-We have incorporated all necessary softwares into a singularity file that can be found in the softwares/ folder. 
+We have incorporated all necessary softwares into a singularity file that can be downloaded at [Link to be determined]. 
 
 To produce the current paper, all the user has to do is type 'python workflow/run.py' and the pipeline executes each script sequencially and produce the final pdf paper. 
 The required data should be put in the data/ folder and they can be retrieved from [Link to be determined]. 
