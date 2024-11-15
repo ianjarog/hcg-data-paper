@@ -1,0 +1,109 @@
+import yaml
+import sys
+
+with open("config/figures.yaml", 'r') as f:
+    figures = yaml.safe_load(f)
+
+figure_files, figure_files2 = (["outputs/publication/figures/" + 
+    fig for fig in figures[key]] for key in ['figure1', 'figure2'])
+
+configfile: "config/config.yaml"
+
+include: "rules/run_sofia.smk"
+include: "rules/plot_sofia_products.smk"
+include: "rules/plot_gbt_meerkat_spectra.smk"
+include: "rules/plot_gbt_vs_meerkat_flux.smk"
+include: "rules/plot_velocity_ra.smk"
+include: "rules/plot_noise_specaxis.smk"
+include: "rules/plot_global_prof.smk"
+include: "rules/plot_moments.smk"
+include: "rules/plot_segmented_pvdiag.smk"
+include: "rules/plot_optical_mom0.smk"
+include: "rules/plot_chanmap.smk"
+
+# Galaxy indices
+galaxy_indices = ["hcg16", "hcg30", "hcg31", "hcg90", "hcg91", "hcg97"]
+
+# Function to read outputs from rules
+def extract_outputs_from_rules(filename, endline="priority:"):
+    outputs = []
+    in_output_section = False  # Flag to indicate if we're inside the output section
+
+    with open(filename, 'r') as f:
+        for line in f:
+            line = line.strip()  # Remove leading and trailing whitespace
+
+            # Check if we're entering the output section
+            if line.startswith('output:'):
+                in_output_section = True
+                continue  # Move to the next line
+
+            # If we are in the output section and encounter 'priority:', stop reading
+            if in_output_section and line.startswith(endline):
+                break  # Exit the loop
+
+            # If we are in the output section, collect output paths
+            if in_output_section:
+                # Remove any trailing commas and quotes
+                outputs.extend([path.strip().strip('"') for path in line.split(',') if path.strip()])
+
+    return outputs
+
+def replace_galaxy_indices(outputs, indices):
+    replaced_outputs = []
+    for idx in indices:
+        for output in outputs:
+            # Replace {gal_idx} with the current index
+            replaced_output = output.replace("{gal_idx}", idx)
+            replaced_outputs.append(replaced_output)
+    return replaced_outputs
+
+## Retrieve outputs for each galaxy index
+sofia_outs = extract_outputs_from_rules("workflow/rules/run_sofia.smk")
+sofia_outputs = replace_galaxy_indices(sofia_outs, galaxy_indices)
+sofia_products = extract_outputs_from_rules("workflow/rules/plot_sofia_products.smk")
+gbt_meerkat_spectra_out = extract_outputs_from_rules("workflow/rules/plot_gbt_meerkat_spectra.smk")
+gbt_meerkat_spectra_out = replace_galaxy_indices(gbt_meerkat_spectra_out, galaxy_indices)
+gbt_vs_meerkat_flux_out = extract_outputs_from_rules("workflow/rules/plot_gbt_vs_meerkat_flux.smk")
+gbt_vs_meerkat_flux_out = replace_galaxy_indices(gbt_vs_meerkat_flux_out, galaxy_indices)
+velocity_ra_out = extract_outputs_from_rules("workflow/rules/plot_velocity_ra.smk")
+velocity_ra_out = replace_galaxy_indices(velocity_ra_out, galaxy_indices)
+noise_specaxis_out = extract_outputs_from_rules("workflow/rules/plot_noise_specaxis.smk")
+noise_specaxis_out = replace_galaxy_indices(noise_specaxis_out, galaxy_indices)
+global_prof_out = extract_outputs_from_rules("workflow/rules/plot_global_prof.smk")
+global_prof_out = replace_galaxy_indices(global_prof_out, galaxy_indices)
+plot_moments_out = extract_outputs_from_rules("workflow/rules/plot_moments.smk")
+plot_moments_out = replace_galaxy_indices(plot_moments_out, galaxy_indices)
+plot_segmented_pvdiag_out = extract_outputs_from_rules("workflow/rules/plot_segmented_pvdiag.smk")
+plot_segmented_pvdiag_out = replace_galaxy_indices(plot_segmented_pvdiag_out, galaxy_indices)
+plot_optical_mom0_out = extract_outputs_from_rules("workflow/rules/plot_optical_mom0.smk")
+plot_optical_mom0_out = replace_galaxy_indices(plot_optical_mom0_out, galaxy_indices)
+plot_chanmap_out = extract_outputs_from_rules("workflow/rules/plot_chanmap.smk")
+plot_chanmap_out = replace_galaxy_indices(plot_chanmap_out, galaxy_indices)
+
+rule tex2pdf_with_bib:
+    input:
+        sofia_outputs,
+        sofia_products,
+        gbt_meerkat_spectra_out,
+        gbt_vs_meerkat_flux_out,
+        velocity_ra_out,
+        noise_specaxis_out,
+        global_prof_out,
+        plot_moments_out,
+        plot_segmented_pvdiag_out,
+        plot_optical_mom0_out,
+        plot_chanmap_out,
+        tex="workflow/hcg_paper.tex"
+    output:
+        "outputs/publication/hcg_paper.pdf",
+    shell:
+        """
+
+        tectonic -o outputs/publication workflow/hcg_paper.tex
+        for file in *delete*; do
+            if [ -f "$file" ]; then
+                rm -f "$file"
+            fi
+        done        
+        """

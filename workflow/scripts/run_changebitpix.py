@@ -1,0 +1,1 @@
+python change_bitpix.py --input ../../results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_17_mask.fits --output ../../results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_17_mask_bitpix.fits

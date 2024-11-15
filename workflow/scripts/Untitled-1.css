@@ -1,0 +1,710 @@
+
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://englishintake.com/static/EnglishWebSite/img/og-image-intake.webp" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="shortcut icon" type="image/x-icon" href="/static/EnglishWebSite/img/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/EnglishWebSite/img/apple-touch.png">
+
+<meta name="description" content="Various quizzes to improve your way of expressing likes and dislikes in English.">
+<meta name="keywords" content="Likes and dislikes quiz">
+<meta name="author" content="English Intake">
+
+
+<title>Likes and dislikes quiz</title>
+
+<style nonce="7ciXJpSwjKynCEo0IS7YRA==">
+.container-side{display:flex;flex-wrap:wrap;width:100%}.side-by-side{flex:1;border:0;margin:10px;padding:20px;box-sizing:border-box}@media (max-width:720px){.side-by-side{flex:1 0 100%}}td.noborder, th.noborder{border: border: 0px solid white; background-color:white!important;}.weekend{background:#f7f4f1}.center-div{display: flex;justify-content : center;align-items: center;}.social-sharing {display: flex; margin-top: 30px; justify-content: center; gap: 15px;}.social-sharing a {display: block;border: none;}.social-sharing img {width: 40px; height: auto;transition: transform 0.3s ease;}.social-sharing img:hover {transform: scale(1.1);}.media-share, h2{color:rgb(0,0,205);font-weight:10;}.lsnone ol ol>li{list-style:none}.align-center{text-align:center !important;}.navbar,body{display:flex;line-height: 1.5;}.pslabels{color:green!important}.submit,.restart,#submitbut,#submitbut2,.action-button{position:relative;padding:10px 30px;margin:0 10px 10px 0;float:left;text-decoration:none;color:white;font-size:22px;cursor:pointer}.feedback{color:green;margin-top: 20px;}#submitbut2, .submit,.restart,#submitbut,.clearbut,.showbut,.submitbut{border-radius:10px;margin-top:20px;background-image:radial-gradient(ellipse farthest-corner at 0 140%,#142a54 0,#142a54 70%,#142a54 70%);border-bottom:5px solid orange}.padtop2{padding-top:50px;}.padtop{padding-top: 100px;}.select2,body,textarea,p,.pronounce-word{font-size:20px}.div_message textarea{width:100%;max-width:100%;box-sizing:border-box}.ulnobullet{list-style-type: none}#conjugatebut,#id_trans_inputs,.form-group textarea,.select2{margin-top:10px}.select2{max-width:230px}.box,.container{background-color:#fff;border-radius:10px}select{text-overflow: ellipsis}option,.choice-dynamic{font-size:19px;max-width:250px;overflow-wrap:break-word}body{margin:0;font-family:Halvetica,sans-serif;flex-direction:column;background-color:#142a54}header{position:fixed;z-index:4;top: 0;width: 100%}.navbar{justify-content:space-between;padding:1rem;z-index:3;position:relative;height:60px}.banner-image h1{word-wrap: break-word;padding-top:230px;padding-left:10%;color:#d9d9d9;font-size:70px;font-family: 'Niconne',cursive;text-shadow: 3px 3px 0 black,-1px -1px 0 black,1px -1px 0 black,-1px 1px 0 black,1px 1px 0 black;}.banner-image{width:100%;min-height:510px;display:flex;flex-direction:column;align-items:flex-start;box-sizing:border-box;z-index:1;justify-content:center;}.main-container{padding:100px 50px 50px;display:flex;flex-direction:row;}.quiz-containera span{display: block;text-align: left;}.verblistsw{background:white;border-radius:4px;display:inline-block;padding:4px 10px;width:auto;box-shadow: 0 0 10px #142a54;margin-left:10px;margin-bottom:10px;white-space:normal;color:#000;text-align:center;text-decoration:none;box-sizing:border-box;text-indent:0}.quiz-containera{display: block;text-align: left !important;border: 1px solid #e0e0e0;padding: 20px 20px 50px;min-height:400px;margin: 20px;border-radius: 8px;max-width: 600px;margin: 20px auto;box-shadow:0 0 20px 10px rgba(0,0,0,.19),0 0 6px 10px rgba(0,0,0,.23);}.question{display:none}.question p{font-size:20px;margin-bottom:10px;background-color:#03083b;color:#fff;padding:10px;border-radius:5px 5px 0 0}.question:first-of-type{display:block}.restart{display: none; font-size: 20px;}@media (min-width:1800px){.main-container{padding:100px 350px 50px !important}}.flexcont,.sidebar-container,.sidebar-inner{display:flex;flex-direction:column}.left-align{padding-left:10px!important}.left-align,textarea{padding:5px;text-align:left}.form-group label,.fs14{font-weight:700}.sidebar-search-btn{padding-left:10px;padding-right:10px;cursor:pointer;border-radius:10px;font-size:20px}.select2{padding:10px}.close-icon,.menu-icon{display:none}.nav-links{list-style:none;margin:0;padding:0;display:flex}.box,.container,.sidebar,footer{padding:1rem}.input-conj-class,.input-trans-class{width:100%}.nav-links li{padding:0 1rem}.nav-links li a{text-decoration:none;color:#fff;z-index:5;background-color:#142a54;border-radius:10px;padding:10px}.nav-links a:hover{color:orange}.container{flex-grow:1}.sidebar-title{text-decoration:underline;font-size:22px;margin-bottom:20px;color:#142a54;text-decoration-color:orange;text-underline-offset:8px;text-decoration-thickness:4px}.sidebar{flex-shrink:0;min-width:300px;margin-top:-1rem;margin-left:0}.img-icon{width:15px;height:15px}select,.box{max-width:250px;margin-bottom:1rem}.intake-logo{width:55px;height:55px;position:relative!important;margin-top:-15px}footer{text-align:left;}@media (max-width: 1200px){.banner-image h1{line-height:1.5em!important}.box,.container{margin-left:10px}.close-icon,.menu-icon{display:block;cursor:pointer;background-color:black;padding:10px 10px 37px 10px;border-radius:10px}.close-icon,.nav-links{display:none;position:absolute}.main-container{flex-direction:column;padding:100px 0px 50px}.close-icon{right:1rem;top:1rem;cursor:pointer}.sidebar-search-btn{margin-left:10px}.nav-links{flex-direction:column;background-color:#142a54;width:100%;top:100%;right:0}.box,.sidebar{flex-direction:column}.nav-links li{text-align:left;margin-left:1rem;padding:1rem 0;border-top:1px solid #ccc}.nav-links li a{color:#fff;background-color:#142a54}.select2,select,.box{max-width:100%;width:100%;box-sizing: border-box;}.nav-links li:last-child{border-bottom:1px solid #ccc}.sidebar{box-sizing:border-box;width:100%;margin-left:-1rem;margin-top:1rem}.input-conj-class,.input-trans-class{margin-left:0}}.picassoFooter{background-color:radial-gradient(circle,#000,#142a54,#000);color:#fff;padding:20px;display:flex;flex-wrap:wrap;justify-content:space-around;font-family:Halvetica,sans-serif;flex-direction:row}.footer-navigation a:hover{color:orange}.footer-contact,.footer-navigation,.footer-social{margin:10px}.footer-contact h3,.footer-navigation h3,.footer-social h3{color:orange;margin-bottom:15px}.social-icon img{width:40px;height:40px}.search-icon{width:20px}.footer-navigation ul,.footer-social .social-icons{list-style:none;padding:0}.footer-navigation ul li,.social-icon{margin-bottom:10px;transition:transform .2s ease-in-out}.footer-navigation ul li a,.social-icon{color:#fff;text-decoration:none}.social-icon{display:inline-block;margin-right:5px}.footer-navigation ul li a:hover,.social-icon:hover{transform:scale(1.1)}@media (max-width:600px){.picassoFooter{flex-direction:column}}.footer-area-bottom{background-color:black;text-align:center;color:white;height:80px;position:absolute;width:100%}.footer-area-bottom-container{display:flex;flex-direction:column;width:100%}.numbers-img{max-width:400px;}.w{width:350px}.y{width:150px}.z{width:165px}#mobile-text-input{width:140px;font-size:22px}.pad{box-shadow:0 1px 3px rgba(0, 0, 0, 0.2); display:inline-block;padding:10px; margin-right:10px;margin-bottom:10px;border-radius:10px;}.special-field{border-radius:10px;background-color:#f5ebe0}.lists_h3lesson{margin-left:30px;}.lists_lesson{margin-left:10px;}.alphabet-table caption{color:white;background-color:#142a54;font-size:20px;font-weight:bold;text-align:center;}.table-container{overflow-x:scroll;margin: 0 auto;-webkit-overflow-scrolling: touch;width:100%}.alphabet-table{border-collapse:collapse;width:100%;}.alphabet-table td,.alphabet-table th,caption{padding:10px;border:1px solid #ddd;font-size:20px;}.alphabet-table th{background-color:black;color:white}.noborder{border:0px solid!important}.bcg-green{background-color:#114542!important}.bcg-white{background-color:white!important}.bcg-black{background-color:black!important}.container-adverbs{display:flex;flex-wrap:wrap;flex-direction:row}.pronounce-word,.pronounce{cursor:pointer;display:inline;}.adverblists{cursor:pointer;height:44px;justify-content:center;align-items:center;display:flex;background-color:white;border-radius:4px;width:135px;margin-left:10px;margin-bottom:10px;white-space:normal;box-sizing:border-box;text-align:center;text-indent:0;box-shadow:0 0 10px #142a54}#next-game-btn,#restart-game-btn,.display-none,.habibi-button{display:none}.container-div{border:1px solid #000;max-width:300px;border-radius:10px;display:inline-block;margin-bottom:5px}.header-div{background-color:#114542;color:#fff;padding:10px;font-size:22px;border-top-left-radius:10px;border-top-right-radius:10px;text-align:center}.content-div{padding:20px;width:250px;height:auto}.section-float{overflow:auto;margin-bottom:20px}.container-float{overflow:hidden}.image.float-left{float:left;margin-right:20px;width:200px;height:auto}.float-right{float:right}.text h4,.text ol{margin:10px;padding-left:20px}.text ol{padding-top:20px}.note-box{border-left:5px solid #114542;background-color:#e7dfd8}.example-box{border-left:10px solid #142a54; background-color:#f9f9f9}.note-box,.example-box{margin:20px 0;padding:15px 10px 15px 20px;border-radius:10px;}.arrowbg{width:40px;margin-top:40px}.vocab{width:220px;height:220px}.vocab-word{color:black;font-weight:700;}.card_chores{width:250px;height:270px;display:inline-block;text-align:center;padding:10px;margin:1rem;position:relative;vertical-align:top;border:none;}.minw768{min-width:768px;}.minw850{min-width:850px!important}.mxw950{max-width:900px!important}.parentdiv{cursor:pointer;display:flex;width:100%;overflow-x:scroll!important}.mxw800{max-width:800px}.download{padding: 5px 10px; cursor: pointer;font-size:19px;background-color:#142a54;color:white;border-radius:10px; cursor: pointer;}.underline-s{text-decoration: underline solid red; text-underline-offset:5px;text-decoration-thickness:3px}.underline-s2{text-decoration: underline solid red; text-underline-offset:35px;text-decoration-thickness:3px}.underline-a{text-decoration: underline solid #9b6150; text-underline-offset:5px;text-decoration-thickness:3px}.underline-v{text-decoration: underline solid blue;text-underline-offset:5px;text-decoration-thickness:3px}.underline-o{text-decoration: underline solid orange;text-underline-offset:5px;text-decoration-thickness:3px}.underline-o2{text-decoration: underline solid orange;text-underline-offset:35px;text-decoration-thickness:3px}.team{position:relative}.team::after{content:attr(title);position:absolute;top:1.2em;left:0.4em}.ol-height li{margin-bottom:40px}.ol-height2 li{margin-bottom:100px}.ol-height li:last-child{margin-bottom:0px}.ol-height2 li:last-child{margin-bottom:50px}.team-left1::after{left:1em!important}.team-left2::after{left:2em!important}.team-left3::after{left:1.6em!important}.team-left4::after{left:2.7em!important}.team-left0::after{left:-0.1em!important}.team-under::after{margin-top:30px}.clock{border:2px solid;margin-left:50px;border-radius:7px}.ht150{height:150px}.ht60{height:60px!important}.img_center{display:block;margin-left:auto;margin-right:auto;text-align:center;width:220px;height:100px}.pad-top{margin-top:20px}.pad.za{margin-bottom:20px;box-shadow:0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 0 0 #b9b9b9,0 5px 0 rgb(125,125,125,.2),0 6px 1px rgb(0,0,0,.2),0 0 5px rgb(0,0,0,.2),0 1px 3px rgb(0,0,0,.2),0 3px 5px rgb(0,0,0,.2),0 5px 10px rgb(0,0,0,.2),0 10px 10px rgb(0,0,0,.2),0 20px 20px rgb(0,0,0,.2),0 0 4px #fff,0 0 3px #fff,1px 1px 5px rgb(255,155,0,.37),1px 1px 10px rgb(102,60,0,.5)}}.quiz-wrapper2 li.option2{border-radius:7px;display:inline-block;border:2px solid;box-sizing:border-box;text}.clock{font-size:30px;background:#000;padding:5px;width:100px;box-shadow:0 6px 5px maroon;text-align:center;color:#fff}*,::after,::before{box-sizing:border-box}.pricing-table{background:#fff;width:100%;border-radius:10px;position:relative;box-shadow:0 0 10px #999;overflow:hidden}.pricing-table{display:flex;flex-flow:row wrap;max-width:1100px;margin:0 auto}.pricing-table .ptable-item{width:100%;padding:0 15px}.pricing-table{margin-bottom:30px;}.pricing-table .ptable-action,.pricing-table .ptable-body,.pricing-table .ptable-description,.pricing-table .ptable-footer,.pricing-table .ptable-header,.pricing-table .ptable-price,.pricing-table .ptable-status,.pricing-table .ptable-title{width:100%;text-align:left;position:relative}.pricing-table .ptable-header{padding:0;height:auto;border-radius:10px}.pricing-table .ptable-header h3{margin-left:20px;padding:0}.pricing-table .ptable-item.featured-item .ptable-header{background:#ff6f61;padding-left:10px}.pricing-table .ptable-price h3,.pricing-table .ptable-status span,.pricing-table .ptable-title h3{color:#fff}.pricing-table .ptable-status span{background:#2a293e;letter-spacing:1px;display:inline-block;width:50px;height:30px;padding:5px 0;text-align:center}.pricing-table .ptable-action a,.pricing-table .ptable-item.featured-item .ptable-action a:hover,.pricing-table .ptable-title h3{background-color:#03083b;letter-spacing:2px}.pricing-table ptable-action a{display:inline-block;padding:10px 20px;letter-spacing:2px;text-decoration:none;color:#2a293e;background:#ff6f61}.pricing-table .ptable-description ol li{color:#2a293e;font-size:19px;list-style:none;font-family:Helvetica,sans-serif;letter-spacing:1px;padding:7px 7px 7px 20px;border-bottom:1px solid #dedede}.notes,.notes2{padding:20px 20px 20px 50px;background-color:#e8e0cd;font-size:20px}img.lstyle{width:35px;padding-right:10px}.imgw300{width:300px!important}.imgw200{width:200px;height:auto}.container-calendar{background:#fff;padding:15px;width:100%;margin:0 auto;overflow-x:auto}.button-container-calendar button{cursor:pointer;display:inline-block;background:#a76d69;color:#fff;border:1px solid #a76d69;border-radius:4px;padding:5px 10px}.table-calendar{border-collapse:collapse;width:100%}.table-calendar td,.table-calendar th{padding:5px;border:1px solid #e2e2e2;text-align:center;vertical-align:top}.table-calendar th{width:.1%;color:#fff;background:#a76d69}.footer-container-calendar{margin-top:1em;border-top:1px solid #dadada;padding:10px 0}.footer-container-calendar select{display:inline-block;background:#a76d69;color:#fff;border-radius:3px;padding:5px 1em}#monthAndYear{text-align:center;margin-top:0;color:maroon;font-weight:700}@media only screen and (max-width:767px){.container-calendar{padding:15px;max-width:500px}}@media only screen and (max-width:500px){.container-calendar{padding:15px;max-width:300px}}#contentDiv,#definition-box{transform:translate(-50%,-50%)}#contentDiv{top:50%;left:50%;width:30%;height:auto;min-height:100px;min-width:250px;background-color:#fff;box-shadow:0 19px 38px rgb(0,0,0,.3),0 15px 12px rgb(0,0,0,.22);z-index:400;display:none;font-family:Halvetica;font-size:20px;padding:20px}#contentDiv,.fixed{position:fixed;border-radius:10px}.adverb-example-col{color:#2a71b0}#x{position:absolute;background:#1c2841;width:50px;font-size:30px;top:20px;right:20px;color:white;cursor:pointer}.adverb-element{color:#f18e1c;font-weight:bold}.adverb-s{color:#2a71b0}.lsnone{list-style:none!important}@media(min-width:600px){.center-text{margin-top:70px!important}}@media(max-width:599px){.center-text{margin-top:10px!important}}.textalc{text-align:center}.mrgr50{margin-right:50px!important}.mrgb10{margin-bottom:10px!important}.mrgb30{margin-bottom:30px!important}.width195{width:195px!important}.col372{color:#ba372a}.w260{width:260px!important}.w150{width:150px}.w300{width:300px!important}.bcg-fdcolor{background-color:#fdf8f4!important}.card_collective{box-shadow:0 0 10px #999;width:350px;height:250px;display:inline-block;text-align:left;border-radius:10px;padding:10px;margin:1rem;position:relative;vertical-align:top}.mxw500{max-width:500px!important}.minh860{min-height:860px!important}.w350{width:350px!important}.mxw340{max-width:340px!important}.mxw250{max-width:250px!important}.notes_card{background-color:#e8e0cd;padding-left:10px;padding-right:10px;padding-top:10px;padding-bottom:10px;border-radius:10px;font-family:Halvetica;font-size:20px;position:absolute;bottom:10px;left:10px;right:10px}.top-right{position:absolute;top:0;right:0}.center-img{position:absolute;margin-top:-100px;margin-bottom:10px;margin-left:40px}.ht400{height:400px!important}.mrgtm30{margin-top:-30px!important}.mrgtm80{margin-top:-80px!important}.mrgtm60{margin-top:-60px!important}.mrgt30{margin-top:30px!important}.mrgt0{margin-top:0px!important}.quizContainer{background:linear-gradient(to right,#142a54,#000,#004447);border-radius:10px;padding:50px 10px 50px 10px}.word{display:inline-block;margin:5px;padding:10px;border:1px solid #ccc;border-radius:8px;font-size:19px;color:#000;box-shadow:0 0 3px #999}.word,.quizContainer img{cursor:pointer}.quiz-wrapper li.option,.target{margin-bottom:10px;text-align:center}.target{display:inline-block;min-width:100px;background:#add8e6;border:none;border-radius:10px;padding-left:10px}.quiz-wrapper,.quiz-wrapper2{position:relative;display:block}.quiz-wrapper li.title,.quiz-wrapper2 li.title,.status p{background:linear-gradient(to right,#142a54,#000,#004447);font-size:20px}.quiz-wrapper2 li.option2,.quiz-wrapper li.option{background:beige;border-radius:4px;display:inline-block;text-decoration:none;padding:4px;width:100px;white-space:normal;box-sizing:border-box;text-indent:0;color:#000;box-shadow:0 3px 1px maroon}.quiz-wrapper2 li.option2{color:white!important;text-align:center;margin-right:5px!important;}.status{display:none;z-index:110;width:80%;top:220px;left:47px}.status p{border-radius:5px;color:#fff;font-weight:700}.status{position:absolute}.width-1{min-width:30px}.width-2{min-width:50px}.width-3{min-width:100px!important}.width-4{min-width:150px}.width-5{min-width:200px}.display-inline{display:inline!important}.service-box1,.display-inline-block{display:inline-block!important}.totscore{color:red}.button-container,.game-details-container,.options,.quiz-container{width:100%;display:flex}.container-liss:hover{transform:scale(1.1);background:#581845}.card header,.logo:after,.logo:before{transform:translateY(-50%);position:absolute}.quiz-container{flex-direction:column;align-items:center;gap:1rem;min-height:550px;border:2px solid #000;padding:20px;border-radius:10px;background:linear-gradient(to right,#142a54,#000,#004447)}.game-details-container{justify-content:space-between}.game-details-container p{color:#fab402;font-size:25px}.greeting{font-size:1.2rem;font-weight:700;padding:10px;align-items:center;justify-content:center;border-radius:10px}.options{flex-wrap:wrap;justify-content:space-between;gap:1rem}.options button{flex-basis:48%}.button-container{justify-content:center}.exo{font-style:italic}.service-box1{border-right:1px solid #aaa;padding:30px 30px 15px 40px;margin-right:5px;margin-top:10px;max-width:380px;border-radius:5px;background-color:#ebf3fd}.div_subject input,.div_name input,.div_email input,.fs19{font-size:19px!important}.inline-block{display:inline-block!important}
+</style>
+
+<style nonce="7ciXJpSwjKynCEo0IS7YRA==">
+.container-side{display:flex;flex-wrap:wrap;width:100%}.side-by-side{flex:1;border:0;margin:10px;padding:20px;box-sizing:border-box}@media (max-width:720px){.side-by-side{flex:1 0 100%}}.pagination{width:100%;border-top:2px solid #ccc!important;border-bottom:2px solid #ccc!important;padding:10px 0;text-align:center;background-color:#142a54!important;}.pagination p{margin:0;display:flex;justify-content:center}.pagination a{margin:0 5px;flex:1;text-align:center;position:relative;padding-right:20px; color:white}.pagination a:not(:last-child)::after{content:'|';position:absolute;right:0;top:0;bottom:0;color:white;display:flex;align-items:center}.content .word,.details p b{font-weight:500}.crossword{padding:20px;}.crossword, .container-game{width:600px;border-radius:7px;background:#fff;box-shadow:0 0 20px 10px rgba(0,0,0,.19),0 0 6px 10px rgba(0,0,0,.23)}.word-game{display:flex;justify-content:center;font-size:25px;font-weight:500;padding:16px 25px;border-bottom:1px solid #ccc}.container-game .content{margin:25px 20px 35px}.word{display:flex;justify-content:center;}.content .word{user-select:none;font-size:33px;text-align:center;letter-spacing:24px;margin-right:0;color:orange;background:#142a54;word-break:break-all;text-transform:uppercase}.content .details{margin:25px 0 20px}.details p{font-size:20px;margin-bottom:10px}.content input{width:100%;height:60px;outline:0;padding:0 16px;font-size:20px;border-radius:5px;border:1px solid #bfbfbf}.content input:focus{box-shadow:0 2px 4px rgba(0,0,0,.08)}.content input::placeholder{color:#aaa}.content input:focus::placeholder{color:#bfbfbf}.content .buttons{display:flex;margin-top:20px;justify-content:space-between}.clear-puzzle-btn, .show-hints-btn, .show-answers, .buttons button{border:none;outline:0;color:#fff;cursor:pointer;padding:15px 0;font-size:20px;border-radius:5px;width:calc(100% / 2 - 8px);transition:.3s}.buttons button:active{transform:scale(.97)} .buttons .refresh-word{background:#114542}.show-hints-btn:hover, .show-answers:hover, .clear-puzzle-btn:hover, .buttons .check-word:hover,.buttons .refresh-word:hover,.pause-game:hover,.start-game:hover{background:#184d67}.show-answers, .buttons .check-word{background:#142a54}.clear-puzzle-btn{background-color:#735392}.pause-game{display:none;background-color:#735392}.show-hints-btn, .start-game{background-color:#c41e3a}.show-hints-btn, .clear-puzzle-btn, .show-answers, .buttons{display:flex;flex-direction:column;align-items:center;gap:5px}.game-controls{width:100%;display:flex;flex-direction:column;align-items:center;margin-top:10px}.time-left{color:red}@media screen and (max-width:470px){.word{display:flex;justify-content:center;}.word-game{font-size:22px;padding:13px 20px;display:flex;justify-content:center;}.content .word{font-size:20px;letter-spacing:20px;margin-right:0}.container-game .content{margin:20px 20px 30px}.details p{font-size:16px;margin-bottom:8px}.content input{height:55px;font-size:20px}.buttons button{padding:14px 0;font-size:20px;width:calc(100% / 2 - 7px)}}
+.crossword {
+  margin: 1em auto;
+  position: relative;
+  font-family: sans-serif;
+}
+.crossword-clues {
+  font-size: 18px;
+}
+.clear-puzzle-btn{margin-bottom: 20px;}
+.crossword-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  clear: both;
+  text-align: center;
+  padding-top: 1em;
+  button {
+    margin: 0.4em;
+    min-width: 200px;
+  }
+}
+
+table.crossword-grid {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.grid-row {
+  clear: left;
+}
+.grid-square {
+  position: relative;
+  background-clip: padding-box;
+  &:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
+  &.active {
+    border: 2px solid black;
+  }
+  &.current-word {
+    background-color: lighten(yellow,30%);
+  }
+  &.correct-across,
+  &.correct-down {
+    background-color: #dff0d8;
+    &.current-word {
+      background-color: multiply(lighten(yellow,30%),#dff0d8);
+    }
+  }
+  .word-label {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    line-height: 1;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 19px;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: transparent;
+  }
+}
+@media screen and (max-width: 470px) {
+    .grid-square {
+        input{
+            font-size:14px;
+        }
+    }
+}
+.crossword-clues {
+  li {
+    position: relative;
+    label {
+      display: block;
+      font-weight: normal;
+      cursor: pointer;
+    }
+    &.active {
+      background: lighten(yellow,30%);
+    }
+    &.correct {
+      background: transparent;
+      color: green;
+      text-decoration: line-through;
+      &.active {
+        background: multiply(lighten(yellow,30%),#dff0d8);
+      }
+      label:before {
+        content: "\f00c";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        left: 0;
+        top: .1em;
+      }
+    }
+  }
+  span.hint {
+    display: none;
+    color: blue;
+    .show-hints& {
+      display: inline;
+    }
+  }
+}
+.clue-tooltip {
+  position: absolute;
+  z-index: 10;
+  /*bottom: 100%;*/
+  background: rgba(255, 196, 35, 0.9);
+  /*color: white;*/
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  transform: translateY(-100%);
+  max-width: 90vw;
+  .clue-tooltip-arrow {
+    display: block;
+    border: 8px solid transparent;
+    border-top-color: rgba(255, 196, 35, 0.9);
+    border-bottom: none;
+    position: absolute;
+    top: 100%;
+  }
+}
+.crossword-puzzle{min-width:600px;min-height:400px;}
+@media  (max-width:720px) {
+  .crossword {padding-left:130px;} 
+  .crossword-puzzle{min-width:550px;min-height:400px;}
+}
+</style>
+
+</head>
+<body>
+<header>
+<div class=navbar>
+<div class=logo><img src="/static/EnglishWebSite/img/mobile-logo.png" alt="English Intake logo" class=intake-logo></div>
+<div class=menu-icon id=menuIcon><img class=img-icon src="/static/lessons/img/menu-icon-white-img.png" alt="Menu icon"></div>
+<div class=close-icon id=closeIcon><img class=img-icon src="/static/lessons/img/close-icon-white.png" alt="Close icon"></div>
+<ul class=nav-links>
+<li><a href="/">Home</a></li>
+<li><a href="/conjugation/">Conjugation</a></li>
+<li><a href="/grammar/">Grammar</a></li>
+<li><a href="/vocabulary/">Vocabulary</a></li>
+<li><a href="/english-lessons/">Lessons</a></li>
+<li><a href="/about-us/">About us</a></li>
+<li><a href="/contact-us/">Contact us</a></li>
+<li><a href="/search/"><img class="search-icon" src="/static/lessons/img/search-icon.png" alt="Search icon" /></a></li>
+</ul>
+</div>
+</header>
+<div class="banner-image">
+        
+   <h1>Likes and dislikes interactive quizzes</h1>
+   
+</div>
+<div class="main-container">
+    <div class="container">
+       
+   <div class="pagination">
+   <p>
+   <a href="https://englishintake.com/learn-english/exercises-likes-dislikes-1/">likes and dislikes exercises</a>
+   <a href="https://englishintake.com/learn-english/lesson-likes-dislikes/">Expressing likes and dislikes</a>
+   </p>
+   </div>
+   
+    <div id="contentDiv">
+        &nbsp;
+    </div>
+    
+   <h2>English practice quizzes: expressing likes and dislikes</h2>
+   <h3>Quiz 1: likes and dislikes vocabulary test</h3>
+   <p>Unscramble the mixed-up letters to find the correct word matching the provided hint. </p>
+   <div class="center-div"><div class="container-game"><div class="word-game">Word scramble</div><div class="content"><div class="word">start</div><div class="details"><p class="hint">Hint: <span>Click the start button to begin.</span></p><p class="time">Time left: <span class="time-left"><b>30</b>s</span></p></div><input type="text" spellcheck="false" placeholder="Enter a valid word"><div class="buttons"><div class="game-controls"><button class="start-game">Start quiz</button><button class="pause-game">Pause quiz</button></div><button class="refresh-word">Refresh word</button><button class="check-word">Check word</button></div></div><span>&nbsp;</span></div></div>
+   <h3>Quiz 2: Choose the option that best match each statement</h3>
+<div class="quiz-containera">
+    <div class="question" data-correct="c">
+        <p>I can&rsquo;t stand going to the gym.</p>
+	    <span><input type="radio" name="question1" value="a" id="q1a"><label for="q1a">I don&rsquo;t mind going to the gym.</label></span><br>  
+	    <span><input type="radio" name="question1" value="b" id="q1b"><label for="q1b">I enjoy going to the gym.</label></span><br>
+	    <span><input type="radio" name="question1" value="c" id="q1c"><label for="q1c">I hate going to the gym.</label></span><br>
+    </div>
+    
+    <div class="question" data-correct="c">
+        <p>Classical music makes me feel so calm.</p>
+	    <span><input type="radio" name="question2" value="a" id="q2a"><label for="q2a">I’m not fond of classical music.</label></span><br>    
+	    <span><input type="radio" name="question2" value="b" id="q2b"><label for="q2b">Classical music is not my thing.</label></span><br>
+	    <span><input type="radio" name="question2" value="c" id="q2c"><label for="q2c">I love classical music.</label></span><br>
+    </div>
+
+    <div class="question" data-correct="b">
+        <p>I have a strong aversion to Mathematics.</p>
+	    <span><input type="radio" name="question3" value="a" id="q3a"><label for="q3a">I love Mathematics.</label></span><br>    
+	    <span><input type="radio" name="question3" value="b" id="q3b"><label for="q3b">I can&rsquo;t stand Mathematics.</label></span><br>
+	    <span><input type="radio" name="question3" value="c" id="q3c"><label for="q3c">Mathematics is my favourite subject.</label></span><br>
+    </div>
+
+    <div class="question" data-correct="a">
+        <p>I always look forward to the weekend to play video games.</p>
+	    <span><input type="radio" name="question4" value="a" id="q4a"><label for="q4a">I’m passionate about video games.</label></span><br>     
+	    <span><input type="radio" name="question4" value="b" id="q4b"><label for="q4b">I dislike video games.</label></span><br>
+	    <span><input type="radio" name="question4" value="c" id="q4c"><label for="q4c">I think video games are boring.</label></span><br>
+    </div>
+
+    <button class="submit">Submit</button>
+    <button class="restart">Play again</button>
+    <p class="feedback"></p>
+</div>
+
+<h3>Quiz 3: Identify the idiom that best describes each feeling.</h3>
+<div class="quiz-containera">
+
+    <div class="question" data-correct="a">
+        <p>I can't stand horror movies.</p>
+        <span><input type="radio" name="question5" value="a" id="q5a"><label for="q5a">Horror movies don't float my boat.</label></span><br>
+        <span><input type="radio" name="question5" value="b" id="q5b"><label for="q5b">I’m a sucker for horror movies.</label></span><br>
+        <span><input type="radio" name="question5" value="c" id="q5c"><label for="q5c">I’m crazy about horror movies.</label></span><br>
+    </div>
+
+    <div class="question" data-correct="b">
+        <p>She finds shopping therapeutic.</p>
+        <span><input type="radio" name="question6" value="a" id="q6a"><label for="q6a">Shopping is not her cup of tea.</label></span><br>
+        <span><input type="radio" name="question6" value="b" id="q6b"><label for="q6b">Shopping is her cup if tea.</label></span><br>
+        <span><input type="radio" name="question6" value="c" id="q6c"><label for="q6c">She is sick of shopping.</label></span><br>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="question" data-correct="c">
+        <p>He avoids social gatherings like the plague.</p>
+        <span><input type="radio" name="question7" value="a" id="q7a"><label for="q7a">He’s a social butterfly.</label></span><br>
+        <span><input type="radio" name="question7" value="b" id="q7b"><label for="q7b">He’s always on the go.</label></span><br>
+        <span><input type="radio" name="question7" value="c" id="q7c"><label for="q7c">He’s not a big fan of crowds.</label></span><br>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" data-correct="a">
+        <p>She likes muscular men.</p>
+        <span><input type="radio" name="question8" value="a" id="q8a"><label for="q8a">She has a thing for muscular men.</label></span><br>
+        <span><input type="radio" name="question8" value="b" id="q8b"><label for="q8b">She is not into muscular men.</label></span><br>
+        <span><input type="radio" name="question8" value="c" id="q8c"><label for="q8c">Muscular men drive her nuts.</label></span><br>
+    </div>
+
+    <button class="submit">Submit</button>
+    <button class="restart">Play again</button>
+    <p class="feedback"></p>
+</div>
+
+<h3>Quiz 4: Select the correct meaning of each word</h3>
+
+<div class="quiz-containera">
+
+    <div class="question" data-correct="b">
+        <p>Adore</p>
+        <span><input type="radio" name="question9" value="a" id="q9a"><label for="q9a">Dislike intensely</label></span><br>
+        <span><input type="radio" name="question9" value="b" id="q9b"><label for="q9b">Love deeply</label></span><br>
+        <span><input type="radio" name="question9" value="c" id="q9c"><label for="q9c">Ignore</label></span><br>
+    </div>
+
+    <div class="question" data-correct="a">
+        <p>Detest</p>
+        <span><input type="radio" name="question10" value="a" id="q10a"><label for="q10a">Hate strongly</label></span><br>
+        <span><input type="radio" name="question10" value="b" id="q10b"><label for="q10b">Enjoy</label></span><br>
+        <span><input type="radio" name="question10" value="c" id="q10c"><label for="q10c">Appreciate</label></span><br>
+    </div>
+
+    <div class="question" data-correct="c">
+        <p>Fancy</p>
+        <span><input type="radio" name="question11" value="a" id="q11a"><label for="q11a">Despise</label></span><br>
+        <span><input type="radio" name="question11" value="b" id="q11b"><label for="q11b">Ignore</label></span><br>
+        <span><input type="radio" name="question11" value="c" id="q11c"><label for="q11c">Like a lot</label></span><br>
+    </div>
+
+    <div class="question" data-correct="b">
+        <p>Relish</p>
+        <span><input type="radio" name="question12" value="a" id="q12a"><label for="q12a">Dislike</label></span><br>
+        <span><input type="radio" name="question12" value="b" id="q12b"><label for="q12b">Enjoy greatly</label></span><br>
+        <span><input type="radio" name="question12" value="c" id="q12c"><label for="q12c">Ignore</label></span><br>
+    </div>
+
+    <div class="question" data-correct="b">
+        <p>Cherish</p>
+        <span><input type="radio" name="question13" value="a" id="q13a"><label for="q13a">Neglect</label></span><br>
+        <span><input type="radio" name="question13" value="b" id="q13b"><label for="q13b">Hold dear</label></span><br>
+        <span><input type="radio" name="question13" value="c" id="q13c"><label for="q13c">Underestimate</label></span><br>
+    </div>
+
+    <div class="question" data-correct="a">
+        <p>Abhor</p>
+        <span><input type="radio" name="question14" value="a" id="q14a"><label for="q14a">Loathe</label></span><br>
+        <span><input type="radio" name="question14" value="b" id="q14b"><label for="q14b">Admire</label></span><br>
+        <span><input type="radio" name="question14" value="c" id="q14c"><label for="q14c">Enjoy</label></span><br>
+    </div>
+
+    <div class="question" data-correct="c">
+        <p>Despise</p>
+        <span><input type="radio" name="question15" value="a" id="q15a"><label for="q15a">Adore</label></span><br>
+        <span><input type="radio" name="question15" value="b" id="q15b"><label for="q15b">Enjoy</label></span><br>
+        <span><input type="radio" name="question15" value="c" id="q15c"><label for="q15c">Feel contempt for</label></span><br>
+    </div>
+
+    <button class="submit">Submit</button>
+    <button class="restart">Play again</button>
+    <p class="feedback"></p>
+</div>
+<h3>Crossword puzzle</h3>
+Test your likes and dislikes vocabulary by completing the crossword puzzle. The boxes will turn green when your answer is correct.
+<div class="table-container"><div class="center-div"><div class="crossword"><div class="word-game">Crossword puzzle</div><span>&nbsp;</span></div></div></div>
+
+
+<div class="divhomeht">
+	<p></p>
+</div>   
+   
+   
+   <div class="center-div"><span class="media-share">Share this content on social media</span></div>
+<div class="social-sharing">
+  <a href="https://www.facebook.com/sharer.php?u=https://englishintake.com/learn-english/likes-and-dislikes-quiz" target="_blank">
+      <img src="/static/lessons/img/facebook-icon.svg" alt="Share on Facebook" />
+  </a>
+  <a href="https://pinterest.com/pin/create/button/?url=https://englishintake.com/learn-english/likes-and-dislikes-quiz" target="_blank">
+    <img src="/static/lessons/img/pinterest-icon.svg" alt="Share on pinterest" />
+</a>
+  <a href="https://twitter.com/share?url=https://englishintake.com/learn-english/likes-and-dislikes-quiz" target="_blank">
+      <img src="/static/lessons/img/twitter-icon.svg" alt="Share on Twitter" />
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://englishintake.com/learn-english/likes-and-dislikes-quiz" target="_blank">
+      <img src="/static/lessons/img/linked-in-icon.svg" alt="Share on LinkedIn" />
+  </a>
+ <a href="https://reddit.com/submit?url=https://englishintake.com/learn-english/likes-and-dislikes-quiz&title=" target="_blank">
+  <img src="/static/lessons/img/reddit-icon.svg" alt="Share on Reddit" />
+</a>
+<a href="https://wa.me/?text=https://englishintake.com/learn-english/likes-and-dislikes-quiz" target="_blank">
+  <img src="/static/lessons/img/whatsapp-icon.svg" alt="Share on Whatsapp" />
+</a>
+<a href="/cdn-cgi/l/email-protection#ead5999f88808f899ed7cc88858e93d7a9828f8981ca9e828399ca859f9ed0ca829e9e9a99d0c5c58f848d8683998283849e8b818fc4898587c5868f8b9884c78f848d86839982c58683818f99c78b848ec78e83998683818f99c79b9f8390" target="_blank">
+  <img src="/static/lessons/img/email-icon.svg" alt="Email to your friends or colleagues" />
+</a>
+</div>
+   
+</div>
+
+<div class="flexcont"> 
+<div class="sidebar-container"> 
+<div class="sidebar-inner"> 
+    <aside class="sidebar">
+        <div class="box">
+	    <div class="form-group sidebar-title" >Translate</div>
+            <form id="checkout-form1" method="POST" >
+                <input type="hidden" name="csrfmiddlewaretoken" value="I4CYzUhVECcuEoC5q3d3ZB8yWZoQnSqN9LandZjMWZe9YJ8ytA4QxECzrmcalJUe">
+		<label for="id_trans_inputs" class="fs14">Type a text or word(s):</label>
+                <div class="form-group" id="input-translate"> <textarea name="txt" cols="80" rows="7" class="input-trans-class" id="id_trans_inputs" required>
+</textarea></div>
+                    <p class="form-group" id="result-translate">  </p>
+                    <label for="id_lang" class="fs14">Language:</label>
+                    <select  class='select2' name="lang" id="id_lang">
+                        <option value="en">English</option>
+                        <option value='af'>Afrikaans</option>
+                        <option value='sq'>Albanian</option>
+                        <option value='am'>Amharic</option>
+                        <option value='ar'>Arabic</option>
+                        <option value='hy'>Armenian</option>
+                        <option value='az'>Azerbaijani</option>
+                        <option value='eu'>Basque</option>
+                        <option value='be'>Belarusian</option>
+                        <option value='bn'>Bengali</option>
+                        <option value='bs'>Bosnian</option>
+                        <option value='bg'>Bulgarian</option>
+                        <option value='ca'>Catalan</option>
+                        <option value='ceb'>Cebuano</option>
+                        <option value='ny'>Chichewa</option>
+                        <option value='zh-cn'>Chinese (simplified)</option>
+                        <option value='zh-tw'>Chinese (traditional)</option>
+                        <option value='co'> Corsican</option>
+                        <option value='hr'> Croatian</option>
+                        <option value='cs'> Czech</option>
+                        <option value='da'> Danish</option>
+                        <option value='nl'> Dutch</option>
+                        <option value='en'> English</option>
+                        <option value='eo'> Esperanto</option>
+                        <option value='et'> Estonian</option>
+                        <option value='tl'> Filipino</option>
+                        <option value='fi'> Finnish</option>
+                        <option value='fr'> French</option>
+                        <option value='fy'> Frisian</option>
+                        <option value='gl'> Galician</option>
+                        <option value='ka'> Georgian</option>
+                        <option value='de'> German</option>
+                        <option value='el'> Greek</option>
+                        <option value='gu'> Gujarati</option>
+                        <option value='ht'> Haitian creole</option>
+                        <option value='ha'> Hausa</option>
+                        <option value='haw'> Hawaiian</option>
+                        <option value='iw'> Hebrew</option>
+                        <option value='he'> Hebrew</option>
+                        <option value='hi'> Hindi</option>
+                        <option value='hmn'> Hmong</option>
+                        <option value='hu'> Hungarian</option>
+                        <option value='is'> Icelandic</option>
+                        <option value='ig'> Igbo</option>
+                        <option value='id'> Indonesian</option>
+                        <option value='ga'> Irish</option>
+                        <option value='it'> Italian</option>
+                        <option value='ja'> Japanese</option>
+                        <option value='jw'> Javanese</option>
+                        <option value='kn'> Kannada</option>
+                        <option value='kk'> Kazakh</option>
+                        <option value='km'> Khmer</option>
+                        <option value='ko'> Korean</option>
+                        <option value='ku'> Kurdish (kurmanji)</option>
+                        <option value='ky'> Kyrgyz</option>
+                        <option value='lo'> Lao</option>
+                        <option value='la'> Latin</option>
+                        <option value='lv'> Latvian</option>
+                        <option value='lt'> Lithuanian</option>
+                        <option value='lb'> Luxembourgish</option>
+                        <option value='mk'> Macedonian</option>
+                        <option value='mg'> Malagasy</option>
+                        <option value='ms'> Malay</option>
+                        <option value='ml'> Malayalam</option>
+                        <option value='mt'> Maltese</option>
+                        <option value='mi'> Maori</option>
+                        <option value='mr'> Marathi</option>
+                        <option value='mn'> Mongolian</option>
+                        <option value='my'> Myanmar (burmese)</option>
+                        <option value='ne'> Nepali</option>
+                        <option value='no'> Norwegian</option>
+                        <option value='or'> Odia</option>
+                        <option value='ps'> Pashto</option>
+                        <option value='fa'> Persian</option>
+                        <option value='pl'> Polish</option>
+                        <option value='pt'> Portuguese</option>
+                        <option value='pa'> Punjabi</option>
+                        <option value='ro'> Romanian</option>
+                        <option value='ru'> Russian</option>
+                        <option value='sm'> Samoan</option>
+                        <option value='gd'> Scots gaelic</option>
+                        <option value='sr'> Serbian</option>
+                        <option value='st'> Sesotho</option>
+                        <option value='sn'> Shona</option>
+                        <option value='sd'> Sindhi</option>
+                        <option value='si'> Sinhala</option>
+                        <option value='sk'> Slovak</option>
+                        <option value='sl'> Slovenian</option>
+                        <option value='so'> Somali</option>
+                        <option value='es'> Spanish</option>
+                        <option value='su'> Sundanese</option>
+                        <option value='sw'> Swahili</option>
+                        <option value='sv'> Swedish</option>
+                        <option value='tg'> Tajik</option>
+                        <option value='ta'> Tamil</option>
+                        <option value='te'> Telugu</option>
+                        <option value='th'> Thai</option>
+                        <option value='tr'> Turkish</option>
+                        <option value='uk'> Ukrainian</option>
+                        <option value='ur'> Urdu</option>
+                        <option value='ug'> Uyghur</option>
+                        <option value='uz'> Uzbek</option>
+                        <option value='vi'> Vietnamese</option>
+                        <option value='cy'> Welsh</option>
+                        <option value='xh'> Xhosa</option>
+                        <option value='yi'> Yiddish</option>
+                        <option value='yo'> Yoruba</option>
+                        <option value='zu'> Zulu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="sidebar-search-btn" 
+                         type="submit" id="translatebut">TRANSLATE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <aside class="sidebar">
+        <div class="box">
+	    <div class="form-group sidebar-title" >Dictionary</div>
+            <form id="checkout-form-dict" method="POST" >
+                <input type="hidden" name="csrfmiddlewaretoken" value="I4CYzUhVECcuEoC5q3d3ZB8yWZoQnSqN9LandZjMWZe9YJ8ytA4QxECzrmcalJUe">
+                <div class="form-group" id="input-dict"> <label for="id_dict_inputs">Type a word:</label>
+
+
+
+<textarea name="inputs" cols="88" rows="2" class="input-conj-class" id="id_dict_inputs" required>
+</textarea></div>
+		<audio src="/static/EnglishWebSite/mp3/audionum35191.mp3" id="audiodict"> </audio>
+                    <span class="form-group" id="inputsdict">&nbsp;</span>
+                    <p class="form-group" id="pronunciationdict">&nbsp; </p>
+                          <p class="form-group" id="typedict">&nbsp; </p>
+                          <p class="form-group" id="regiondict">&nbsp; </p>
+                          <span class="form-group" id="definitiondict">&nbsp; </span>
+                </div>
+                <div class="form-group">
+                    <button class="sidebar-search-btn" 
+                         type="submit" id="translatebut">FIND
+                    </button>
+                </div>
+            </form>
+        </div>
+    </aside>
+    <aside class="sidebar">
+        <div class="box">
+            <div class="form-group sidebar-title" >Conjugation</div>
+                <form id="checkout-form-conj" method="POST">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="I4CYzUhVECcuEoC5q3d3ZB8yWZoQnSqN9LandZjMWZe9YJ8ytA4QxECzrmcalJUe">
+                       <div class="form-group course-name" id="input-conjugate"> <p>
+    <label for="id_conj_inputs">Type a verb:</label>
+    <textarea name="inputs" cols="88" rows="2" class="input-conj-class" id="id_conj_inputs" required>
+</textarea>
+    
+    
+      
+    
+  </p> </div>
+                    <div class="form-group">
+                       <label for="id_tense" class="fs14">Tense:</label>
+                        <select  class='select2' name="tense" id="id_tense">
+                            <option value="present">Present simple</option>
+                            <option value='present_cont'>Present continuous</option>
+                            <option value='present_perfect'>Present perfect</option>
+                            <option value='present_perfect_cont'>Present perfect continuous</option>
+                            <option value='past'>Past simple</option>
+                            <option value='past_perfect'>Past perfect</option>
+                            <option value='past_perfect_cont'>Past perfect continuous</option>
+                            <option value='future'>Future simple</option>
+                            <option value='future_cont'>Future continuous</option>
+                            <option value='future_perfect'>Future perfect</option>
+                            <option value='future_perfect_cont'>
+                                Future perfect continuous
+                            </option>
+                            <option value="conditional_present">
+                                Conditional present simple
+                            </option>
+                            <option value='conditional_present_cont'>
+                                Conditional present continuous
+                            </option>
+                            <option value='conditional_perfect'>Conditional perfect
+                            </option>
+                            <option value='conditional_perfect_cont'>
+                                Conditional perfect continuous
+                            </option>
+                            <option value='imperative'>Imperative</option>
+                            <option value='infinitive'>Infinitive</option>
+                            <option value='participle_present'>Participle present</option>
+                            <option value='participle_past'>Participle past</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button class="sidebar-search-btn" type="submit" id="conjugatebut">CONJUGATE</button>
+                    </div>
+                </form>
+                <p></p>
+                <fieldset id='fieldconj'> <legend id=titleconjug>  </legend>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd0" class="cjtdcol"></span> <span ></span> <span id="cjtda0"></span> <span></span> <span id="cjtdb0"></span>  <span></span> <span id="cjtdc0"></span> <span></span> <span id="cjtdd0"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd1" class="cjtdcol"></span> <span></span> <span id="cjtda1"></span> <span></span> <span id="cjtdb1"></span>  <span></span> <span id="cjtdc1"></span> <span></span> <span id="cjtdd1"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd2" class="cjtdcol"></span> <span></span> <span id="cjtda2"></span> <span></span> <span id="cjtdb2"></span>  <span></span> <span id="cjtdc2"></span> <span></span> <span id="cjtdd2"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd3" class="cjtdcol"></span> <span></span> <span id="cjtda3"></span> <span></span> <span id="cjtdb3"></span>  <span></span> <span id="cjtdc3"></span> <span></span> <span id="cjtdd3"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd4" class="cjtdcol"></span> <span></span> <span id="cjtda4"></span> <span></span> <span id="cjtdb4"></span>  <span></span> <span id="cjtdc4"></span> <span></span> <span id="cjtdd4"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd5" class="cjtdcol"></span> <span></span> <span id="cjtda5"></span> <span></span> <span id="cjtdb5"></span>  <span></span> <span id="cjtdc5"></span> <span></span> <span id="cjtdd5"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd6" class="cjtdcol"></span> <span></span> <span id="cjtda6"></span> <span></span> <span id="cjtdb6"></span>  <span></span> <span id="cjtdc6"></span> <span></span> <span id="cjtdd6"></span> </li></ul>
+                <ul id="cjtr" class="ulnobullet"> <li><span id="cjtd7" class="cjtdcol"></span> <span></span> <span id="cjtda7"></span> <span></span> <span id="cjtdb7"></span>  <span></span> <span id="cjtdc7"></span> <span></span> <span id="cjtdd7"></span> </li></ul>
+                </fieldset>
+                <p></p>
+        </div>
+    </aside>
+</div>
+</div>
+</div>
+
+</div>
+<footer class="picassoFooter">
+    <div class="footer-navigation">
+        <h3>Quick links</h3>
+        <ul>
+            <li><a href="/terms-and-conditions/">Terms And Conditions</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="https://englishintake.com/sitemap.xml/">Sitemap</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <h3>Contact us</h3>
+        <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2818d8c96838196a2878c858e8b918a8b8c96838987cc818d8f">[email&#160;protected]</a></p>
+    </div>
+    <div class="footer-social">
+        <h3>Follow us</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100094314365752" target="_blank" class="social-icon"><img alt="Facebook icon" src="/static/lessons/img/facebook-icon.png"></a>
+            <a href="https://instagram.com/englishintake?igshid=MjEwN2IyYWYwYw==" target="_blank" class="social-icon"><img alt="Instagram icon" src="/static/lessons/img/instagram-icon-transparent.png"></a>
+            <a href="https://www.pinterest.com/englishintake" target="_blank" class="social-icon"><img alt="Pinterest icon" src="/static/lessons/img/pinterest-icon.png"></a>
+        </div>
+    </div>
+<div class="footer-area-bottom-container">
+    <div class="footer-area-bottom">
+            <span>&nbsp;<br></span>
+    	    <span class="foot-class-cp">&copy; 2021 English Intake All Rights Reserved.</span>
+    </div>
+</div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+document.addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".menu-icon"),l=document.querySelector(".close-icon");function n(){let n=document.querySelector(".nav-links");"flex"===n.style.display?(n.style.display="none",l.style.display="none",e.style.display="block"):(n.style.display="flex",l.style.display="block",e.style.display="none")}e.addEventListener("click",n),l.addEventListener("click",n),window.addEventListener("resize",function n(){let s=document.querySelector(".nav-links");window.innerWidth>1200?(s.style.display="",l.style.display="none",e.style.display="none"):"flex"===s.style.display?(e.style.display="none",l.style.display="block"):(e.style.display="block",l.style.display="none")})});
+</script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==" src="https://code.jquery.com/jquery-3.7.0.min.js" 
+                    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script async defer  nonce="7ciXJpSwjKynCEo0IS7YRA==" src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" 
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+function playSounddict(){var t=document.getElementById("audiodict");t?(t.load(),t.play()):alert("Error playing audio")}$(document).on("submit","#checkout-form1",function(t){return t.preventDefault,$.ajax({type:"post",url:"/translated/",data:$(this).serialize(),success:function(t){document.getElementById("result-translate").innerHTML=t.result,$("#result-translate").css({"font-size":"20px","font-weight":"regular"})},error:function(t,e,n){console.log(t.status+": "+t.responseText)}}),!1}),$(document).on("submit","#checkout-form-dict",function(t){return t.preventDefault(),$.ajax({type:"post",url:"/dictionary/",data:$(this).serialize(),success:function(t){var e=$("<img>").attr({src:"/static/EnglishWebSite/img/speaker.png",alt:"speaker icon for English pronunciation",class:"clickable-img"}).on("click",playSounddict),n=$("<div>").attr("id","audio_dict").append(e).append(" "+t.inputs);$("#inputsdict").empty().append(n),$("#pronunciationdict").text(t.pronunciation).css({"font-size":"21px","font-family":"Halvetica"}),$("#typedict").text(t.type).css({"font-size":"21px","font-family":"Halvetica",color:"#145da0"});var o="/static/EnglishWebSite/mp3/"+t.audio;$("#audiodict").attr("src",o);var c=document.getElementById("audiodict");c.load(),c.play(),$("#definitiondict").text(t.definition)},error:function(t,e,n){console.log(t.status+": "+t.responseText)}}),!1}),$(document).on("submit","#checkout-form-conj",function(t){return t.preventDefault(),$.ajax({type:"post",url:"/conjugator/",data:$(this).serialize(),dataType:"json",success:function(t){document.getElementById("titleconjug").textContent=t.tense,$("#fieldconj").css({border:"solid orange 3px","background-color":"#FEFFED"}),$("#titleconjug").css({"background-color":"#021630",color:"#fafafa","border-radius":"5px","box-shadow":"5px 5px 5px 5px black"});for(var e=0;e<8;e++)document.getElementById("cjtda"+e).textContent="",document.getElementById("cjtdb"+e).textContent="",document.getElementById("cjtdc"+e).textContent="",document.getElementById("cjtdd"+e).textContent="",document.getElementById("cjtd"+e).textContent="";for(var e=0;e<t.result_conjug.length;e++)document.getElementById("cjtd"+e).textContent=t.result_conjug[e][0],$("#cjtd"+e).css({color:"#006ad3","font-size":"20px","font-weight":"bold"}),3==t.result_conjug[e][1].split(" ").length?(document.getElementById("cjtda"+e).textContent=t.result_conjug[e][1].split(" ")[0],$("#cjtda"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),document.getElementById("cjtdb"+e).textContent=t.result_conjug[e][1].split(" ")[1],$("#cjtdb"+e).css({"font-size":"20px","font-weight":"regular",color:"black"})):2==t.result_conjug[e][1].split(" ").length?(document.getElementById("cjtda"+e).textContent=t.result_conjug[e][1].split(" ")[0],$("#cjtda"+e).css({"font-size":"20px","font-weight":"regular",color:"black"})):4==t.result_conjug[e][1].split(" ").length?(document.getElementById("cjtda"+e).textContent=t.result_conjug[e][1].split(" ")[0],$("#cjtda"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),document.getElementById("cjtdb"+e).textContent=t.result_conjug[e][1].split(" ")[1],$("#cjtdb"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),document.getElementById("cjtdc"+e).textContent=t.result_conjug[e][1].split(" ")[2],$("#cjtdc"+e).css({"font-size":"20px","font-weight":"regular",color:"black"})):5==t.result_conjug[e][1].split(" ").length&&(document.getElementById("cjtda"+e).textContent=t.result_conjug[e][1].split(" ")[0],document.getElementById("cjtdb"+e).textContent=t.result_conjug[e][1].split(" ")[1],document.getElementById("cjtdc"+e).textContent=t.result_conjug[e][1].split(" ")[2],document.getElementById("cjtdd"+e).textContent=t.result_conjug[e][1].split(" ")[3],$("#cjtda"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),$("#cjtdb"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),$("#cjtdc"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}),$("#cjtdd"+e).css({"font-size":"20px","font-weight":"regular",color:"black"}))},error:function(t,e,n){alert("HTTP Status: "+t.status+"\nError Thrown: "+n+"\nResponse Text: "+t.responseText)}}),!1});
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EWYQMWD3WD" nonce="7ciXJpSwjKynCEo0IS7YRA=="></script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EWYQMWD3WD');
+</script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==" src="/static/lessons/js/voice_audio.js"
+        integrity="sha512-29uKtk5m8E9FLu2lE8+JdneSwJx2qn9YHVGBsN2DOvjbViB7uBw1XOxY/o/VkNUZifsCSpiWvS963fBpBH0Vwg==" crossorigin="anonymous"></script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+	document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".pronounce-word").forEach(e=>{e.addEventListener("click",t=>{let n=e.getAttribute("data-word");responsiveVoice.speak(n,"US English Female", {rate: 0.8})})})});
+</script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA=="> 
+async function getDefinition(){let e,n=await fetch("https://englishintake.com/get_adverbs/");e=await n.json();let t=document.querySelectorAll(".adverblists, .spanlists");t.forEach(n=>{n.addEventListener("click",()=>{let t=n.id,i=e[t],o=JSON.stringify(i.definition).replace(/"/g,""),s=JSON.stringify(i.phonetics).replace(/"/g,""),l=JSON.stringify(i.example).replace(/"/g,"");var a=document.getElementById("contentDiv");a.style.display="block";var p=formatString(t);"id_ent_log_in_required"==t||"id_ent2_log_in_required"==t?a.innerHTML="<p> <span style='color: #f18e1c; font-weight: bold;'>"+p+"</span><br> <span style='color:#2a71b0;'>"+s+"</span></p><p> Please <a href='https://englishintake.com/signup/' style='color: #2a71b0;'>sign up to get unlimited access</a> or <span id='access_content2'> unlock this page for only 1 &euro; </span></p></p><button id = 'x' onclick=closeWindow()> X &nbsp;&nbsp; </button>":a.innerHTML="<p> <span class='adverb-element'>"+p+"</span><br> <span class='adverb-s'>"+s+"</span></p><p>"+o+"</p> <p><span class='adverb-example-col'>Example: </span>"+l+"</p><button id = 'x' onclick=closeWindow()>&nbsp;&nbsp;</button>";var c=document.createElement("button");c.id="x",c.innerText="X",c.onclick=closeWindow,a.appendChild(c)})})}function formatString(e){let n=e.split("_");n.splice(0,2);let t=n.join(" ");return t.charAt(0).toUpperCase()+t.slice(1)}function closeWindow(){document.getElementById("contentDiv").style.display="none"}getDefinition();
+</script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+    const buttons = document.querySelectorAll('button');
+    
+    for(let i = 0; i < buttons.length; i++) {
+      const btn = buttons[i]
+      
+      btn.addEventListener('click', function(event) {
+        event.target.classList.toggle('active');
+      });
+    }
+    </script>
+<script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+    document.addEventListener("DOMContentLoaded",function(){let e=document.querySelectorAll(".quiz-containera");e.forEach(function(e){let t=e.querySelector(".submit"),l=e.querySelector(".restart"),n=e.querySelectorAll(".question"),o=e.querySelector(".feedback");t.addEventListener("click",function(){let e=null;if(n.forEach(t=>{"none"===t.style.display||e||(e=t)}),e){let c=e.querySelector('input[type="radio"]:checked'),r=e.dataset.correct;if(c){if(c.value===r){o.textContent="Correct!",o.style.color="green",e.style.display="none";let s=e.nextElementSibling;s&&s.classList.contains("question")?s.style.display="block":(o.textContent="Congratulations! You've completed the quiz.",t.style.display="none",l.style.display="block")}else o.textContent="Oops! That's not correct. Try again.",o.style.color="red"}else o.textContent="Please select an answer.",o.style.color="red"}}),l.addEventListener("click",function(){n.forEach((e,t)=>{e.style.display=0===t?"block":"none",e.querySelectorAll('input[type="radio"]').forEach(e=>{e.checked=!1})}),o.textContent="",o.style.color="black",l.style.display="none",t.style.display="block"})})});
+</script>
+
+   <script nonce="7ciXJpSwjKynCEo0IS7YRA==">
+    let words=[{word:"adore",hint:"To love someone very much."},{word:"enjoy",hint:"To take pleasure in something."},{word:"fancy",hint:"To want to do or have something."},{word:"prefer",hint:"To like one thing more than another."},{word:"cherish",hint:"To feel or show great love for something."},{word:"detest",hint:"To hate or dislike something or someone."},{word:"despise",hint:"To strongly dislike something or someone."},{word:"loathe",hint:"To feel intense dislike or disgust for something or someone."},{word:"abhor",hint:"To regard with disgust and hatred."},{word:"appreciate",hint:"To recognize the full worth of something or someone."},{word:"relish",hint:"To like or enjoy."},{word:"savour",hint:"To take the time to enjoy food or experience."},{word:"esteem",hint:"To regard highly or favourably."},{word:"disdain",hint:"To dislike or to consider to be unworthy of one's consideration."},{word:"spurn",hint:"To reject something or someone with disdain or contempt."},{word:"admire",hint:"To regard with respect or warm approval."},{word:"value",hint:"To consider with respect to worth, excellence, usefulness, or importance."},{word:"covet",hint:"To desire to have something, especially when it belongs to someone else."}];document.addEventListener("DOMContentLoaded",function(){let e=document.querySelector(".start-game"),o=document.querySelector(".pause-game"),t=document.querySelector(".refresh-word"),r=document.querySelector(".check-word"),n=document.querySelector(".word"),i=document.querySelector(".hint span"),s=document.querySelector(".time b"),d=document.querySelector("input"),a,l,h=30,c=e=>/^[a-zA-Z0-9]+$/.test(e),w=()=>{"Pause quiz"===o.textContent?(clearInterval(l),o.textContent="Resume quiz",d.disabled=!0):(u(h),o.textContent="Pause quiz",d.disabled=!1)},u=e=>{clearInterval(l),l=setInterval(()=>{e>0?(h=--e,s.innerText=e):(clearInterval(l),alert(`Time off! ${a.toUpperCase()} was the correct word`),m())},1e3)},m=()=>{let e=words[Math.floor(Math.random()*words.length)],o=e.word.split("");for(let t=o.length-1;t>0;t--){let r=Math.floor(Math.random()*(t+1));[o[t],o[r]]=[o[r],o[t]]}n.innerText=o.join(""),i.innerText=e.hint,a=e.word.toLowerCase(),d.value="",d.setAttribute("maxlength",a.length),d.disabled=!1,u(30)},g=()=>{let e=d.value.toLowerCase();return e?c(e)?e!==a?alert(`Oops! ${e} is not correct.`):void(alert(`Congrats! ${a.toUpperCase()} is the correct word`),m()):alert("Invalid input. Please enter only letters and numbers."):alert("Please enter the word to check!")};e.addEventListener("click",()=>{e.style.display="none",o.style.display="inline-block",m()}),o.addEventListener("click",w),t.addEventListener("click",m),r.addEventListener("click",g)});
+    var wordspuzzle=[{number:1,direction:"down",row:1,column:3,clue:"A feeling of strong dislike to something or someone (noun).",answer:"aversion",hint:"Av _ _ _ _ _ _"},{number:2,direction:"across",row:7,column:2,clue:"A lack of interest in doing something (noun).",answer:"boredom",hint:"_ _ _ _ _ om"},{number:3,direction:"down",row:4,column:5,clue:"To have a strong dislike for someone or something (verb).",answer:"detest",hint:"d _ _ _ _ _"},{number:3,direction:"across",row:4,column:5,clue:"When food tastes good. It's ______(adjective).",answer:"delicious",hint:"_ _ _ _ _ _ _ us"},{number:4,direction:"down",row:1,column:6,clue:"Opposite of love (noun).",answer:"hate",hint:"h _ _ _"},{number:5,direction:"down",row:6,column:7,clue:"Feeling of appreciating someone or something (noun).",answer:"fondness",hint:"_ _ _ _ _ _ ss"},{number:6,direction:"across",row:2,column:10,clue:"To have a preference for something (verb).",answer:"favour",hint:"_ _ v _ _ _"},{number:7,direction:"down",row:2,column:11,clue:"To have a deep affection and admiration for someone (verb).",answer:"adore",hint:"a _ _ _ _"},{number:8,direction:"across",row:6,column:10,clue:"When you are unnable to tolerate or endure something, you can't ____ it.",answer:"bear",hint:"b _ _ _"},{number:9,direction:"across",row:9,column:7,clue:"Antonym of like.",answer:"dislike",hint:"_i_ _ _ _ _"},{number:10,direction:"across",row:11,column:3,clue:"An intense feeling of dislike (noun).",answer:"hatred",hint:"_ _ t _ _ _"},{number:12,direction:"across",row:13,column:1,clue:"Something not enjoyable (adjective).",answer:"unpleasant",hint:"_ _ pl _ _ _ _ _ _"}],gridSize=[22,14],direction="across",markCorrect=!0,successShown=!1,$clueTooltip=$(" ").appendTo(".crossword"),$crosswordPuzzle=$('<div class="crossword-puzzle"></div>'),$table=$('<table class="crossword-grid"></table>');for(i=0;i<gridSize[1];i++){var e=$('<tr class="grid-row"></tr>');for(j=0;j<gridSize[0];j++)(r=$('<td class="grid-square"></td>')).appendTo(e);e.appendTo($table),$table.appendTo($crosswordPuzzle),$crosswordPuzzle.appendTo(".crossword")}for(i=0;i<wordspuzzle.length;i++){var o=wordspuzzle[i].row,t=wordspuzzle[i].column;for(j=0;j<wordspuzzle[i].answer.length;j++){var r=$(".grid-row").eq(o-1).find(".grid-square").eq(t-1),s=wordspuzzle[i].clue+", letter "+(j+1)+" of "+wordspuzzle[i].answer.length,a=("across"==wordspuzzle[i].direction?"a":"d")+"-"+wordspuzzle[i].number+"-"+(j+1);if(0==j&&0==r.find(".word-label").length&&$('<span class="word-label">'+wordspuzzle[i].number+"</span>").appendTo(r),0==r.find("input").length){var n=$('<input type="text" class="letter" title="'+s+'" id="'+a+'" maxlength="1" />');"across"==wordspuzzle[i].direction?(n.attr("data-across",wordspuzzle[i].number),n.attr("data-across-clue",wordspuzzle[i].clue)):(n.attr("data-down",wordspuzzle[i].number),n.attr("data-down-clue",wordspuzzle[i].clue)),n.data("letter",wordspuzzle[i].answer[j]),n.appendTo(r),r.addClass("active")}else{var n=r.find("input");n.attr("title",n.attr("title")+"; "+s),n.attr("id",n.attr("id")+"+"+a),"across"==wordspuzzle[i].direction?(n.attr("data-across",wordspuzzle[i].number),n.attr("data-across-clue",wordspuzzle[i].clue)):(n.attr("data-down",wordspuzzle[i].number),n.attr("data-down-clue",wordspuzzle[i].clue))}"down"==wordspuzzle[i].direction?o++:t++}}var $puzzleButtons=$('<div class="crossword-buttons"></div>'),$hintsButton=$('<button class="btn btn-default show-hints-btn">Show hints</button>');$hintsButton.on("click",function(e){e.preventDefault(),$(".crossword-clues").toggleClass("show-hints"),$(this).text($(".crossword-clues").hasClass("show-hints")?"Hide hints":"Show hints"),$(".hint").toggle()}).appendTo($puzzleButtons);for(var $crosswordClues=$('<div class="crossword-clues"><div class="row"></div></div>'),$acrossClues=$('<div class="across-clues"><p><strong>Across</strong></p><ol></ol></div>'),$downClues=$('<div class="down-clues"><p><strong>Down</strong></p><ol></ol></div>'),i=0;i<wordspuzzle.length;i++){var d=$('<li value="'+wordspuzzle[i].number+'" data-direction="'+wordspuzzle[i].direction+'" data-clue="'+wordspuzzle[i].number+'"><label>'+wordspuzzle[i].clue+" </label></li>");d.find("label").attr("for",$("[data-"+wordspuzzle[i].direction+"="+wordspuzzle[i].number+"]").eq(0).attr("id")),d.on("click",function(){direction=$(this).data("direction")}),wordspuzzle[i].hint.length>0&&""!=wordspuzzle[i].hint&&$('<span class="hint"> Hint: '+wordspuzzle[i].hint+"</span>").appendTo(d.find("label")),"across"==wordspuzzle[i].direction?d.appendTo($acrossClues.find("ol")):d.appendTo($downClues.find("ol"))}$acrossClues.appendTo($crosswordClues.find(".row")),$downClues.appendTo($crosswordClues.find(".row")),$crosswordClues.appendTo(".crossword"),$puzzleButtons.appendTo(".crossword"),$acrossClues.appendTo($crosswordClues.find(".row")),$downClues.appendTo($crosswordClues.find(".row")),$crosswordClues.appendTo(".crossword"),$hintsButton.appendTo($puzzleButtons);var $resetButton=$('<button class="btn btn-default clear-puzzle-btn">Clear puzzle</button>');$resetButton.on("click",function(e){e.preventDefault(),$("input.letter").val("").parent(".grid-square").removeClass("correct-down correct-across"),$(".crossword-clues li").removeClass("correct"),markCorrect=!0}),$resetButton.appendTo($puzzleButtons);var $solveButton=$('<button class="show-answers btn btn-default">Show Answers</button>');$solveButton.on("click",function(e){e.preventDefault(),$("input.letter").each(function(){$(this).val($(this).data("letter"))}),markCorrect=!1}),$solveButton.appendTo($puzzleButtons),$puzzleButtons.appendTo(".crossword");var $modal=$(' ');function checkWord(e){var o,t;e.is("[data-across]")&&(o=0,$("[data-across="+(t=e.data("across"))+"]").each(function(){$(this).val().toLowerCase()==$(this).data("letter").toLowerCase()&&(o+=1)}),o==$("[data-across="+t+"]").length?($("[data-across="+t+"]").parent(".grid-square").addClass("correct-across"),$(".crossword-clues li[data-direction=across][data-clue="+t+"]").addClass("correct")):($("[data-across="+t+"]").parent(".grid-square").removeClass("correct-across"),$(".crossword-clues li[data-direction=across][data-clue="+t+"]").removeClass("correct"))),e.is("[data-down]")&&(o=0,$("[data-down="+(t=e.data("down"))+"]").each(function(){$(this).val().toLowerCase()==$(this).data("letter").toLowerCase()&&(o+=1)}),o==$("[data-down="+t+"]").length?($("[data-down="+t+"]").parent(".grid-square").addClass("correct-down"),$(".crossword-clues li[data-direction=down][data-clue="+t+"]").addClass("correct")):($("[data-down="+t+"]").parent(".grid-square").removeClass("correct-down"),$(".crossword-clues li[data-direction=down][data-clue="+t+"]").removeClass("correct"))),0!=$(".grid-square.active:not([class*=correct])").length||successShown||($("#success-modal").modal(),successShown=!0)}function getNextWord(e){var o=$(".crossword-clues li").length,t=$(".crossword-clues li").index($(".crossword-clues li.active"));return direction=($nextWord=t<o-1?$(".crossword-clues li").eq(t+1):$(".crossword-clues li").eq(0)).data("direction"),$("[data-"+$nextWord.data("direction")+"="+$nextWord.data("clue")+"]").eq(0)}function getPrevWord(e){var o=$(".crossword-clues li").length,t=$(".crossword-clues li").index($(".crossword-clues li.active"));return direction=($prevWord=t>0?$(".crossword-clues li").eq(t-1):$(".crossword-clues li").eq(o-1)).data("direction"),$("[data-"+$prevWord.data("direction")+"="+$prevWord.data("clue")+"]").eq(0)}function getDirection(e){getPrevLetter(e)||getNextLetter(e)||(direction="across"==direction?"down":"across")}function getPrevLetter(e){var o=$("[data-"+direction+"="+e.data(direction)+"]").index(e);return o>0&&$("[data-"+direction+"="+e.data(direction)+"]").eq(o-1)}function getNextLetter(e){var o=$("[data-"+direction+"="+e.data(direction)+"]").length,t=$("[data-"+direction+"="+e.data(direction)+"]").index(e);return t<o-1&&$("[data-"+direction+"="+e.data(direction)+"]").eq(t+1)}function tooltipPosition(e){var o=$("[data-"+direction+"="+e.data(direction)+"]").eq(0).offset().left-$(".crossword").offset().left,t=$("[data-"+direction+"="+e.data(direction)+"]").eq(0).offset().top-$(".crossword").offset().top;$clueTooltip.find(".clue-tooltip-text").text(e.data(direction+"-clue"));var r=o+$clueTooltip.outerWidth()-$(".crossword-puzzle").outerWidth();return r=r>0?r:0,{left:o-=r,top:t,offset:r}}$modal.appendTo("body"),$("input.letter").on("focus",function(){var e=$(this);e.select(),e[0].setSelectionRange(0,10),getDirection(e),$("[data-"+direction+"="+e.data(direction)+"]").parent(".grid-square").addClass("current-word"),$(".crossword-clues li").removeClass("active"),$(".crossword-clues li[data-direction="+direction+"][data-clue="+$(this).data(direction)+"]").addClass("active"),$clueTooltip.css({left:tooltipPosition(e).left+"px",top:tooltipPosition(e).top-10+"px"}).removeClass("invisible").find(".clue-tooltip-arrow").css("left",tooltipPosition(e).offset+"px")}),$("input.letter").on("blur",function(){$(".grid-square").removeClass("current-word"),$(".crossword-clues li").removeClass("active"),$clueTooltip.addClass("invisible")}),$("input.letter").on("keyup",function(e){var o=$(this);38==e.which?(direction="down",getPrevLetter(o)&&getPrevLetter(o).focus()):40==e.which?(direction="down",getNextLetter(o)&&getNextLetter(o).focus()):37==e.which?(direction="across",getPrevLetter(o)&&getPrevLetter(o).focus()):39==e.which?(direction="across",getNextLetter(o)&&getNextLetter(o).focus()):e.preventDefault(),markCorrect&&checkWord(o)}),$("input.letter").on("keydown",function(e){var o=$(this);9==e.which?(e.preventDefault(),e.shiftKey?getPrevWord(o).focus():getNextWord(o).focus()):8==e.which?(e.preventDefault(),$(this).val().length>0?$(this).val(""):getPrevLetter(o)&&getPrevLetter(o).focus().val("")):(e.which>=48&&e.which<=90||e.which>=96&&e.which<=111||e.which>=186&&e.which<=192||e.which>=219&&e.which<=222)&&(e.preventDefault(),o.val(String.fromCharCode(e.which)),getNextLetter(o)&&getNextLetter(o).focus()),markCorrect&&checkWord(o)});
+     
+     
+     
+     
+     
+     
+     
+    
+    
+    
+    
+    
+     </script>
+    
+</body>
+</html>

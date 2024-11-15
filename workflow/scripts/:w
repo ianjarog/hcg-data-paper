@@ -1,0 +1,194 @@
+import csv
+import yaml
+import numpy
+import aplpy
+import argparse
+import figure_properties
+from astropy.io import fits
+from astropy.wcs import WCS
+import astropy.units as unit
+import matplotlib.pyplot as plt
+from astropy.coordinates import SkyCoord
+from analysis_tools.functions import radec2deg
+from astropy.wcs.utils import skycoord_to_pixel
+from math import sin, cos, sqrt, atan2, radians
+
+# load custom font to change default matplotlib font
+custom_font = figure_properties.FontManager(
+        ['/opt/fits-tools/src/analysis_tools/'], 'tex gyre heros')
+
+fig_prop = open("config/figure_properties.yaml")
+fig_prop = yaml.safe_load(fig_prop)
+
+def get_args():
+    '''This function parses and returns arguments passed in'''
+    description = 'Select dataset'
+    parser = argparse.ArgumentParser(description=description)
+    parser.add_argument('-m', '--mom_map', dest='mom_map',
+                        help='Name of fits moment zero map')
+    args = parser.parse_args()
+    return args
+
+
+def calculate_distance(ra1, dec1, ra2, dec2):
+    """
+    Calculates the angular distance between two points (ra1, dec1) (ra2, dec2) 
+    given their right ascension and declination.
+
+    Parameters:
+    ra1 : float
+        Right Ascension of the first point in degrees.
+    dec1 : float
+        Declination of the first point in degrees.
+    ra2 : float
+        Right Ascension of the second point in degrees.
+    dec2 : float
+        Declination of the second point in degrees.
+    Returns:
+    float
+        Angular distance in arcminutes.
+    """
+
+    # Convert all coordinates from degrees to radians for calculation
+    rad_ra1, rad_dec1, rad_ra2, rad_dec2 = map(radians, [ra1, dec1, ra2, dec2])
+
+    # Calculate the change in right ascension
+    delta_ra = rad_ra2 - rad_ra1
+
+    # Calculate the 3D Cartesian coordinates for the vector difference
+    x_component = cos(rad_dec2) * sin(delta_ra)
+    y_component = cos(rad_dec1) * sin(rad_dec2) - sin(rad_dec1) * cos(rad_dec2) * cos(delta_ra)
+    z_component = sin(rad_dec1) * sin(rad_dec2) + cos(rad_dec1) * cos(rad_dec2) * cos(delta_ra)
+
+    # Calculate the angular distance using the atan2 function for a better numerical stability
+    angular_distance_radians = atan2(sqrt(x_component ** 2 + y_component ** 2), z_component)
+
+    # Convert the angular distance from radians to degrees and then to arcminutes
+    angular_distance_degrees = angular_distance_radians * 180 / numpy.pi
+    angular_distance_arcminutes = angular_distance_degrees * 60
+
+    return angular_distance_arcminutes
+
+
+def plot_coords(ax, x_coords, y_coords, x_coords_hook, y_coords_hook):
+    main_path_points = [35, 84, 170, 280, 366, -1]
+    hook_path_points = [0, 1, 2]
+    ax.plot(
+        [x_coords_hook[i] for i in hook_path_points] 
+        + [x_coords[i] for i in main_path_points],
+        [y_coords_hook[i] for i in hook_path_points]
+        + [y_coords[i] for i in main_path_points],
+        color='black'
+    )
+    for i in main_path_points: 
+        ax.plot(x_coords[i], y_coords[i], marker='o', color="black", markersize=4)   
+    for i in hook_path_points: 
+        ax.plot(x_coords_hook[i], y_coords_hook[i], 
+                marker='o', color="black", markersize=4)   
+
+def show_fits(path_coords, path_coords_hook, mom_map, bmin, bmaj, bpa,
+              vmin, vmax, output, colmap = plt.cm.gray_r,  pathcol='black'):
+    x_coords, y_coords = zip(*path_coords)
+    x_coords_hook, y_coords_hook = zip(*path_coords_hook)  
+
+    fig_size = plt.figure(figsize=(fig_prop['general']['figsize'][0],
+                                   fig_prop['general']['figsize'][1]))
+
+    fits_fig = aplpy.FITSFigure(mom_map, figure=fig_size,
+                 subplot=[fig_prop['general']['x0'],
+                 fig_prop['general']['y0'],
+                 fig_prop['general']['w'],
+                 fig_prop['general']['h']])
+    fits_fig.show_colorscale(vmin=vmin, vmax=vmax, aspect='auto', cmap=colmap)  
+    figprop = figure_properties.Figureprop(fits_fig)
+    figprop.aplpy_figprop()
+    fig_size.canvas.draw() 
+    beampos = figprop.ra_dec_corner(mom_map, edge_offset_percent=5)
+    x_word = beampos[0]
+    y_word = beampos[1]
+    # Show beam at the lower left corner of the image
+    fits_fig.show_ellipses(x_word, y_word, bmin, bmaj,
+                           angle=bpa, edgecolor="black")
+    ax = plt.gca()
+    figprop.axprop(ax, secaxtickhide=True) 
+    plot_coords(ax, x_coords, y_coords, x_coords_hook, y_coords_hook)
+    plt.tight_layout()
+    plt.savefig(output, bbox_inches="tight", dpi=fig_prop['general']['dpi']) 
+
+# Read the CSV file
+csv_file = 'data/hcg16/segmented_pv_coordinates.csv'
+# ra dec position for the hook path
+radec1 = radec2deg("2:10:04.5", "-10:10:03")
+radec2 = radec2deg("2:10:20.7", "-10:17:05")
+radec3 = radec2deg("2:10:36.1", "-10:20:30")
+
+radecs = [
+          radec2deg("2:10:04.5", "-10:10:03"),
+          radec2deg("2:10:20.7", "-10:17:05"),
+          radec2deg("2:10:36.1", "-10:20:30"),
+        ]
+
+def get_coordinates(hdu):
+    U = list()
+    for j in range(len(radecs)):
+        Uj = skycoord_to_pixel(SkyCoord(ra=radecs[j]["ra"]*unit.deg, 
+                                        dec=radecs[j]["dec"]*unit.deg,
+                                        frame='icrs', equinox='J2000'), 
+                                        WCS(hdu.header))
+        U.append(Uj)
+    
+    coordinates_hook = [(int(U[0][0]), int(U[0][1])), 
+                        (int(U[1][0]), int(U[1][1])), 
+                        (int(U[2][0]), int(U[2][1]))]
+    coordinates = []
+    with open(csv_file, 'r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            ra = float(row['RA'])
+            dec = float(row['Dec'])
+            U = skycoord_to_pixel(SkyCoord(ra=ra*unit.deg, dec=dec*unit.deg,
+                                           frame='icrs', equinox='J2000'), 
+                                           WCS(hdu.header))
+            coordinates.append((int(U[0]), int(U[1])))
+    return {"coordinates": coordinates, "coordinates_hook": coordinates_hook}
+
+def plot_pvdiagram(f, figname, pv, dirc, pvdrms_in=None, skycoord=None, 
+                   elprop=None, tails=None, skycoord0=None):
+    hdr = pv.header
+    cdelt1, cdelt2 = hdr["CDELT1"] * 60, hdr["CDELT2"]
+    crval1, crval2 = hdr["CRVAL1"] * 60, hdr["CRVAL2"]
+    crpix1, crpix2 = -hdr["CRPIX1"], -hdr["CRPIX2"]
+
+    # Prepare velocity and position axes data
+    vel = [(i + 1 - crpix2) * cdelt2 + crval2 for i in range(pv.data.shape[0])]
+    xpos = [(i + 1 - crpix1) * cdelt1 + crval1 for i in range(pv.data.shape[1])]
+
+    # Update PV header for plotting
+    pv.header.update(CDELT1=cdelt1, CRVAL1=crval1, CDELT2=cdelt2, CRVAL2=crval2)
+    del pv.header["WCSAXES"]
+
+    # Write modified PV data to file
+    pv.writeto(f[:-5] + "_arcsec.fits", overwrite=True)
+
+if __name__ == '__main__':
+    args = get_args()
+    mom_map = args.mom_map
+    hdu_mom = fits.open(mom_map)[0]
+    img_mom = hdu_mom.data
+    hdr_mom = hdu_mom.header
+    bmin = hdr_mom["BMIN"]
+    bmaj = hdr_mom["BMAJ"]
+    bpa = hdr_mom["BPA"]
+    coordinates = get_coordinates(hdu_mom)["coordinates"]
+    coordinates_hook = get_coordinates(hdu_mom)["coordinates_hook"]
+    output = "results/publication/figures/hcg16_segmented_pv_view_mom0.pdf"
+    custom_font.setup_fonts()
+    show_fits(
+              mom_map = mom_map,
+              path_coords=coordinates, bmin=bmin, bpa=bpa, 
+              bmaj=bmaj, path_coords_hook=coordinates_hook, 
+              vmin=numpy.nanpercentile(img_mom, 1), 
+              vmax=numpy.nanpercentile(img_mom, 99), 
+              output=output,
+              colmap = plt.cm.RdYlBu_r
+             )
