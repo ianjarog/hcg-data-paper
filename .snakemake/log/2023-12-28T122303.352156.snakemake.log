@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+run_sofia                  3
+tex2pdf_with_bib           1
+total                      6
+
+Select jobs to execute...
+
+[Thu Dec 28 12:23:04 2023]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par, data/hcg31/hcg31_line60_masked.pb_corr.fits, data/hcg31/hcg31_line60_masked.pb.fits, config/sofia_pbc/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31.log
+    jobid: 3
+    reason: Missing output files: results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=5670, mem_mib=5408, disk_mb=5670, disk_mib=5408, tmpdir=/tmp
+
+[Thu Dec 28 12:23:04 2023]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par, data/hcg30/hcg30_line60_masked.pb_corr.fits, data/hcg30/hcg30_line60_masked.pb.fits, config/sofia_pbc/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30.log
+    jobid: 2
+    reason: Missing output files: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia/hcg30/hcg30_sofia_updated_vopt.par
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=3610, mem_mib=3443, disk_mb=3610, disk_mib=3443, tmpdir=/tmp
+
+[Thu Dec 28 12:23:04 2023]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex
+    output: results/publication/hcg_paper.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/hcg_paper.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2023-12-28T122303.352156.snakemake.log

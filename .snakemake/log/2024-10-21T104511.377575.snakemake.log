@@ -1,0 +1,17 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 16, in <module>
+    #include: "rules/plot_noise_specaxis.smk"
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/rules/plot_sofia_products.smk", line 13, in <module>
+    cubeletes = (f"outputs/sofia_pbc/{hcg30}/{hcg30}_line60_masked.pb_corr_vopt_cubelets/{hcg30}_line60_masked.pb_corr_vopt_1_mom0.fits"
+NameError: name 'hcg30' is not defined
+
+NameError in file /data/workflow/rules/plot_sofia_products.smk, line 12:
+name 'hcg30' is not defined
+  File "/data/workflow/Snakefile", line 12, in <module>
+  File "/data/workflow/rules/plot_sofia_products.smk", line 12, in <module>

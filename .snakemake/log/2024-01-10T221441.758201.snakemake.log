@@ -1,0 +1,34 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+tex2pdf_with_bib        1
+total                   1
+
+Select jobs to execute...
+
+[Wed Jan 10 22:14:42 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/hcg_paper.pdf
+    jobid: 0
+    reason: Missing output files: results/publication/hcg_paper.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Wed Jan 10 22:14:44 2024]
+Error in rule tex2pdf_with_bib:
+    jobid: 0
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/hcg_paper.pdf
+    shell:
+        
+        tectonic -o results/publication workflow/hcg_paper.tex
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-10T221441.758201.snakemake.log

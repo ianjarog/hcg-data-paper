@@ -1,0 +1,17 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 22, in <module>
+    #include: "rules/plot_segmented_pvdiag.smk"
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/rules/plot_gbt_meerkat_spectra.smk", line 5, in <module>
+    from ..workflow.scripts.utility_functions import extract_outputs_from_rules, replace_galaxy_indices
+ImportError: attempted relative import beyond top-level package
+
+ImportError in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 5:
+attempted relative import beyond top-level package
+  File "/data/workflow/Snakefile", line 16, in <module>
+  File "/data/workflow/rules/plot_gbt_meerkat_spectra.smk", line 5, in <module>

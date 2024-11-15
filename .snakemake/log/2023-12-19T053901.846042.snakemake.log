@@ -1,0 +1,4 @@
+WorkflowError in file /data/workflow/src/Snakefile, line 3:
+Failed to open source file /data/workflow/src/workflow/rules/run_sofia.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/data/workflow/src/workflow/rules/run_sofia.smk'
+  File "/data/workflow/src/Snakefile", line 3, in <module>

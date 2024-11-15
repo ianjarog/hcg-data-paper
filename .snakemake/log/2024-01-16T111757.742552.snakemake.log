@@ -1,0 +1,3 @@
+Building DAG of jobs...
+CyclicGraphException in rule plot_noise_specaxis in file /data/workflow/rules/plot_noise_specaxis.smk, line 13:
+Cyclic dependency on rule plot_noise_specaxis.

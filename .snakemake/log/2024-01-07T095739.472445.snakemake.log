@@ -1,0 +1,33 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      3
+
+Select jobs to execute...
+
+[Sun Jan  7 09:57:43 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_chan.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule plot_sofia_products in file /data/workflow/rules/plot_sofia_products.smk, line 9:
+Job 4  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+Removing output files of failed job plot_sofia_products since they might be corrupted:
+results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-07T095739.472445.snakemake.log

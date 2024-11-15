@@ -1,0 +1,8 @@
+Building DAG of jobs...
+MissingInputException in rule plot_moments in file /data/workflow/rules/plot_moments.smk, line 22:
+Missing input files for rule plot_moments:
+    output: results/publication/figures/hcg31_mom0_pbc_large.pdf, results/publication/figures/hcg31_mom0_pbc_zoom.pdf
+    wildcards: gal_idx=hcg31
+    affected files:
+        results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom1.fits
+        results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits

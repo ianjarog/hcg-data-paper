@@ -1,0 +1,64 @@
+# Sofia
+sofia_params: 
+  hcg16: 
+    sofia_par: "config/sofia/hcg16_sofia.par" # non primary beam corrected cube
+    sofia_par_pbc: "config/sofia_pbc/hcg16_sofia.par" # primary beam corrected cube
+    scfind_threshold: 5.6
+    reliability_minpix: 0
+    reliability_threshold: 0.9
+    reliability_enable : "false"
+    datacube: "data/hcg16/hcg16_line60_masked.image.fits"
+    datacube_pbc: "data/hcg16/hcg16_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg16/hcg16_line60_masked.pb.fits"
+  hcg30: 
+    ngc1622_mom0: "outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits"   
+    source_id: 7 # Sofia source id for NGC 1622 in cubelets...to replace the _1_mom0.fits above    
+    sofia_par: "config/sofia/hcg30_sofia.par"
+    sofia_par_pbc: "config/sofia_pbc/hcg30_sofia.par"
+    scfind_threshold: 5.0
+    reliability_minpix: 0
+    reliability_threshold: 0.9
+    reliability_enable: "false"
+    datacube: "data/hcg30/hcg30_line60_masked.image.fits"
+    datacube_pbc: "data/hcg30/hcg30_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg30/hcg30_line60_masked.pb.fits"
+  hcg31: 
+    sofia_par: "config/sofia/hcg31_sofia.par"
+    sofia_par_pbc: "config/sofia_pbc/hcg31_sofia.par"
+    scfind_threshold: 4
+    reliability_minpix: 0
+    reliability_threshold: 0.95
+    reliability_enable: "true"
+    datacube: "data/hcg31/hcg31_line60_masked.image.fits"
+    datacube_pbc: "data/hcg31/hcg31_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg31/hcg31_line60_masked.pb.fits"
+  hcg90: 
+    sofia_par: "config/sofia/hcg90_sofia.par"
+    sofia_par_pbc: "config/sofia_pbc/hcg90_sofia.par"
+    scfind_threshold: 5
+    reliability_minpix: 0
+    reliability_threshold: 0.95
+    reliability_enable: "false"
+    datacube: "data/hcg90/hcg90_line60_masked.image.fits"
+    datacube_pbc: "data/hcg90/hcg90_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg90/hcg90_line60_masked.pb.fits"
+  hcg91: 
+    sofia_par: "config/sofia/hcg91_sofia.par"
+    sofia_par_pbc: "config/sofia_pbc/hcg91_sofia.par"
+    scfind_threshold: 4
+    reliability_minpix: 0
+    reliability_threshold: 0.95
+    reliability_enable: "true"
+    datacube: "data/hcg91/hcg91_line60_masked.image.fits"
+    datacube_pbc: "data/hcg91/hcg91_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg91/hcg91_line60_masked.pb.fits"
+  hcg97: 
+    sofia_par: "config/sofia/hcg97_sofia.par"
+    sofia_par_pbc: "config/sofia_pbc/hcg97_sofia.par"
+    scfind_threshold: 4
+    reliability_minpix: 0
+    reliability_threshold: 0.95
+    reliability_enable: "true"
+    datacube: "data/hcg97/hcg97_line60_masked.image.fits"
+    datacube_pbc: "data/hcg97/hcg97_line60_masked.pb_corr.fits"
+    weight_cube: "data/hcg97/hcg97_line60_masked.pb.fits"

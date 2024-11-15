@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 792, in snakemake
+    success = workflow.execute(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 895, in execute
+    dag.init()
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 214, in init
+    job = self.update([job], progress=progress, create_inventory=True)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 927, in update
+    raise exceptions[0]
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 885, in update
+    self.update_(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1018, in update_
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1000, in update_
+    selected_job = self.update(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 927, in update
+    raise exceptions[0]
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 885, in update
+    self.update_(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1046, in update_
+    raise MissingInputException(job, missing_input)
+snakemake.exceptions.MissingInputException: Missing input files for rule plot_gbt_vs_meerkat_flux:
+    output: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    affected files:
+        outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingInputException in rule plot_gbt_vs_meerkat_flux in file /data/workflow/rules/plot_gbt_vs_meerkat_flux.smk, line 24:
+Missing input files for rule plot_gbt_vs_meerkat_flux:
+    output: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    affected files:
+        outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+        outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+unlocking
+removed all locks

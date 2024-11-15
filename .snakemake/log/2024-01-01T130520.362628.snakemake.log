@@ -1,0 +1,48 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      3
+
+Select jobs to execute...
+
+[Mon Jan  1 13:05:21 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_snr.fits
+    output: results/publication/figures/ngc1622_mom0.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/ngc1622_mom0.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+
+[Mon Jan  1 13:05:21 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex
+    output: results/publication/hcg_paper.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/hcg_paper.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Mon Jan  1 13:05:22 2024]
+Error in rule tex2pdf_with_bib:
+    jobid: 5
+    input: workflow/hcg_paper.tex
+    output: results/publication/hcg_paper.pdf
+    shell:
+        
+        tectonic -o results/publication workflow/hcg_paper.tex
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan  1 13:06:28 2024]
+Finished job 4.
+1 of 3 steps (33%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-01T130520.362628.snakemake.log

@@ -1,0 +1,90 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Mon Oct 21 11:12:47 2024]
+rule plot_sofia_products:
+    input: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_spec.pdf
+    jobid: 7
+    reason: Updated input files: outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt
+    priority: 99
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/utils.py", line 425, in format
+    return fmt.format(_pattern, *args, **variables)
+  File "/opt/conda_envs/snakemake/lib/python3.10/string.py", line 161, in format
+    return self.vformat(format_string, args, kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/string.py", line 165, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+  File "/opt/conda_envs/snakemake/lib/python3.10/string.py", line 205, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/string.py", line 270, in get_field
+    obj = self.get_value(first, args, kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/string.py", line 227, in get_value
+    return kwargs[key]
+KeyError: 'ngc1622_catalog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1009, in format_wildcards
+    return format(string, **_variables)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/utils.py", line 435, in format
+    raise NameError(
+NameError: The name 'ngc1622_catalog' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 792, in snakemake
+    success = workflow.execute(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1246, in execute
+    raise e
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1242, in execute
+    success = self.scheduler.schedule()
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 636, in schedule
+    self.run(runjobs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 685, in run
+    executor.run_jobs(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 158, in run_jobs
+    self.run(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 568, in run
+    super()._run(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 271, in _run
+    super()._run(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 186, in _run
+    self.printjob(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 192, in printjob
+    job.log_info(skip_dynamic=True)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1092, in log_info
+    logger.shellcmd(self.shellcmd, indent=indent)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 542, in shellcmd
+    self.format_wildcards(self.rule.shellcmd)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1011, in format_wildcards
+    raise RuleException(
+snakemake.exceptions.RuleException: NameError: The name 'ngc1622_catalog' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+python workflow/scripts/plot_sofia_products.py --filetoplot {input.ngc1622_mom0} --source_id {params.source_id} --catalogue {ngc1622_catalog}
+
+RuleException in rule plot_sofia_products in file /data/workflow/rules/plot_sofia_products.smk, line 9:
+NameError: The name 'ngc1622_catalog' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+python workflow/scripts/plot_sofia_products.py --filetoplot {input.ngc1622_mom0} --source_id {params.source_id} --catalogue {ngc1622_catalog}
+unlocking
+removing lock
+removing lock
+removed all locks

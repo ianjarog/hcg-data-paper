@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+run_sofia               1
+tex2pdf_with_bib        1
+total                   2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Tue Oct 15 14:20:12 2024]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par, data/hcg16/hcg16_line60_masked.pb_corr.fits, data/hcg16/hcg16_line60_masked.pb.fits, config/sofia_pbc/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_sofia_updated_vopt_central.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits
+    log: results/sofia/logs/hcg16/hcg16.log
+    jobid: 1
+    reason: Missing output files: results/sofia/hcg16/hcg16_sofia_updated_vopt_central.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits
+    wildcards: gal_idx=hcg16
+    priority: 100
+    resources: mem_mb=3206, mem_mib=3058, disk_mb=3206, disk_mib=3058, tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-15T142012.550345.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

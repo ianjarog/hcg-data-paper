@@ -1,0 +1,3 @@
+SyntaxError in file /data/workflow/rules/run_sofia.smk, line 26:
+Unexpected keyword expand in rule definition (run_sofia.smk, line 26)
+  File "/data/workflow/Snakefile", line 3, in <module>

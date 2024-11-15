@@ -1,0 +1,15 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 25, in <module>
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/rules/plot_gbt_vs_meerkat_flux.smk", line 32
+    priority:97
+SyntaxError: positional argument follows keyword argument
+
+SyntaxError in file /data/workflow/rules/plot_gbt_vs_meerkat_flux.smk, line 30:
+positional argument follows keyword argument
+  File "/data/workflow/Snakefile", line 17, in <module>

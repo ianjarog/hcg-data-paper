@@ -1,0 +1,4 @@
+AttributeError in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 17:
+'builtin_function_or_method' object has no attribute 'cube'
+  File "/data/workflow/Snakefile", line 12, in <module>
+  File "/data/workflow/rules/plot_gbt_meerkat_spectra.smk", line 17, in <module>

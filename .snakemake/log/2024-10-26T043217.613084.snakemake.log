@@ -1,0 +1,57 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 136, in new
+    obj = self.cache[key]
+KeyError: ('tex2pdf_with_bib',)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 974, in format_match
+    value = wildcards[name]
+KeyError: 'gal_idx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/rules.py", line 909, in expand_input
+    incomplete = self._apply_wildcards(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/rules.py", line 872, in _apply_wildcards
+    concrete = concretize(item_, wildcards, _is_callable)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/rules.py", line 895, in concretize_iofile
+    return f.apply_wildcards(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 740, in apply_wildcards
+    apply_wildcards(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 986, in apply_wildcards
+    return _wildcard_regex.sub(format_match, pattern)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 984, in format_match
+    raise WildcardError(str(ex))
+snakemake.exceptions.WildcardError: 'gal_idx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 792, in snakemake
+    success = workflow.execute(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 895, in execute
+    dag.init()
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 213, in init
+    for job in map(self.rule2job, self.targetrules):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1975, in rule2job
+    return self.new_job(targetrule)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1708, in new_job
+    job = self.job_factory.new(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 138, in new
+    obj = Job(rule, dag, wildcards_dict, format_wildcards, targetfile)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 210, in __init__
+    ) = self.rule.expand_input(self.wildcards_dict, groupid=groupid)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/rules.py", line 921, in expand_input
+    raise WildcardError(
+snakemake.exceptions.WildcardError: Wildcards in input files cannot be determined from output files:
+'gal_idx'
+
+WildcardError in rule tex2pdf_with_bib in file /data/workflow/Snakefile, line 72:
+Wildcards in input files cannot be determined from output files:
+'gal_idx'
+unlocking
+removed all locks

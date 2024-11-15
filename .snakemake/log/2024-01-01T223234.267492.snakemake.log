@@ -1,0 +1,51 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      3
+
+Select jobs to execute...
+
+[Mon Jan  1 22:32:35 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom0.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Mon Jan  1 22:34:03 2024]
+Finished job 4.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Mon Jan  1 22:34:03 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf
+    output: results/publication/hcg_paper.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/hcg_paper.pdf; Input files updated by another job: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_chan.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Mon Jan  1 22:34:07 2024]
+Finished job 5.
+2 of 3 steps (67%) done
+Select jobs to execute...
+
+[Mon Jan  1 22:34:07 2024]
+localrule all:
+    input: results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/hcg_paper.pdf
+    jobid: 0
+    reason: Input files updated by another job: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/hcg_paper.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom0.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Mon Jan  1 22:34:07 2024]
+Finished job 0.
+3 of 3 steps (100%) done
+Complete log: .snakemake/log/2024-01-01T223234.267492.snakemake.log

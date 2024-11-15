@@ -1,0 +1,66 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_chanmap                    1
+plot_gbt_meerkat_spectra        6
+plot_gbt_vs_meerkat_flux        1
+plot_global_prof                6
+plot_moments                    6
+plot_noise_specaxis             6
+plot_optical_mom0               1
+plot_segmented_pvdiag           1
+plot_sofia_products             1
+plot_velocity_ra                6
+run_sofia                       4
+tex2pdf_with_bib                1
+total                          40
+
+Select jobs to execute...
+
+[Mon Oct 14 11:17:32 2024]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par, data/hcg30/hcg30_line60_masked.pb_corr.fits, data/hcg30/hcg30_line60_masked.pb.fits, config/sofia_pbc/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_noise.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30.log
+    jobid: 2
+    reason: Updated input files: config/sofia_pbc/hcg30_sofia.par
+    wildcards: gal_idx=hcg30
+    resources: tmpdir=/tmp
+
+[Mon Oct 14 11:17:32 2024]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par, data/hcg16/hcg16_line60_masked.pb_corr.fits, data/hcg16/hcg16_line60_masked.pb.fits, config/sofia_pbc/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg16/hcg16_line60_masked.image_vopt.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg16/hcg16.log
+    jobid: 3
+    reason: Updated input files: config/sofia_pbc/hcg16_sofia.par
+    wildcards: gal_idx=hcg16
+    resources: tmpdir=/tmp
+
+[Mon Oct 14 11:17:32 2024]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par, data/hcg31/hcg31_line60_masked.pb_corr.fits, data/hcg31/hcg31_line60_masked.pb.fits, config/sofia_pbc/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_noise.fits, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg31/hcg31_line60_masked.image_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31.log
+    jobid: 4
+    reason: Updated input files: config/sofia_pbc/hcg31_sofia.par
+    wildcards: gal_idx=hcg31
+    resources: tmpdir=/tmp
+
+[Mon Oct 14 11:17:32 2024]
+rule run_sofia:
+    input: data/hcg90/hcg90_line60_masked.image.fits, config/sofia/hcg90_sofia.par, data/hcg90/hcg90_line60_masked.pb_corr.fits, data/hcg90/hcg90_line60_masked.pb.fits, config/sofia_pbc/hcg90_sofia.par
+    output: results/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, results/sofia/hcg90/hcg90_sofia_updated_vopt.par, results/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, results/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg90/hcg90_sofia_updated_vopt.par, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg90/hcg90_line60_masked.image_vopt.fits, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg90/hcg90.log
+    jobid: 5
+    reason: Updated input files: config/sofia_pbc/hcg90_sofia.par
+    wildcards: gal_idx=hcg90
+    resources: tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-14T111727.629669.snakemake.log

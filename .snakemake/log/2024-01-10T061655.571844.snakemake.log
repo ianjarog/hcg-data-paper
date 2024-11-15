@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+plot_velocity_ra        4
+tex2pdf_with_bib        1
+total                   6
+
+Select jobs to execute...
+
+[Wed Jan 10 06:16:56 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 11
+    reason: Missing output files: results/publication/figures/hcg16_velocity_ra.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-01-10T061655.571844.snakemake.log

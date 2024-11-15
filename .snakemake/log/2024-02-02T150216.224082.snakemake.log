@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule plot_segmented_pvdiag in file /data/workflow/rules/plot_segmented_pvdiag.smk, line 16:
+Missing input files for rule plot_segmented_pvdiag:
+    output: results/publication/figures/hcg16_segmented_pv_view_mom0.pdf, results/publication/figures/hcg16_segmented_pv.pdf, results/publication/figures/hcg16_segmented_pv_vla.pdf
+    affected files:
+        results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0_nan_zoom_addbeam.fits

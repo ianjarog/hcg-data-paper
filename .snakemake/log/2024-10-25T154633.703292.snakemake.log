@@ -1,0 +1,149 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        6
+plot_gbt_vs_meerkat_flux        1
+tex2pdf_with_bib                1
+total                           8
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (6)
+Select jobs to execute...
+Selected jobs (6)
+Resources after job selection: {'_cores': 18, '_nodes': 9223372036854775801}
+
+[Fri Oct 25 15:46:34 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg16/hcg16_meerkat_gbt_spec.log
+    jobid: 8
+    reason: Missing output files: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg16
+    priority: 98
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Fri Oct 25 15:46:35 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg31/hcg31_meerkat_gbt_spec.log
+    jobid: 10
+    reason: Missing output files: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg31
+    priority: 98
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Fri Oct 25 15:46:35 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg91/hcg91_meerkat_gbt_spec.log
+    jobid: 12
+    reason: Missing output files: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg91
+    priority: 98
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Fri Oct 25 15:46:35 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg30/hcg30_meerkat_gbt_spec.log
+    jobid: 9
+    reason: Missing output files: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg30
+    priority: 98
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Fri Oct 25 15:46:35 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg90/hcg90_meerkat_gbt_spec.log
+    jobid: 11
+    reason: Missing output files: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg90
+    priority: 98
+    resources: mem_mb=2206, mem_mib=2104, disk_mb=2206, disk_mib=2104, tmpdir=/data
+
+
+[Fri Oct 25 15:46:35 2024]
+rule plot_gbt_meerkat_spectra:
+    input: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg97/hcg97_meerkat_gbt_spec.log
+    jobid: 13
+    reason: Missing output files: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg97
+    priority: 98
+    resources: mem_mb=1439, mem_mib=1373, disk_mb=1439, disk_mib=1373, tmpdir=/data
+
+[Fri Oct 25 15:46:46 2024]
+Finished job 8.
+1 of 8 steps (12%) done
+[Fri Oct 25 15:46:46 2024]
+Finished job 9.
+2 of 8 steps (25%) done
+[Fri Oct 25 15:46:47 2024]
+Finished job 13.
+3 of 8 steps (38%) done
+[Fri Oct 25 15:46:50 2024]
+Finished job 10.
+4 of 8 steps (50%) done
+[Fri Oct 25 15:46:51 2024]
+Finished job 11.
+5 of 8 steps (62%) done
+[Fri Oct 25 15:46:55 2024]
+Finished job 12.
+6 of 8 steps (75%) done
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Fri Oct 25 15:46:55 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 14
+    reason: Input files updated by another job: outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    priority: 97
+    resources: mem_mb=11120, mem_mib=10605, disk_mb=11120, disk_mib=10605, tmpdir=/data
+
+[Fri Oct 25 15:47:10 2024]
+Finished job 14.
+7 of 8 steps (88%) done
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Fri Oct 25 15:47:10 2024]
+rule tex2pdf_with_bib:
+    input: outputs/sofia/hcg16/hcg16_sofia_updated_vopt_central.par, outputs/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg16/hcg16_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia/hcg30/hcg30_sofia_updated_vopt_central.par, outputs/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg30/hcg30_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia/hcg31/hcg31_sofia_updated_vopt_central.par, outputs/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg31/hcg31_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg31/hcg31_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia/hcg91/hcg91_sofia_updated_vopt_central.par, outputs/sofia/hcg91/hcg91_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg91/hcg91_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg91/hcg91_line60_masked.image_vopt_cubelets/hcg91_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg91/hcg91_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia/hcg97/hcg97_sofia_updated_vopt_central.par, outputs/sofia/hcg97/hcg97_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg97/hcg97_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg97/hcg97_line60_masked.image_vopt_cubelets/hcg97_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg97/hcg97_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_cubelets/hcg97_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_spec.pdf, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, workflow/hcg_paper.tex
+    output: outputs/publication/hcg_paper.pdf
+    jobid: 0
+    reason: Updated input files: workflow/hcg_paper.tex; Input files updated by another job: outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    resources: mem_mb=55641, mem_mib=53064, disk_mb=55641, disk_mib=53064, tmpdir=/data
+
+[Fri Oct 25 15:47:13 2024]
+Finished job 0.
+8 of 8 steps (100%) done
+Complete log: .snakemake/log/2024-10-25T154633.703292.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

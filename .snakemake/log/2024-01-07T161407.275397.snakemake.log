@@ -1,0 +1,75 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_meerkat_spectra        3
+tex2pdf_with_bib                1
+total                           5
+
+Select jobs to execute...
+
+[Sun Jan  7 16:14:07 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Sun Jan  7 16:14:08 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Sun Jan  7 16:14:08 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Sun Jan  7 16:14:08 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/hcg_paper.pdf
+    jobid: 8
+    reason: Missing output files: results/publication/hcg_paper.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Sun Jan  7 16:14:09 2024]
+Error in rule tex2pdf_with_bib:
+    jobid: 8
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/hcg_paper.pdf
+    shell:
+        
+        tectonic -o results/publication workflow/hcg_paper.tex
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 16:14:20 2024]
+Finished job 5.
+1 of 5 steps (20%) done
+[Sun Jan  7 16:14:20 2024]
+Finished job 4.
+2 of 5 steps (40%) done
+[Sun Jan  7 16:14:24 2024]
+Finished job 6.
+3 of 5 steps (60%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-07T161407.275397.snakemake.log

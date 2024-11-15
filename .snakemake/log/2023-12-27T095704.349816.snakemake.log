@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in rule plot_sofia_products in file /data/workflow/rules/plot_sofia_products.smk, line 1:
+Missing input files for rule plot_sofia_products:
+    output: results/publication/figures/ngc1622_mom0.pdf
+    affected files:
+        16

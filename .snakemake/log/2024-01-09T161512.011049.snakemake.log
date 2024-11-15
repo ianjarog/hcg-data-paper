@@ -1,0 +1,46 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_vs_meerkat_flux        1
+tex2pdf_with_bib                1
+total                           3
+
+Select jobs to execute...
+
+[Tue Jan  9 16:15:12 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Missing output files: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    resources: mem_mb=7475, mem_mib=7129, disk_mb=7475, disk_mib=7129, tmpdir=/data
+
+[Tue Jan  9 16:15:15 2024]
+Error in rule plot_gbt_vs_meerkat_flux:
+    jobid: 10
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    shell:
+        
+        
+        dir="results/data/hcgs/"
+        dir_gbt="${dir}/gbt_data/"
+        dir_meerkat="${dir}/meerkat_data/"
+        if [ -d "$dir" ]; then
+            rm -r "$dir"
+        fi
+        mkdir -p "$dir_gbt" "$dir_meerkat"
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done  
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-09T161512.011049.snakemake.log

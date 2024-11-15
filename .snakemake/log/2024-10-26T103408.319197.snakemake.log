@@ -1,0 +1,359 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+plot_global_prof        6
+tex2pdf_with_bib        1
+total                   7
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (6)
+Select jobs to execute...
+Selected jobs (6)
+Resources after job selection: {'_cores': 18, '_nodes': 9223372036854775801}
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits, data/hcg97/vla_data/hcg97_spec.txt, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg97_global_profile.pdf
+    jobid: 32
+    reason: Missing output files: outputs/publication/figures/hcg97_global_profile.pdf
+    wildcards: gal_idx=hcg97
+    priority: 94
+    resources: mem_mb=2879, mem_mib=2746, disk_mb=2879, disk_mib=2746, tmpdir=/data
+
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, data/hcg16/vla_data/hcg16_spec.txt, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg16_global_profile.pdf
+    jobid: 27
+    reason: Missing output files: outputs/publication/figures/hcg16_global_profile.pdf
+    wildcards: gal_idx=hcg16
+    priority: 94
+    resources: mem_mb=2137, mem_mib=2039, disk_mb=2137, disk_mib=2039, tmpdir=/data
+
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, data/hcg31/vla_data/hcg31_spec.txt, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg31_global_profile.pdf
+    jobid: 29
+    reason: Missing output files: outputs/publication/figures/hcg31_global_profile.pdf
+    wildcards: gal_idx=hcg31
+    priority: 94
+    resources: mem_mb=3780, mem_mib=3605, disk_mb=3780, disk_mib=3605, tmpdir=/data
+
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, data/hcg91/vla_data/hcg91_spec.txt, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg91_global_profile.pdf
+    jobid: 31
+    reason: Missing output files: outputs/publication/figures/hcg91_global_profile.pdf
+    wildcards: gal_idx=hcg91
+    priority: 94
+    resources: mem_mb=6625, mem_mib=6319, disk_mb=6625, disk_mib=6319, tmpdir=/data
+
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, data/hcg30/vla_data/hcg30_spec.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg30_global_profile.pdf
+    jobid: 28
+    reason: Missing output files: outputs/publication/figures/hcg30_global_profile.pdf
+    wildcards: gal_idx=hcg30
+    priority: 94
+    resources: mem_mb=2406, mem_mib=2295, disk_mb=2406, disk_mib=2295, tmpdir=/data
+
+
+[Sat Oct 26 10:34:09 2024]
+rule plot_global_prof:
+    input: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, data/hcg90/vla_data/hcg90_spec.txt, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg90_global_profile.pdf
+    jobid: 30
+    reason: Missing output files: outputs/publication/figures/hcg90_global_profile.pdf
+    wildcards: gal_idx=hcg90
+    priority: 94
+    resources: mem_mb=4411, mem_mib=4207, disk_mb=4411, disk_mib=4207, tmpdir=/data
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg16/vla_data/hcg16_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:15 2024]
+Error in rule plot_global_prof:
+    jobid: 27
+    input: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, data/hcg16/vla_data/hcg16_spec.txt, outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg16_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg16/vla_data/hcg16_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg16/vla_data/hcg16_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg16/vla_data/hcg16_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg16/vla_data/hcg16_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg97/vla_data/hcg97_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:16 2024]
+Error in rule plot_global_prof:
+    jobid: 32
+    input: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits, data/hcg97/vla_data/hcg97_spec.txt, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg97_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg97/vla_data/hcg97_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg97/vla_data/hcg97_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg97/vla_data/hcg97_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg97/vla_data/hcg97_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg30/vla_data/hcg30_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:16 2024]
+Error in rule plot_global_prof:
+    jobid: 28
+    input: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, data/hcg30/vla_data/hcg30_spec.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg30_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg30/vla_data/hcg30_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg30/vla_data/hcg30_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg30/vla_data/hcg30_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg30/vla_data/hcg30_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg31/vla_data/hcg31_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:17 2024]
+Error in rule plot_global_prof:
+    jobid: 29
+    input: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, data/hcg31/vla_data/hcg31_spec.txt, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg31_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg31/vla_data/hcg31_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg31/vla_data/hcg31_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg31/vla_data/hcg31_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg31/vla_data/hcg31_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg90/vla_data/hcg90_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:19 2024]
+Error in rule plot_global_prof:
+    jobid: 30
+    input: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, data/hcg90/vla_data/hcg90_spec.txt, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg90_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg90/vla_data/hcg90_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg90/vla_data/hcg90_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg90/vla_data/hcg90_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg90/vla_data/hcg90_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg91/vla_data/hcg91_spec.txt' returned non-zero exit status 1.
+
+[Sat Oct 26 10:34:21 2024]
+Error in rule plot_global_prof:
+    jobid: 31
+    input: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, data/hcg91/vla_data/hcg91_spec.txt, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits
+    output: outputs/publication/figures/hcg91_global_profile.pdf
+    shell:
+        python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg91/vla_data/hcg91_spec.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_global_prof.smk", line 47, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg91/vla_data/hcg91_spec.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg91/vla_data/hcg91_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_global_prof.smk, line 33:
+Command 'set -euo pipefail;  python workflow/scripts/plot_global_prof.py --cube outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits --mask outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits --vlaspec data/hcg91/vla_data/hcg91_spec.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_global_prof.smk", line 33, in __rule_plot_global_prof
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-26T103408.319197.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

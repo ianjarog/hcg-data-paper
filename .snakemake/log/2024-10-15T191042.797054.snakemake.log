@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+run_sofia               1
+tex2pdf_with_bib        1
+total                   2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Tue Oct 15 19:10:43 2024]
+rule run_sofia:
+    input: data/hcg90/hcg90_line60_masked.image.fits, config/sofia/hcg90_sofia.par, data/hcg90/hcg90_line60_masked.pb_corr.fits, data/hcg90/hcg90_line60_masked.pb.fits, config/sofia_pbc/hcg90_sofia.par
+    output: outputs/sofia/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: outputs/sofia/logs/hcg90/hcg90.log
+    jobid: 4
+    reason: Missing output files: outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, outputs/sofia/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_sofia_updated_vopt_central.par, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits, outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, outputs/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg90
+    priority: 100
+    resources: mem_mb=6618, mem_mib=6312, disk_mb=6618, disk_mib=6312, tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-15T191042.797054.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

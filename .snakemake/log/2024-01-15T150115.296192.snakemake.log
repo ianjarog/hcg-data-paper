@@ -1,0 +1,81 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        1
+plot_gbt_vs_meerkat_flux        1
+plot_global_prof                2
+plot_moments                    3
+plot_noise_specaxis             4
+plot_sofia_products             1
+plot_velocity_ra                4
+run_sofia                       1
+tex2pdf_with_bib                1
+total                          18
+
+Select jobs to execute...
+
+[Mon Jan 15 15:01:16 2024]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par, data/hcg31/hcg31_line60_masked.pb_corr.fits, data/hcg31/hcg31_line60_masked.pb.fits, config/sofia_pbc/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/data/hcg31/hcg31_line60_masked.image_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31.log
+    jobid: 4
+    reason: Missing output files: results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits; Params have changed since last execution
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=5670, mem_mib=5408, disk_mb=5670, disk_mib=5408, tmpdir=/data
+
+[Mon Jan 15 15:02:48 2024]
+Finished job 4.
+1 of 18 steps (6%) done
+Select jobs to execute...
+
+[Mon Jan 15 15:02:48 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 8
+    reason: Input files updated by another job: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Mon Jan 15 15:02:48 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    jobid: 1
+    reason: Input files updated by another job: results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Mon Jan 15 15:03:04 2024]
+Finished job 8.
+2 of 18 steps (11%) done
+Select jobs to execute...
+
+[Mon Jan 15 15:03:04 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Input files updated by another job: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    resources: mem_mb=7475, mem_mib=7129, disk_mb=7475, disk_mib=7129, tmpdir=/data
+
+[Mon Jan 15 15:03:16 2024]
+Finished job 10.
+3 of 18 steps (17%) done
+[Mon Jan 15 15:03:31 2024]
+Error in rule plot_sofia_products:
+    jobid: 1
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    shell:
+        python workflow/scripts/plot_sofia_products.py --gfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits --rfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits --ifilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-15T150115.296192.snakemake.log

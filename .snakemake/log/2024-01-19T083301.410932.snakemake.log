@@ -1,0 +1,3 @@
+KeyboardInterrupt in file /data/workflow/Snakefile, line 14.
+  File "/data/workflow/Snakefile", line 14, in <module>
+  File "/opt/conda_envs/snakemake/lib/python3.10/tokenize.py", line 536, in _tokenize

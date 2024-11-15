@@ -1,0 +1,83 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+run_sofia                  3
+total                      5
+
+Select jobs to execute...
+
+[Wed Dec 20 16:30:56 2023]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_line60_masked.image_cat.txt, results/sofia/hcg16/hcg16_sofia_updated.par, results/sofia/hcg16/hcg16_line60_masked.image_cubelets/hcg16_line60_masked.image_16_mom0.fits
+    log: results/sofia/logs/hcg16/hcg16_line60_masked.image.log
+    jobid: 1
+    reason: Missing output files: results/sofia/hcg16/hcg16_sofia_updated.par, results/sofia/hcg16/hcg16_line60_masked.image_cat.txt, results/sofia/hcg16/hcg16_line60_masked.image_cubelets/hcg16_line60_masked.image_16_mom0.fits
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/tmp
+
+
+[Wed Dec 20 16:30:56 2023]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_cat.txt, results/sofia/hcg31/hcg31_sofia_updated.par, results/sofia/hcg31/hcg31_line60_masked.image_cubelets/hcg31_line60_masked.image_16_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31_line60_masked.image.log
+    jobid: 3
+    reason: Missing output files: results/sofia/hcg31/hcg31_line60_masked.image_cat.txt, results/sofia/hcg31/hcg31_line60_masked.image_cubelets/hcg31_line60_masked.image_16_mom0.fits, results/sofia/hcg31/hcg31_sofia_updated.par
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/tmp
+
+
+[Wed Dec 20 16:30:56 2023]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_cat.txt, results/sofia/hcg30/hcg30_sofia_updated.par, results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30_line60_masked.image.log
+    jobid: 2
+    reason: Missing output files: results/sofia/hcg30/hcg30_sofia_updated.par, results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits, results/sofia/hcg30/hcg30_line60_masked.image_cat.txt
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/tmp
+
+[Wed Dec 20 16:31:53 2023]
+Finished job 2.
+1 of 5 steps (20%) done
+Select jobs to execute...
+
+[Wed Dec 20 16:31:53 2023]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-zfilter.fits, results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/ngc1622_mom0.pdf; Input files updated by another job: results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Wed Dec 20 16:31:53 2023]
+Error in rule plot_sofia_products:
+    jobid: 4
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-zfilter.fits, results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf
+    shell:
+        python workflow/scripts/plot_sofia_products.py        --gfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits        --ifilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits        --zfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-zfilter.fits        --contour_file results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sofia in file /data/workflow/rules/run_sofia.smk, line 1:
+Job 1  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/sofia/hcg16/hcg16_line60_masked.image_cubelets/hcg16_line60_masked.image_16_mom0.fits
+Removing output files of failed job run_sofia since they might be corrupted:
+results/sofia/hcg16/hcg16_line60_masked.image_cat.txt, results/sofia/hcg16/hcg16_sofia_updated.par
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sofia in file /data/workflow/rules/run_sofia.smk, line 1:
+Job 3  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/sofia/hcg31/hcg31_line60_masked.image_cubelets/hcg31_line60_masked.image_16_mom0.fits
+Removing output files of failed job run_sofia since they might be corrupted:
+results/sofia/hcg31/hcg31_line60_masked.image_cat.txt, results/sofia/hcg31/hcg31_sofia_updated.par
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-20T163054.984854.snakemake.log

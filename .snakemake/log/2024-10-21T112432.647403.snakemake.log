@@ -1,0 +1,79 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Mon Oct 21 11:24:33 2024]
+rule plot_sofia_products:
+    input: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_spec.pdf
+    jobid: 7
+    reason: Missing output files: outputs/publication/figures/ngc1622_spec.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf; Updated input files: outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt
+    priority: 99
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_sofia_products.smk", line 47, in __rule_plot_sofia_products
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_sofia_products.py --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --catalogue outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt' returned non-zero exit status 1.
+
+[Mon Oct 21 11:24:44 2024]
+Error in rule plot_sofia_products:
+    jobid: 7
+    input: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_spec.pdf
+    shell:
+        python workflow/scripts/plot_sofia_products.py --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --catalogue outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_sofia_products.smk", line 47, in __rule_plot_sofia_products
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_sofia_products.py --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --catalogue outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_sofia_products.smk, line 29:
+Command 'set -euo pipefail;  python workflow/scripts/plot_sofia_products.py --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --catalogue outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_sofia_products.smk", line 29, in __rule_plot_sofia_products
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_sofia_products.smk, line 29:
+Command 'set -euo pipefail;  python workflow/scripts/plot_sofia_products.py --filetoplot results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --catalogue outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_sofia_products.smk", line 29, in __rule_plot_sofia_products
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-21T112432.647403.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

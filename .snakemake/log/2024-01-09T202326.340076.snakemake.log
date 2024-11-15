@@ -1,0 +1,8 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /data/workflow/Snakefile, line 16:
+Missing input files for rule all:
+    affected files:
+        results/publication/figures/hcg30_velocity_ra.pdf
+        results/publication/figures/hcg31_velocity_ra.pdf
+        results/publication/figures/hcg16_velocity_ra.pdf
+        results/publication/figures/hcg91_velocity_ra.pdf

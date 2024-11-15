@@ -1,0 +1,216 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        4
+plot_gbt_vs_meerkat_flux        1
+plot_sofia_products             1
+plot_velocity_ra                4
+run_sofia                       4
+tex2pdf_with_bib                1
+total                          15
+
+Select jobs to execute...
+
+[Wed Jan 10 15:41:37 2024]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par, data/hcg30/hcg30_line60_masked.pb_corr.fits, data/hcg30/hcg30_line60_masked.pb.fits, config/sofia_pbc/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30.log
+    jobid: 2
+    reason: Missing output files: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=3610, mem_mib=3443, disk_mb=3610, disk_mib=3443, tmpdir=/data
+
+[Wed Jan 10 15:41:37 2024]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par, data/hcg16/hcg16_line60_masked.pb_corr.fits, data/hcg16/hcg16_line60_masked.pb.fits, config/sofia_pbc/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/data/hcg16/hcg16_line60_masked.image_vopt.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg16/hcg16.log
+    jobid: 3
+    reason: Missing output files: results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=3206, mem_mib=3058, disk_mb=3206, disk_mib=3058, tmpdir=/data
+
+[Wed Jan 10 15:41:37 2024]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par, data/hcg31/hcg31_line60_masked.pb_corr.fits, data/hcg31/hcg31_line60_masked.pb.fits, config/sofia_pbc/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/data/hcg31/hcg31_line60_masked.image_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31.log
+    jobid: 4
+    reason: Missing output files: results/data/hcg31/hcg31_line60_masked.image_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=5670, mem_mib=5408, disk_mb=5670, disk_mib=5408, tmpdir=/data
+
+[Wed Jan 10 15:41:37 2024]
+rule run_sofia:
+    input: data/hcg91/hcg91_line60_masked.image.fits, config/sofia/hcg91_sofia.par, data/hcg91/hcg91_line60_masked.pb_corr.fits, data/hcg91/hcg91_line60_masked.pb.fits, config/sofia_pbc/hcg91_sofia.par
+    output: results/sofia/hcg91/hcg91_line60_masked.image_vopt_cat.txt, results/sofia/hcg91/hcg91_sofia_updated_vopt.par, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cubelets/hcg91_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg91/hcg91_sofia_updated_vopt.par, results/data/hcg91/hcg91_line60_masked.image_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg91/hcg91.log
+    jobid: 5
+    reason: Missing output files: results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits, results/data/hcg91/hcg91_line60_masked.image_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=9939, mem_mib=9479, disk_mb=9939, disk_mib=9479, tmpdir=/data
+
+[Wed Jan 10 15:42:30 2024]
+Finished job 3.
+1 of 15 steps (7%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:42:30 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 11
+    reason: Missing output files: results/publication/figures/hcg16_velocity_ra.pdf; Input files updated by another job: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Wed Jan 10 15:42:30 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf; Input files updated by another job: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+[Wed Jan 10 15:42:39 2024]
+Finished job 6.
+2 of 15 steps (13%) done
+[Wed Jan 10 15:42:45 2024]
+Finished job 11.
+3 of 15 steps (20%) done
+[Wed Jan 10 15:42:46 2024]
+Finished job 2.
+4 of 15 steps (27%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:42:46 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 12
+    reason: Missing output files: results/publication/figures/hcg30_velocity_ra.pdf; Input files updated by another job: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Wed Jan 10 15:42:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 7
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf; Input files updated by another job: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+[Wed Jan 10 15:42:57 2024]
+Finished job 7.
+5 of 15 steps (33%) done
+[Wed Jan 10 15:42:58 2024]
+Finished job 4.
+6 of 15 steps (40%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:42:58 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 13
+    reason: Missing output files: results/publication/figures/hcg31_velocity_ra.pdf; Input files updated by another job: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Wed Jan 10 15:42:58 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 8
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf; Input files updated by another job: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+[Wed Jan 10 15:43:01 2024]
+Finished job 12.
+7 of 15 steps (47%) done
+[Wed Jan 10 15:43:10 2024]
+Finished job 8.
+8 of 15 steps (53%) done
+[Wed Jan 10 15:43:13 2024]
+Finished job 13.
+9 of 15 steps (60%) done
+[Wed Jan 10 15:43:52 2024]
+Finished job 5.
+10 of 15 steps (67%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:43:52 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    jobid: 9
+    reason: Missing output files: results/publication/figures/hcg91_meerkat_gbt_spec.pdf; Input files updated by another job: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Wed Jan 10 15:43:52 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 14
+    reason: Missing output files: results/publication/figures/hcg91_velocity_ra.pdf; Input files updated by another job: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Wed Jan 10 15:43:52 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    jobid: 1
+    reason: Missing output files: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf; Input files updated by another job: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Wed Jan 10 15:44:11 2024]
+Finished job 9.
+11 of 15 steps (73%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:44:11 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Missing output files: results/publication/figures/hcgs_meerkat_gbt_flux.pdf; Input files updated by another job: results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    resources: mem_mb=7475, mem_mib=7129, disk_mb=7475, disk_mib=7129, tmpdir=/data
+
+[Wed Jan 10 15:44:15 2024]
+Finished job 10.
+12 of 15 steps (80%) done
+[Wed Jan 10 15:44:21 2024]
+Finished job 14.
+13 of 15 steps (87%) done
+[Wed Jan 10 15:44:45 2024]
+Finished job 1.
+14 of 15 steps (93%) done
+Select jobs to execute...
+
+[Wed Jan 10 15:44:45 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/hcg_paper.pdf
+    jobid: 0
+    reason: Missing output files: results/publication/hcg_paper.pdf; Input files updated by another job: results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Wed Jan 10 15:44:50 2024]
+Finished job 0.
+15 of 15 steps (100%) done
+Complete log: .snakemake/log/2024-01-10T154136.315476.snakemake.log

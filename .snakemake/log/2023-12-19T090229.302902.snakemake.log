@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule all in file /data/workflow/Snakefile, line 5:
+Missing input files for rule all:
+    affected files:
+        results/sofia/hcg31/subcube_hcg31_cat.txt
+        results/sofia/hcg30/subcube_hcg30_cat.txt
+        results/sofia/hcg16/subcube_hcg16_cat.txt

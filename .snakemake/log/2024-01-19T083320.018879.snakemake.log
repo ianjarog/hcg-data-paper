@@ -1,0 +1,14 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+plot_moments            4
+tex2pdf_with_bib        1
+total                   5
+
+Select jobs to execute...
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-01-19T083320.018879.snakemake.log

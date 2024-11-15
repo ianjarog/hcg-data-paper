@@ -1,0 +1,3 @@
+SyntaxError in file /data/workflow/rules/plot_noise_specaxis.smk, line 18:
+invalid syntax. Perhaps you forgot a comma?
+  File "/data/workflow/Snakefile", line 16, in <module>

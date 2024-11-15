@@ -1,0 +1,4 @@
+NameError in file /data/workflow/rules/plot_optical_mom0.smk, line 30:
+name 'hcg16_optical_mom0' is not defined
+  File "/data/workflow/Snakefile", line 20, in <module>
+  File "/data/workflow/rules/plot_optical_mom0.smk", line 30, in <module>

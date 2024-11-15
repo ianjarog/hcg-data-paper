@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in rule run_sofia in file /data/workflow/rules/run_sofia.smk, line 1:
+Error:
+  KeyError: '{wildcards.gal_idx}'
+Wildcards:
+  gal_idx={wildcards.gal_idx}
+Traceback:
+  File "/data/workflow/rules/run_sofia.smk", line 3, in <lambda>

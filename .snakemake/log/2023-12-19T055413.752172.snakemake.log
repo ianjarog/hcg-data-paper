@@ -1,0 +1,4 @@
+KeyError in file /data/workflow/rules/run_sofia.smk, line 11:
+'threads'
+  File "/data/workflow/Snakefile", line 3, in <module>
+  File "/data/workflow/rules/run_sofia.smk", line 11, in <module>

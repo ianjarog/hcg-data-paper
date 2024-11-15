@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+run_sofia               3
+tex2pdf_with_bib        1
+total                   4
+
+Select jobs to execute...
+
+[Tue Oct 15 13:33:09 2024]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par, data/hcg16/hcg16_line60_masked.pb_corr.fits, data/hcg16/hcg16_line60_masked.pb.fits, config/sofia_pbc/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_sofia_updated_vopt_central.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt_central.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg16/hcg16_line60_masked.image_vopt.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg16/hcg16.log
+    jobid: 1
+    reason: Missing output files: results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/data/hcg16/hcg16_line60_masked.image_vopt.fits, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_noise.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia/hcg16/hcg16_sofia_updated_vopt_central.par, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt_central.par
+    wildcards: gal_idx=hcg16
+    priority: 100
+    resources: mem_mb=3206, mem_mib=3058, disk_mb=3206, disk_mib=3058, tmpdir=/tmp
+
+[Tue Oct 15 13:33:09 2024]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par, data/hcg30/hcg30_line60_masked.pb_corr.fits, data/hcg30/hcg30_line60_masked.pb.fits, config/sofia_pbc/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_sofia_updated_vopt_central.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_noise.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt_central.par, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30.log
+    jobid: 2
+    reason: Missing output files: results/sofia/hcg30/hcg30_sofia_updated_vopt_central.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt_central.par, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom1.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_noise.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_noise.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    wildcards: gal_idx=hcg30
+    priority: 100
+    resources: mem_mb=3610, mem_mib=3443, disk_mb=3610, disk_mib=3443, tmpdir=/tmp
+
+[Tue Oct 15 13:33:09 2024]
+rule run_sofia:
+    input: data/hcg90/hcg90_line60_masked.image.fits, config/sofia/hcg90_sofia.par, data/hcg90/hcg90_line60_masked.pb_corr.fits, data/hcg90/hcg90_line60_masked.pb.fits, config/sofia_pbc/hcg90_sofia.par
+    output: results/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, results/sofia/hcg90/hcg90_sofia_updated_vopt_central.par, results/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, results/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg90/hcg90_sofia_updated_vopt_central.par, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg90/hcg90_line60_masked.image_vopt.fits, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg90/hcg90.log
+    jobid: 4
+    reason: Missing output files: results/sofia/hcg90/hcg90_line60_masked.image_vopt_cat.txt, results/sofia/hcg90/hcg90_sofia_updated_vopt_central.par, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg90/hcg90_sofia_updated_vopt_central.par, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/sofia/hcg90/hcg90_line60_masked.image_vopt_cubelets/hcg90_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom1.fits, results/sofia/hcg90/hcg90_line60_masked.image_vopt_noise.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_noise.fits, results/data/hcg90/hcg90_line60_masked.image_vopt.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_cubelets/hcg90_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mask.fits
+    wildcards: gal_idx=hcg90
+    priority: 100
+    resources: mem_mb=6618, mem_mib=6312, disk_mb=6618, disk_mib=6312, tmpdir=/tmp
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-15T133309.083936.snakemake.log

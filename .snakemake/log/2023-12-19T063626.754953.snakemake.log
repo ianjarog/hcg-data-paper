@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule run_sofia in file /data/workflow/rules/run_sofia.smk, line 1:
+Missing input files for rule run_sofia:
+    output: results/sofia/hcg16/subcube_hcg16_cat.txt, results/sofia/hcg16/sofia.par
+    wildcards: gal_idx=hcg16
+    affected files:
+        config/sofia/sofia_hcg16.par

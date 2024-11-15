@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+plot_sofia_products        1
+tex2pdf_with_bib           1
+total                      2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Mon Oct 21 14:43:58 2024]
+rule plot_sofia_products:
+    input: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_snr.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_spec.pdf
+    jobid: 7
+    reason: Missing output files: outputs/publication/figures/ngc1622_column_density.pdf, outputs/publication/figures/ngc1622_mom2.pdf, outputs/publication/figures/ngc1622_mom1.pdf, outputs/publication/figures/ngc1622_chan.pdf, outputs/publication/figures/ngc1622_spec.pdf, outputs/publication/figures/ngc1622_snr.pdf
+    priority: 99
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.

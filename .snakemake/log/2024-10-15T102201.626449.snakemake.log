@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in rule tex2pdf_with_bib in file /data/workflow/Snakefile, line 48:
+Wildcards in input files cannot be determined from output files:
+'gal_idx'

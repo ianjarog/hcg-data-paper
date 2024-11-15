@@ -1,0 +1,137 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_chanmap                    1
+plot_gbt_meerkat_spectra        6
+plot_gbt_vs_meerkat_flux        1
+plot_global_prof                6
+plot_moments                    6
+plot_noise_specaxis             6
+plot_optical_mom0               1
+plot_segmented_pvdiag           1
+plot_velocity_ra                6
+tex2pdf_with_bib                1
+total                          35
+
+Select jobs to execute...
+
+[Fri Feb  2 16:32:26 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 8
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1079, mem_mib=1030, disk_mb=1079, disk_mib=1030, tmpdir=/tmp
+
+
+[Fri Feb  2 16:32:27 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 10
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1901, mem_mib=1813, disk_mb=1901, disk_mib=1813, tmpdir=/tmp
+
+
+[Fri Feb  2 16:32:27 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    jobid: 12
+    reason: Missing output files: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3324, mem_mib=3171, disk_mb=3324, disk_mib=3171, tmpdir=/tmp
+
+
+[Fri Feb  2 16:32:27 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 9
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1214, mem_mib=1158, disk_mb=1214, disk_mib=1158, tmpdir=/tmp
+
+
+[Fri Feb  2 16:32:27 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg90_meerkat_gbt_spec.pdf
+    jobid: 11
+    reason: Missing output files: results/publication/figures/hcg90_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg90
+    resources: mem_mb=2216, mem_mib=2114, disk_mb=2216, disk_mib=2114, tmpdir=/tmp
+
+
+[Fri Feb  2 16:32:27 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg97_meerkat_gbt_spec.pdf
+    jobid: 13
+    reason: Missing output files: results/publication/figures/hcg97_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg97
+    resources: mem_mb=1450, mem_mib=1383, disk_mb=1450, disk_mib=1383, tmpdir=/tmp
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 9
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 12
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 10
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 8
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 11
+    input: results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg90_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Feb  2 16:32:30 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 13
+    input: results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg97_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-02-02T163225.549004.snakemake.log

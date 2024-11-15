@@ -1,0 +1,91 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+plot_velocity_ra        4
+tex2pdf_with_bib        1
+total                   6
+
+Select jobs to execute...
+
+[Tue Jan  9 22:27:10 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 11
+    reason: Missing output files: results/publication/figures/hcg16_velocity_ra.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Tue Jan  9 22:27:10 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 12
+    reason: Missing output files: results/publication/figures/hcg30_velocity_ra.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Tue Jan  9 22:27:10 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 13
+    reason: Missing output files: results/publication/figures/hcg31_velocity_ra.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Tue Jan  9 22:27:10 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 14
+    reason: Missing output files: results/publication/figures/hcg91_velocity_ra.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+[Tue Jan  9 22:27:25 2024]
+Finished job 11.
+1 of 6 steps (17%) done
+[Tue Jan  9 22:27:26 2024]
+Finished job 12.
+2 of 6 steps (33%) done
+[Tue Jan  9 22:27:28 2024]
+Finished job 13.
+3 of 6 steps (50%) done
+[Tue Jan  9 22:27:39 2024]
+Finished job 14.
+4 of 6 steps (67%) done
+Select jobs to execute...
+
+[Tue Jan  9 22:27:39 2024]
+rule tex2pdf_with_bib:
+    input: workflow/hcg_paper.tex, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/hcg_paper.pdf
+    jobid: 15
+    reason: Missing output files: results/publication/hcg_paper.pdf; Input files updated by another job: results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Tue Jan  9 22:27:43 2024]
+Finished job 15.
+5 of 6 steps (83%) done
+Select jobs to execute...
+
+[Tue Jan  9 22:27:43 2024]
+localrule all:
+    input: results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg91/hcg91_sofia_updated_vopt.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cubelets/hcg91_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia_pbc/hcg91/hcg91_sofia_updated_vopt.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cat.txt, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/hcg_paper.pdf
+    jobid: 0
+    reason: Input files updated by another job: results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/hcg_paper.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg16_velocity_ra.pdf
+    resources: mem_mb=7523, mem_mib=7175, disk_mb=7523, disk_mib=7175, tmpdir=/data
+
+[Tue Jan  9 22:27:43 2024]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: .snakemake/log/2024-01-09T222709.273427.snakemake.log

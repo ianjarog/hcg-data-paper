@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule plot_global_prof in file /data/workflow/rules/plot_global_prof.smk, line 17:
+Missing input files for rule plot_global_prof:
+    output: results/publication/figures/hcg16_global_profile.pdf
+    wildcards: gal_idx=hcg16
+    affected files:
+        results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits

@@ -1,0 +1,359 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+plot_velocity_ra        6
+tex2pdf_with_bib        1
+total                   7
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (6)
+Select jobs to execute...
+Selected jobs (6)
+Resources after job selection: {'_cores': 18, '_nodes': 9223372036854775801}
+
+[Sat Oct 26 04:33:00 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 15
+    reason: Missing output files: outputs/publication/figures/hcg16_velocity_ra.pdf
+    wildcards: gal_idx=hcg16
+    priority: 96
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Sat Oct 26 04:33:01 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 17
+    reason: Missing output files: outputs/publication/figures/hcg31_velocity_ra.pdf
+    wildcards: gal_idx=hcg31
+    priority: 96
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Sat Oct 26 04:33:01 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 19
+    reason: Missing output files: outputs/publication/figures/hcg91_velocity_ra.pdf
+    wildcards: gal_idx=hcg91
+    priority: 96
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Sat Oct 26 04:33:01 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 16
+    reason: Missing output files: outputs/publication/figures/hcg30_velocity_ra.pdf
+    wildcards: gal_idx=hcg30
+    priority: 96
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Sat Oct 26 04:33:01 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg90_velocity_ra.pdf
+    jobid: 18
+    reason: Missing output files: outputs/publication/figures/hcg90_velocity_ra.pdf
+    wildcards: gal_idx=hcg90
+    priority: 96
+    resources: mem_mb=2206, mem_mib=2104, disk_mb=2206, disk_mib=2104, tmpdir=/data
+
+
+[Sat Oct 26 04:33:01 2024]
+rule plot_velocity_ra:
+    input: outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg97_velocity_ra.pdf
+    jobid: 20
+    reason: Missing output files: outputs/publication/figures/hcg97_velocity_ra.pdf
+    wildcards: gal_idx=hcg97
+    priority: 96
+    resources: mem_mb=1439, mem_mib=1373, disk_mb=1439, disk_mib=1373, tmpdir=/data
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:20 2024]
+Error in rule plot_velocity_ra:
+    jobid: 15
+    input: outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg16_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg16/hcg16_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:21 2024]
+Error in rule plot_velocity_ra:
+    jobid: 16
+    input: outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg30_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg30/hcg30_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:22 2024]
+Error in rule plot_velocity_ra:
+    jobid: 20
+    input: outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg97_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg97/hcg97_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:24 2024]
+Error in rule plot_velocity_ra:
+    jobid: 17
+    input: outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg31_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg31/hcg31_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:25 2024]
+Error in rule plot_velocity_ra:
+    jobid: 18
+    input: outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg90_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg90/hcg90_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+[Sat Oct 26 04:33:31 2024]
+Error in rule plot_velocity_ra:
+    jobid: 19
+    input: outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: outputs/publication/figures/hcg91_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 41, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_velocity_ra.smk, line 27:
+Command 'set -euo pipefail;  python workflow/scripts/plot_velocity_ra.py --cube outputs/data/hcg91/hcg91_line60_masked.image_vopt.fits' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 27, in __rule_plot_velocity_ra
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-26T043300.138493.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

@@ -1,0 +1,196 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        6
+plot_gbt_vs_meerkat_flux        1
+tex2pdf_with_bib                1
+total                           8
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (6)
+Select jobs to execute...
+Selected jobs (6)
+Resources after job selection: {'_cores': 18, '_nodes': 9223372036854775801}
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg16/hcg16_meerkat_gbt_spec.log
+    jobid: 8
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg16
+    priority: 98
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg31/hcg31_meerkat_gbt_spec.log
+    jobid: 10
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg31
+    priority: 98
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg91/hcg91_meerkat_gbt_spec.log
+    jobid: 12
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg91
+    priority: 98
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg30/hcg30_meerkat_gbt_spec.log
+    jobid: 9
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg30
+    priority: 98
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg90/hcg90_meerkat_gbt_spec.log
+    jobid: 11
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg90
+    priority: 98
+    resources: mem_mb=2206, mem_mib=2104, disk_mb=2206, disk_mib=2104, tmpdir=/data
+
+
+[Thu Oct 24 04:46:46 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf
+    log: outputs/sofia/logs/hcg97/hcg97_meerkat_gbt_spec.log
+    jobid: 13
+    reason: Set of input files has changed since last execution
+    wildcards: gal_idx=hcg97
+    priority: 98
+    resources: mem_mb=1439, mem_mib=1373, disk_mb=1439, disk_mib=1373, tmpdir=/data
+
+[Thu Oct 24 05:03:11 2024]
+Finished job 8.
+1 of 8 steps (12%) done
+[Thu Oct 24 05:03:11 2024]
+Finished job 10.
+2 of 8 steps (25%) done
+[Thu Oct 24 05:03:11 2024]
+Finished job 13.
+3 of 8 steps (38%) done
+[Thu Oct 24 05:03:11 2024]
+Finished job 9.
+4 of 8 steps (50%) done
+[Thu Oct 24 05:03:12 2024]
+Finished job 12.
+5 of 8 steps (62%) done
+[Thu Oct 24 05:03:12 2024]
+Finished job 11.
+6 of 8 steps (75%) done
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Thu Oct 24 05:03:12 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 14
+    reason: Missing output files: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf; Input files updated by another job: outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    priority: 97
+    resources: mem_mb=11120, mem_mib=10605, disk_mb=11120, disk_mib=10605, tmpdir=/data
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_gbt_vs_meerkat_flux.smk", line 55, in __rule_plot_gbt_vs_meerkat_flux
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done' returned non-zero exit status 1.
+
+[Thu Oct 24 05:03:12 2024]
+Error in rule plot_gbt_vs_meerkat_flux:
+    jobid: 14
+    input: outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    shell:
+        
+        
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done  
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_gbt_vs_meerkat_flux.smk", line 55, in __rule_plot_gbt_vs_meerkat_flux
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_gbt_vs_meerkat_flux.smk, line 36:
+Command 'set -euo pipefail;  
+        
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_gbt_vs_meerkat_flux.smk", line 36, in __rule_plot_gbt_vs_meerkat_flux
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_gbt_vs_meerkat_flux.smk, line 36:
+Command 'set -euo pipefail;  
+        
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_gbt_vs_meerkat_flux.smk", line 36, in __rule_plot_gbt_vs_meerkat_flux
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-24T044645.175625.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

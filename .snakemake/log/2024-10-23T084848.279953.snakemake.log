@@ -1,0 +1,12 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 2, in <module>
+    from utility_functions import extract_outputs_from_rules, replace_galaxy_indices
+ModuleNotFoundError: No module named 'utility_functions'
+
+ModuleNotFoundError in file /data/workflow/Snakefile, line 2:
+No module named 'utility_functions'
+  File "/data/workflow/Snakefile", line 2, in <module>

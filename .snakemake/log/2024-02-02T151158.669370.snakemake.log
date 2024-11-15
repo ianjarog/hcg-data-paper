@@ -1,0 +1,11 @@
+Building DAG of jobs...
+MissingInputException in rule tex2pdf_with_bib in file /data/workflow/Snakefile, line 22:
+Missing input files for rule tex2pdf_with_bib:
+    output: results/publication/hcg_paper.pdf
+    affected files:
+        results/publication/figures/hcg91_optical_hi.pdf
+        results/publication/figures/hcg31_optical_hi.pdf
+        results/publication/figures/hcg30_optical_hi.pdf
+        results/publication/figures/hcg97_optical_hi.pdf
+        results/publication/figures/hcg90_optical_hi.pdf
+        results/publication/figures/hcg16_optical_hi.pdf

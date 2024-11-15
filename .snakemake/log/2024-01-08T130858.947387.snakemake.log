@@ -1,0 +1,59 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_meerkat_spectra        4
+plot_sofia_products             1
+run_sofia                       4
+tex2pdf_with_bib                1
+total                          11
+
+Select jobs to execute...
+
+[Mon Jan  8 13:08:59 2024]
+rule run_sofia:
+    input: data/hcg16/hcg16_line60_masked.image.fits, config/sofia/hcg16_sofia.par, data/hcg16/hcg16_line60_masked.pb_corr.fits, data/hcg16/hcg16_line60_masked.pb.fits, config/sofia_pbc/hcg16_sofia.par
+    output: results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg16/hcg16.log
+    jobid: 1
+    reason: Missing output files: results/sofia/hcg16/hcg16_sofia_updated_vopt.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt, results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=3206, mem_mib=3058, disk_mb=3206, disk_mib=3058, tmpdir=/data
+
+[Mon Jan  8 13:08:59 2024]
+rule run_sofia:
+    input: data/hcg31/hcg31_line60_masked.image.fits, config/sofia/hcg31_sofia.par, data/hcg31/hcg31_line60_masked.pb_corr.fits, data/hcg31/hcg31_line60_masked.pb.fits, config/sofia_pbc/hcg31_sofia.par
+    output: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg31/hcg31.log
+    jobid: 3
+    reason: Missing output files: results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par, results/sofia/hcg31/hcg31_sofia_updated_vopt.par, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=5670, mem_mib=5408, disk_mb=5670, disk_mib=5408, tmpdir=/data
+
+[Mon Jan  8 13:08:59 2024]
+rule run_sofia:
+    input: data/hcg91/hcg91_line60_masked.image.fits, config/sofia/hcg91_sofia.par, data/hcg91/hcg91_line60_masked.pb_corr.fits, data/hcg91/hcg91_line60_masked.pb.fits, config/sofia_pbc/hcg91_sofia.par
+    output: results/sofia/hcg91/hcg91_line60_masked.image_vopt_cat.txt, results/sofia/hcg91/hcg91_sofia_updated_vopt.par, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cubelets/hcg91_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg91/hcg91_sofia_updated_vopt.par, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg91/hcg91.log
+    jobid: 4
+    reason: Missing output files: results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cat.txt, results/sofia/hcg91/hcg91_sofia_updated_vopt.par, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cubelets/hcg91_line60_masked.image_vopt_1_mom0.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/sofia/hcg91/hcg91_line60_masked.image_vopt_cat.txt, results/sofia_pbc/hcg91/hcg91_sofia_updated_vopt.par
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=9939, mem_mib=9479, disk_mb=9939, disk_mib=9479, tmpdir=/data
+
+[Mon Jan  8 13:08:59 2024]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par, data/hcg30/hcg30_line60_masked.pb_corr.fits, data/hcg30/hcg30_line60_masked.pb.fits, config/sofia_pbc/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/sofia/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    log: results/sofia/logs/hcg30/hcg30.log
+    jobid: 2
+    reason: Missing output files: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits, results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par, results/sofia/hcg30/hcg30_sofia_updated_vopt.par
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=3610, mem_mib=3443, disk_mb=3610, disk_mib=3443, tmpdir=/data
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-08T130858.947387.snakemake.log

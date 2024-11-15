@@ -1,0 +1,2 @@
+SyntaxError in file /data/workflow/Snakefile, line 36:
+keyword argument repeated: mom1_pdf

@@ -1,0 +1,42 @@
+hcg16:
+  distance: 49
+  vla_beam: [38.9, 31.7]
+  ra: '02h09m31.300s'
+  dec: '-10d09m30.00s'
+  zoom_center: ["02h09m52.5s", "-10d13m20s"]
+  zoom_size: [30, 70]
+hcg30:
+  distance: 61
+  vla_beam: [57.9, 44.8]
+  ra: '04h36m28.600s'
+  dec: '-02d49m56.00s'
+  zoom_center: ["4h36m27.99s", "-2d49m51.8s"]
+  zoom_size: [7.5, 100]
+hcg31:
+  distance: 53
+  vla_beam: [14.6, 12.1]
+  ra: '05h01m38.300s'
+  dec: '-04d15m25.00s'
+  zoom_center: ['05h01m38.3s', '-04d15m25s']
+  zoom_size: [20, 85]
+hcg90:
+  distance: 33
+  vla_beam: [49.1, 39.9]
+  ra: '22h02m05.600s'
+  dec: '-31d58m00.00s'
+  zoom_center: [330.542, -31.987]
+  zoom_size: [33.6, 120]
+hcg91:
+  distance: 92
+  vla_beam: [51.3, 47.0]
+  ra: '22h09m10.400s'
+  dec: '-27d47m45.00s'
+  zoom_center: ['22h09m08.2605065868s', '-27d46m26.9882325135s']
+  zoom_size: [12, 100]
+hcg97:
+  distance: 85
+  vla_beam: [63.2, 49.5]
+  ra: '23h47m22.900s'
+  dec: '-02d19m34.00s'
+  zoom_center: ['23h47m23.4s', '-2d19m09.41s']
+  zoom_size: [16, 120]

@@ -1,0 +1,4 @@
+WildcardError in file /data/workflow/rules/run_sofia.smk, line 30:
+No values given for wildcard 'gal_idx'.
+  File "/data/workflow/Snakefile", line 3, in <module>
+  File "/data/workflow/rules/run_sofia.smk", line 30, in <module>

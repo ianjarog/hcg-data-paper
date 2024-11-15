@@ -1,0 +1,3 @@
+Building DAG of jobs...
+CyclicGraphException in rule plot_chanmap in file /data/workflow/rules/plot_chanmap.smk, line 28:
+Cyclic dependency on rule plot_chanmap.

@@ -1,0 +1,3 @@
+SyntaxError in file /data/workflow/rules/run_sofia.smk, line 18:
+unterminated string literal (detected at line 33)
+  File "/data/workflow/Snakefile", line 3, in <module>

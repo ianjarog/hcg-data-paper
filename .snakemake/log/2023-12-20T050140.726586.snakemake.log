@@ -1,0 +1,3 @@
+SyntaxError in file /data/workflow/rules/plot_sofia_products.smk, line 10:
+unterminated string literal (detected at line 17)
+  File "/data/workflow/Snakefile", line 4, in <module>

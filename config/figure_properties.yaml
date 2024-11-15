@@ -1,0 +1,27 @@
+general:
+  figsize: [10.5, 10.5]
+  x0: 0.1 
+  y0: 0.1
+  w: 0.8
+  h: 0.8
+  dpi: 300
+  axtext_fontsize: 30
+  xylabel_fontsize: 30
+  ticklabelsize: 30
+  xlabelpad: 1.5 # aplpy
+  ylabelpad: 1.5 #aplpy
+  mat_ylabelpad: 40 # matplotlib
+  mat_xlabelpad: 30 # matplotlib
+  legend_fontsize: 30
+axes:
+  minor_length: 10
+  major_length: 20
+  tick_width: 1
+  tick_pad: 25
+  cbar_tickpad: 15 
+  cbar_labelpad: 20  
+  cbar_width: 0.3 
+line_plot:
+  line_width: 1.5
+scatter_plot:
+  marker_size: 18

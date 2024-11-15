@@ -1,0 +1,4 @@
+FileNotFoundError in file /data/workflow/Snakefile, line 29:
+[Errno 2] No such file or directory: 'rules/run_sofia.smk'
+  File "/data/workflow/Snakefile", line 46, in <module>
+  File "/data/workflow/Snakefile", line 29, in extract_outputs_from_run_sofia

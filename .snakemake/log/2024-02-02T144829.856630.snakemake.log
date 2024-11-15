@@ -1,0 +1,3 @@
+SyntaxError in file /data/workflow/rules/plot_chanmap.smk, line 29:
+EOF in multi-line statement (plot_chanmap.smk, line 29)
+  File "/data/workflow/Snakefile", line 20, in <module>

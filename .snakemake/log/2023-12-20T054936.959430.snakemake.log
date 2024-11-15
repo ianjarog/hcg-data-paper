@@ -1,0 +1,11 @@
+Building DAG of jobs...
+WorkflowError:
+MissingInputException: Missing input files for rule plot_sofia_products:
+    output: results/publication/figures/ngc1622_mom0.pdf
+    affected files:
+        results/sofia/hcg30/hcg30_line60_masked.image_cubelets/hcg30_line60_masked.image_16_mom0.fits
+MissingInputException: Missing input files for rule tex2pdf_with_bib:
+    output: results/publication/figures/ngc1622_mom0.pdf
+    wildcards: name=figures/ngc1622_mom0
+    affected files:
+        workflow/figures/ngc1622_mom0.tex

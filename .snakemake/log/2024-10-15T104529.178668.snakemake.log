@@ -1,0 +1,3 @@
+NameError in file /data/workflow/Snakefile, line 64:
+name 'outputs' is not defined
+  File "/data/workflow/Snakefile", line 64, in <module>

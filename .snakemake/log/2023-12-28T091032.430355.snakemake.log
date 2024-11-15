@@ -1,0 +1,4 @@
+NameError in file /data/workflow/rules/plot_sofia_products.smk, line 3:
+name 'config_pbc' is not defined
+  File "/data/workflow/Snakefile", line 6, in <module>
+  File "/data/workflow/rules/plot_sofia_products.smk", line 3, in <module>

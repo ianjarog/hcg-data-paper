@@ -1,0 +1,98 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+plot_velocity_ra        4
+tex2pdf_with_bib        1
+total                   6
+
+Select jobs to execute...
+
+[Tue Jan  9 20:32:03 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 11
+    reason: Missing output files: results/publication/figures/hcg16_velocity_ra.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Tue Jan  9 20:32:04 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 12
+    reason: Missing output files: results/publication/figures/hcg30_velocity_ra.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Tue Jan  9 20:32:04 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 13
+    reason: Missing output files: results/publication/figures/hcg31_velocity_ra.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Tue Jan  9 20:32:04 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 14
+    reason: Missing output files: results/publication/figures/hcg91_velocity_ra.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+[Tue Jan  9 20:32:20 2024]
+Error in rule plot_velocity_ra:
+    jobid: 14
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Jan  9 20:32:25 2024]
+Error in rule plot_velocity_ra:
+    jobid: 11
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube results/data/hcg16/hcg16_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job plot_velocity_ra since they might be corrupted:
+results/publication/figures/hcg16_velocity_ra.pdf
+[Tue Jan  9 20:32:26 2024]
+Error in rule plot_velocity_ra:
+    jobid: 12
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job plot_velocity_ra since they might be corrupted:
+results/publication/figures/hcg30_velocity_ra.pdf
+[Tue Jan  9 20:32:29 2024]
+Error in rule plot_velocity_ra:
+    jobid: 13
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    shell:
+        python workflow/scripts/plot_velocity_ra.py --cube results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job plot_velocity_ra since they might be corrupted:
+results/publication/figures/hcg31_velocity_ra.pdf
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-09T203202.328688.snakemake.log

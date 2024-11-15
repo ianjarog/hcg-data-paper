@@ -1,0 +1,4 @@
+SyntaxError:
+Input and output files have to be specified as strings or lists of strings.
+  File "/data/workflow/Snakefile", line 15, in <module>
+  File "/data/workflow/rules/plot_sofia_products.smk", line 11, in <module>

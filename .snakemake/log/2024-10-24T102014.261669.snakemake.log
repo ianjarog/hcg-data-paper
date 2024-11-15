@@ -1,0 +1,246 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        6
+plot_gbt_vs_meerkat_flux        1
+tex2pdf_with_bib                1
+total                           8
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (6)
+Select jobs to execute...
+Selected jobs (6)
+Resources after job selection: {'_cores': 18, '_nodes': 9223372036854775801}
+
+[Thu Oct 24 10:20:15 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf, outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg16/hcg16_meerkat_gbt_spec.log
+    jobid: 8
+    reason: Missing output files: outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg16
+    priority: 98
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Thu Oct 24 10:20:16 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf, outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg31/hcg31_meerkat_gbt_spec.log
+    jobid: 10
+    reason: Missing output files: outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg31
+    priority: 98
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Thu Oct 24 10:20:16 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf, outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg91/hcg91_meerkat_gbt_spec.log
+    jobid: 12
+    reason: Missing output files: outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg91
+    priority: 98
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Thu Oct 24 10:20:16 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf, outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg30/hcg30_meerkat_gbt_spec.log
+    jobid: 9
+    reason: Missing output files: outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg30
+    priority: 98
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Thu Oct 24 10:20:16 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg90/hcg90_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg90_meerkat_gbt_spec.pdf, outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg90/hcg90_meerkat_gbt_spec.log
+    jobid: 11
+    reason: Missing output files: outputs/data/hcg90/hcg90_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg90
+    priority: 98
+    resources: mem_mb=2206, mem_mib=2104, disk_mb=2206, disk_mib=2104, tmpdir=/data
+
+
+[Thu Oct 24 10:20:16 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg97/hcg97_line60_masked.pb_corr_vopt.fits
+    output: outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf, outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    log: outputs/sofia/logs/hcg97/hcg97_meerkat_gbt_spec.log
+    jobid: 13
+    reason: Missing output files: outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+    wildcards: gal_idx=hcg97
+    priority: 98
+    resources: mem_mb=1439, mem_mib=1373, disk_mb=1439, disk_mib=1373, tmpdir=/data
+
+Waiting at most 90 seconds for missing files.
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 605, in check_and_touch_output
+    wait_for_files(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 881, in wait_for_files
+    raise IOError(
+OSError: Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 650, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 730, in handle_job_success
+    super().handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 293, in handle_job_success
+    job.postprocess(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1178, in postprocess
+    self.dag.check_and_touch_output(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 612, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job 9  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingOutputException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 27:
+Job 9  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg30/hcg30_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+Removing output files of failed job plot_gbt_meerkat_spectra since they might be corrupted:
+outputs/publication/figures/hcg30_meerkat_gbt_spec.pdf
+Waiting at most 90 seconds for missing files.
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 605, in check_and_touch_output
+    wait_for_files(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 881, in wait_for_files
+    raise IOError(
+OSError: Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 650, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 730, in handle_job_success
+    super().handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 293, in handle_job_success
+    job.postprocess(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1178, in postprocess
+    self.dag.check_and_touch_output(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 612, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job 13  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingOutputException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 27:
+Job 13  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg97/hcg97_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+Removing output files of failed job plot_gbt_meerkat_spectra since they might be corrupted:
+outputs/publication/figures/hcg97_meerkat_gbt_spec.pdf
+Waiting at most 90 seconds for missing files.
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 605, in check_and_touch_output
+    wait_for_files(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 881, in wait_for_files
+    raise IOError(
+OSError: Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 650, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 730, in handle_job_success
+    super().handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 293, in handle_job_success
+    job.postprocess(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1178, in postprocess
+    self.dag.check_and_touch_output(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 612, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job 10  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingOutputException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 27:
+Job 10  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg31/hcg31_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+Removing output files of failed job plot_gbt_meerkat_spectra since they might be corrupted:
+outputs/publication/figures/hcg31_meerkat_gbt_spec.pdf
+Waiting at most 90 seconds for missing files.
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 605, in check_and_touch_output
+    wait_for_files(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 881, in wait_for_files
+    raise IOError(
+OSError: Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 650, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 730, in handle_job_success
+    super().handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 293, in handle_job_success
+    job.postprocess(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1178, in postprocess
+    self.dag.check_and_touch_output(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 612, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job 12  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingOutputException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 27:
+Job 12  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg91/hcg91_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+Removing output files of failed job plot_gbt_meerkat_spectra since they might be corrupted:
+outputs/publication/figures/hcg91_meerkat_gbt_spec.pdf
+Waiting at most 90 seconds for missing files.
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 605, in check_and_touch_output
+    wait_for_files(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 881, in wait_for_files
+    raise IOError(
+OSError: Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/scheduler.py", line 650, in _finish_jobs
+    self.get_executor(job).handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 730, in handle_job_success
+    super().handle_job_success(job)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 293, in handle_job_success
+    job.postprocess(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/jobs.py", line 1178, in postprocess
+    self.dag.check_and_touch_output(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 612, in check_and_touch_output
+    raise MissingOutputException(
+snakemake.exceptions.MissingOutputException: Job 8  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+
+MissingOutputException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 27:
+Job 8  completed successfully, but some output files are missing. Missing files after 90 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+outputs/data/hcg16/hcg16_line60_masked.pb_corr_vopt_times_beam_factor_integrated_spec.txt
+Removing output files of failed job plot_gbt_meerkat_spectra since they might be corrupted:
+outputs/publication/figures/hcg16_meerkat_gbt_spec.pdf
+Waiting at most 90 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-10-24T102014.261669.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

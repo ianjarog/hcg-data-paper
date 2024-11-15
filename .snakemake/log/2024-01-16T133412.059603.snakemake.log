@@ -1,0 +1,282 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        4
+plot_gbt_vs_meerkat_flux        1
+plot_global_prof                4
+plot_moments                    4
+plot_noise_specaxis             4
+plot_velocity_ra                4
+tex2pdf_with_bib                1
+total                          22
+
+Select jobs to execute...
+
+[Tue Jan 16 13:34:14 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Updated input files: results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_chan.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1097, mem_mib=1047, disk_mb=1097, disk_mib=1047, tmpdir=/data
+
+
+[Tue Jan 16 13:34:17 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 7
+    reason: Updated input files: results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_chan.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1232, mem_mib=1175, disk_mb=1232, disk_mib=1175, tmpdir=/data
+
+
+[Tue Jan 16 13:34:17 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 8
+    reason: Updated input files: results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_chan.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1918, mem_mib=1830, disk_mb=1918, disk_mib=1830, tmpdir=/data
+
+
+[Tue Jan 16 13:34:17 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    output: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    jobid: 9
+    reason: Updated input files: results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_chan.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3341, mem_mib=3187, disk_mb=3341, disk_mib=3187, tmpdir=/data
+
+[Tue Jan 16 13:34:30 2024]
+Finished job 6.
+1 of 22 steps (5%) done
+[Tue Jan 16 13:34:32 2024]
+Finished job 7.
+2 of 22 steps (9%) done
+[Tue Jan 16 13:34:34 2024]
+Finished job 8.
+3 of 22 steps (14%) done
+[Tue Jan 16 13:34:41 2024]
+Finished job 9.
+4 of 22 steps (18%) done
+Select jobs to execute...
+
+[Tue Jan 16 13:34:41 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Input files updated by another job: results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    resources: mem_mb=7503, mem_mib=7156, disk_mb=7503, disk_mib=7156, tmpdir=/data
+
+[Tue Jan 16 13:34:51 2024]
+Finished job 10.
+5 of 22 steps (23%) done
+Select jobs to execute...
+
+[Tue Jan 16 13:34:51 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg16/hcg16_line60_masked.image_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    output: results/publication/figures/hcg16_velocity_ra.pdf
+    jobid: 11
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1097, mem_mib=1047, disk_mb=1097, disk_mib=1047, tmpdir=/data
+
+
+[Tue Jan 16 13:34:51 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 12
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1232, mem_mib=1175, disk_mb=1232, disk_mib=1175, tmpdir=/data
+
+
+[Tue Jan 16 13:34:51 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 13
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1919, mem_mib=1831, disk_mb=1919, disk_mib=1831, tmpdir=/data
+
+
+[Tue Jan 16 13:34:51 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 14
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3342, mem_mib=3188, disk_mb=3342, disk_mib=3188, tmpdir=/data
+
+[Tue Jan 16 13:35:05 2024]
+Finished job 11.
+6 of 22 steps (27%) done
+[Tue Jan 16 13:35:07 2024]
+Finished job 12.
+7 of 22 steps (32%) done
+[Tue Jan 16 13:35:11 2024]
+Finished job 13.
+8 of 22 steps (36%) done
+[Tue Jan 16 13:35:18 2024]
+Finished job 14.
+9 of 22 steps (41%) done
+Select jobs to execute...
+
+[Tue Jan 16 13:35:18 2024]
+rule plot_noise_specaxis:
+    input: results/sofia/hcg91/hcg91_line60_masked.image_vopt_noise.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/figures/hcg91_noise_specaxis.pdf
+    jobid: 18
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3346, mem_mib=3191, disk_mb=3346, disk_mib=3191, tmpdir=/data
+
+
+[Tue Jan 16 13:35:18 2024]
+rule plot_noise_specaxis:
+    input: results/sofia/hcg16/hcg16_line60_masked.image_vopt_noise.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/figures/hcg16_noise_specaxis.pdf
+    jobid: 15
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1102, mem_mib=1051, disk_mb=1102, disk_mib=1051, tmpdir=/data
+
+
+[Tue Jan 16 13:35:18 2024]
+rule plot_noise_specaxis:
+    input: results/sofia/hcg30/hcg30_line60_masked.image_vopt_noise.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/figures/hcg30_noise_specaxis.pdf
+    jobid: 16
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1237, mem_mib=1180, disk_mb=1237, disk_mib=1180, tmpdir=/data
+
+
+[Tue Jan 16 13:35:18 2024]
+rule plot_noise_specaxis:
+    input: results/sofia/hcg31/hcg31_line60_masked.image_vopt_noise.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf
+    output: results/publication/figures/hcg31_noise_specaxis.pdf
+    jobid: 17
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1923, mem_mib=1834, disk_mb=1923, disk_mib=1834, tmpdir=/data
+
+[Tue Jan 16 13:35:25 2024]
+Finished job 15.
+10 of 22 steps (45%) done
+[Tue Jan 16 13:35:25 2024]
+Finished job 16.
+11 of 22 steps (50%) done
+[Tue Jan 16 13:35:27 2024]
+Finished job 17.
+12 of 22 steps (55%) done
+[Tue Jan 16 13:35:30 2024]
+Finished job 18.
+13 of 22 steps (59%) done
+Select jobs to execute...
+
+[Tue Jan 16 13:35:30 2024]
+rule plot_global_prof:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, data/hcg16/vla_data/hcg16_spec.txt, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mask.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf
+    output: results/publication/figures/hcg16_global_profile.pdf
+    jobid: 19
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=2171, mem_mib=2071, disk_mb=2171, disk_mib=2071, tmpdir=/data
+
+
+[Tue Jan 16 13:35:30 2024]
+rule plot_global_prof:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, data/hcg30/vla_data/hcg30_spec.txt, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mask.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf
+    output: results/publication/figures/hcg30_global_profile.pdf
+    jobid: 20
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=2440, mem_mib=2327, disk_mb=2440, disk_mib=2327, tmpdir=/data
+
+
+[Tue Jan 16 13:35:30 2024]
+rule plot_global_prof:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, data/hcg31/vla_data/hcg31_spec.txt, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mask.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf
+    output: results/publication/figures/hcg31_global_profile.pdf
+    jobid: 21
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=3813, mem_mib=3637, disk_mb=3813, disk_mib=3637, tmpdir=/data
+
+
+[Tue Jan 16 13:35:30 2024]
+rule plot_global_prof:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits, data/hcg91/vla_data/hcg91_spec.txt, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mask.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf
+    output: results/publication/figures/hcg91_global_profile.pdf
+    jobid: 22
+    reason: Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=6659, mem_mib=6351, disk_mb=6659, disk_mib=6351, tmpdir=/data
+
+[Tue Jan 16 13:35:44 2024]
+Finished job 19.
+14 of 22 steps (64%) done
+[Tue Jan 16 13:35:45 2024]
+Finished job 20.
+15 of 22 steps (68%) done
+[Tue Jan 16 13:35:48 2024]
+Finished job 21.
+16 of 22 steps (73%) done
+[Tue Jan 16 13:36:00 2024]
+Finished job 22.
+17 of 22 steps (77%) done
+Select jobs to execute...
+
+[Tue Jan 16 13:36:00 2024]
+rule plot_moments:
+    input: results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom1.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf
+    output: results/publication/figures/hcg91_mom0_pbc_large.pdf, results/publication/figures/hcg91_mom0_pbc_zoom.pdf
+    jobid: 26
+    reason: Missing output files: results/publication/figures/hcg91_mom0_pbc_large.pdf, results/publication/figures/hcg91_mom0_pbc_zoom.pdf; Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Tue Jan 16 13:36:00 2024]
+rule plot_moments:
+    input: results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom1.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf
+    output: results/publication/figures/hcg16_mom0_pbc_large.pdf, results/publication/figures/hcg16_mom0_pbc_zoom.pdf
+    jobid: 23
+    reason: Missing output files: results/publication/figures/hcg16_mom0_pbc_zoom.pdf, results/publication/figures/hcg16_mom0_pbc_large.pdf; Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Tue Jan 16 13:36:00 2024]
+rule plot_moments:
+    input: results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom1.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf
+    output: results/publication/figures/hcg30_mom0_pbc_large.pdf, results/publication/figures/hcg30_mom0_pbc_zoom.pdf
+    jobid: 24
+    reason: Missing output files: results/publication/figures/hcg30_mom0_pbc_large.pdf, results/publication/figures/hcg30_mom0_pbc_zoom.pdf; Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+[Tue Jan 16 13:36:00 2024]
+rule plot_moments:
+    input: results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom1.fits, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf
+    output: results/publication/figures/hcg31_mom0_pbc_large.pdf, results/publication/figures/hcg31_mom0_pbc_zoom.pdf
+    jobid: 25
+    reason: Missing output files: results/publication/figures/hcg31_mom0_pbc_zoom.pdf, results/publication/figures/hcg31_mom0_pbc_large.pdf; Input files updated by another job: results/publication/figures/hcg31_meerkat_gbt_spec.pdf, results/publication/figures/hcg31_velocity_ra.pdf, results/publication/figures/hcg31_noise_specaxis.pdf, results/publication/figures/hcg16_noise_specaxis.pdf, results/publication/figures/hcg30_global_profile.pdf, results/publication/figures/hcg91_global_profile.pdf, results/publication/figures/hcg30_meerkat_gbt_spec.pdf, results/publication/figures/hcg16_global_profile.pdf, results/publication/figures/hcg16_velocity_ra.pdf, results/publication/figures/hcg91_noise_specaxis.pdf, results/publication/figures/hcg91_meerkat_gbt_spec.pdf, results/publication/figures/hcg30_velocity_ra.pdf, results/publication/figures/hcg31_global_profile.pdf, results/publication/figures/hcg91_velocity_ra.pdf, results/publication/figures/hcgs_meerkat_gbt_flux.pdf, results/publication/figures/hcg30_noise_specaxis.pdf, results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-16T133412.059603.snakemake.log

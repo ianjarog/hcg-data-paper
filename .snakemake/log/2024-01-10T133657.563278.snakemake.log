@@ -1,0 +1,152 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_meerkat_spectra        4
+plot_gbt_vs_meerkat_flux        1
+plot_sofia_products             1
+plot_velocity_ra                3
+tex2pdf_with_bib                1
+total                          11
+
+Select jobs to execute...
+
+[Wed Jan 10 13:36:58 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Missing output files: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    resources: mem_mb=7475, mem_mib=7129, disk_mb=7475, disk_mib=7129, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg30/hcg30_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg30_velocity_ra.pdf
+    jobid: 12
+    reason: Missing output files: results/publication/figures/hcg30_velocity_ra.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg91/hcg91_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg91_velocity_ra.pdf
+    jobid: 14
+    reason: Missing output files: results/publication/figures/hcg91_velocity_ra.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_snr.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 7
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    jobid: 9
+    reason: Missing output files: results/publication/figures/hcg91_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg91
+    resources: mem_mb=3313, mem_mib=3160, disk_mb=3313, disk_mib=3160, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_velocity_ra:
+    input: results/data/hcg31/hcg31_line60_masked.image_vopt.fits
+    output: results/publication/figures/hcg31_velocity_ra.pdf
+    jobid: 13
+    reason: Missing output files: results/publication/figures/hcg31_velocity_ra.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Wed Jan 10 13:36:59 2024]
+rule plot_gbt_meerkat_spectra:
+    input: results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 8
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+[Wed Jan 10 13:37:00 2024]
+Error in rule plot_gbt_vs_meerkat_flux:
+    jobid: 10
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    shell:
+        
+        
+        dir="results/data/hcgs/"
+        dir_gbt="${dir}/gbt_data/"
+        dir_meerkat="${dir}/meerkat_data/"
+        if [ -d "$dir" ]; then
+            rm -r "$dir"
+        fi
+        mkdir -p "$dir_gbt" "$dir_meerkat"
+        for cube in results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done  
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Jan 10 13:37:15 2024]
+Finished job 6.
+1 of 11 steps (9%) done
+[Wed Jan 10 13:37:16 2024]
+Finished job 7.
+2 of 11 steps (18%) done
+[Wed Jan 10 13:37:19 2024]
+Finished job 12.
+3 of 11 steps (27%) done
+[Wed Jan 10 13:37:20 2024]
+Finished job 8.
+4 of 11 steps (36%) done
+[Wed Jan 10 13:37:23 2024]
+Finished job 13.
+5 of 11 steps (45%) done
+[Wed Jan 10 13:37:27 2024]
+Finished job 9.
+6 of 11 steps (55%) done
+[Wed Jan 10 13:37:32 2024]
+Finished job 14.
+7 of 11 steps (64%) done
+[Wed Jan 10 13:37:57 2024]
+Finished job 5.
+8 of 11 steps (73%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-10T133657.563278.snakemake.log

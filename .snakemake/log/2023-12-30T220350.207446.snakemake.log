@@ -1,0 +1,4 @@
+KeyError in file /data/workflow/rules/plot_sofia_products.smk, line 5:
+'ngc1622_z'
+  File "/data/workflow/Snakefile", line 6, in <module>
+  File "/data/workflow/rules/plot_sofia_products.smk", line 5, in <module>

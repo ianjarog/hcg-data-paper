@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_vs_meerkat_flux        1
+tex2pdf_with_bib                1
+total                           3
+
+Select jobs to execute...
+
+[Tue Jan  9 15:00:26 2024]
+rule plot_gbt_vs_meerkat_flux:
+    input: results/data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits, results/data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits, results/data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits, results/data/hcg91/hcg91_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcgs_meerkat_gbt_flux.pdf
+    jobid: 10
+    reason: Code has changed since last execution
+    resources: mem_mb=7475, mem_mib=7129, disk_mb=7475, disk_mib=7129, tmpdir=/data
+
+RuleException in rule plot_gbt_vs_meerkat_flux in file /data/workflow/rules/plot_gbt_vs_meerkat_flux.smk, line 3:
+ValueError: Single '}' encountered in format string, when formatting the following:
+
+        
+        dir="results/data/hcgs/"
+        dir_gbt="${{dir}}/gbt_data/"
+        dir_meerkat="${{dir}}/meerkat_data/"
+        if [ -d "$dir" ]; then
+            rm -r "$dir"
+        fi
+        mkdir -p "$dir_gbt" "$dir_meerkat"
+        for cube in {{input.cubes}; do
+            python workflow/scripts/plot_gbt_vs_meerkat_flux.py --cube $cube
+        done  
+        

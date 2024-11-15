@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+run_sofia               3
+tex2pdf_with_bib        1
+total                   5
+
+Select jobs to execute...
+
+[Tue Dec 19 09:27:29 2023]
+rule run_sofia:
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_cat.txt, results/sofia/hcg30/hcg30_sofia_updated.par
+    log: results/sofia/logs/hcg30/hcg30_line60_masked.image.log
+    jobid: 3
+    reason: Missing output files: results/sofia/hcg30/hcg30_line60_masked.image_cat.txt, results/sofia/hcg30/hcg30_sofia_updated.par
+    wildcards: gal_idx=hcg30
+    threads: 24
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/tmp
+
+[Tue Dec 19 09:27:31 2023]
+Error in rule run_sofia:
+    jobid: 3
+    input: data/hcg30/hcg30_line60_masked.image.fits, config/sofia/hcg30_sofia.par
+    output: results/sofia/hcg30/hcg30_line60_masked.image_cat.txt, results/sofia/hcg30/hcg30_sofia_updated.par
+    log: results/sofia/logs/hcg30/hcg30_line60_masked.image.log (check log file(s) for error details)
+    shell:
+        python workflow/scripts/run_sofia.py        --parfile config/sofia/hcg30_sofia.par        --datacube data/hcg30/hcg30_line60_masked.image.fits        --outname results/sofia/hcg30        --scfind_threshold 5.0        --reliability_minpix 0        --reliability_threshold 0.9        --reliability_enable False        | tee results/sofia/logs/hcg30/hcg30_line60_masked.image.log
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job run_sofia since they might be corrupted:
+results/sofia/hcg30/hcg30_sofia_updated.par
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-19T092729.219567.snakemake.log

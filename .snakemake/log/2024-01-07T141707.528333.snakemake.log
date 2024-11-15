@@ -1,0 +1,72 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_meerkat_spectra        3
+total                           4
+
+Select jobs to execute...
+
+[Sun Jan  7 14:17:08 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/data
+
+
+[Sun Jan  7 14:17:08 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/data
+
+
+[Sun Jan  7 14:17:08 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 7
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/data
+
+[Sun Jan  7 14:17:21 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 5
+    input: data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 14:17:21 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 6
+    input: data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 14:17:24 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 7
+    input: data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-07T141707.528333.snakemake.log

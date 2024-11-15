@@ -1,0 +1,26 @@
+Building DAG of jobs...
+IncompleteFilesException:
+The files below seem to be incomplete. If you are sure that certain files are not incomplete, mark them as complete with
+
+    snakemake --cleanup-metadata <filenames>
+
+To re-generate the files rerun your command with the --rerun-incomplete flag.
+Incomplete files:
+results/sofia/hcg16/hcg16_line60_masked.image_vopt_cat.txt
+results/sofia/hcg16/hcg16_sofia_updated_vopt.par
+results/sofia/hcg16/hcg16_line60_masked.image_vopt_cubelets/hcg16_line60_masked.image_vopt_1_mom0.fits
+results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cat.txt
+results/sofia_pbc/hcg16/hcg16_sofia_updated_vopt.par
+results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits
+results/sofia/hcg30/hcg30_line60_masked.image_vopt_cat.txt
+results/sofia/hcg30/hcg30_sofia_updated_vopt.par
+results/sofia/hcg30/hcg30_line60_masked.image_vopt_cubelets/hcg30_line60_masked.image_vopt_1_mom0.fits
+results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cat.txt
+results/sofia_pbc/hcg30/hcg30_sofia_updated_vopt.par
+results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+results/sofia/hcg31/hcg31_line60_masked.image_vopt_cat.txt
+results/sofia/hcg31/hcg31_sofia_updated_vopt.par
+results/sofia/hcg31/hcg31_line60_masked.image_vopt_cubelets/hcg31_line60_masked.image_vopt_1_mom0.fits
+results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cat.txt
+results/sofia_pbc/hcg31/hcg31_sofia_updated_vopt.par
+results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits

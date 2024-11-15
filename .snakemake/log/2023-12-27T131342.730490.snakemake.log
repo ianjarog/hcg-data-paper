@@ -1,0 +1,4 @@
+SyntaxError:
+Only input files can be specified as functions
+  File "/data/workflow/Snakefile", line 14, in <module>
+  File "/data/workflow/rules/run_sofia.smk", line 31, in <module>

@@ -1,0 +1,9 @@
+Building DAG of jobs...
+InputFunctionException in rule plot_chanmap in file /data/workflow/rules/plot_chanmap.smk, line 28:
+Error:
+  AttributeError: 'Wildcards' object has no attribute 'gal_idx'
+Wildcards:
+
+Traceback:
+  File "/data/workflow/rules/plot_chanmap.smk", line 30, in <lambda>
+  File "/data/workflow/rules/plot_chanmap.smk", line 18, in get_path

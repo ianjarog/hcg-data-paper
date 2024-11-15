@@ -1,0 +1,100 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+plot_optical_mom0        1
+tex2pdf_with_bib         1
+total                    2
+
+Resources before job selection: {'_cores': 24, '_nodes': 9223372036854775807}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 23, '_nodes': 9223372036854775806}
+
+[Sat Oct 26 16:15:27 2024]
+rule plot_optical_mom0:
+    input: outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits
+    output: outputs/publication/figures/hcg16_optical_mom0.pdf, outputs/publication/figures/hcg30_optical_mom0.pdf, outputs/publication/figures/hcg31_optical_mom0.pdf, outputs/publication/figures/hcg90_optical_mom0.pdf, outputs/publication/figures/hcg91_optical_mom0.pdf, outputs/publication/figures/hcg97_optical_mom0.pdf
+    jobid: 40
+    reason: Missing output files: outputs/publication/figures/hcg16_optical_mom0.pdf, outputs/publication/figures/hcg91_optical_mom0.pdf, outputs/publication/figures/hcg31_optical_mom0.pdf, outputs/publication/figures/hcg90_optical_mom0.pdf, outputs/publication/figures/hcg30_optical_mom0.pdf, outputs/publication/figures/hcg97_optical_mom0.pdf
+    priority: 91
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/data
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_optical_mom0.smk", line 57, in __rule_plot_optical_mom0
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+
+        for mommap in outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits; do
+            python workflow/scripts/plot_optical_mom0.py -f $mommap
+        done' returned non-zero exit status 1.
+
+[Sat Oct 26 16:16:08 2024]
+Error in rule plot_optical_mom0:
+    jobid: 40
+    input: outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits, outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits
+    output: outputs/publication/figures/hcg16_optical_mom0.pdf, outputs/publication/figures/hcg30_optical_mom0.pdf, outputs/publication/figures/hcg31_optical_mom0.pdf, outputs/publication/figures/hcg90_optical_mom0.pdf, outputs/publication/figures/hcg91_optical_mom0.pdf, outputs/publication/figures/hcg97_optical_mom0.pdf
+    shell:
+        
+
+        for mommap in outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits; do
+            python workflow/scripts/plot_optical_mom0.py -f $mommap
+        done
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2656, in run_wrapper
+    run(
+  File "/data/workflow/rules/plot_optical_mom0.smk", line 57, in __rule_plot_optical_mom0
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/shell.py", line 294, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+
+        for mommap in outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits; do
+            python workflow/scripts/plot_optical_mom0.py -f $mommap
+        done' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 715, in _callback
+    raise ex
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 699, in cached_or_run
+    run_func(*args)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/executors/__init__.py", line 2692, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /data/workflow/rules/plot_optical_mom0.smk, line 38:
+Command 'set -euo pipefail;  
+
+        for mommap in outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits; do
+            python workflow/scripts/plot_optical_mom0.py -f $mommap
+        done' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_optical_mom0.smk", line 38, in __rule_plot_optical_mom0
+
+RuleException:
+CalledProcessError in file /data/workflow/rules/plot_optical_mom0.smk, line 38:
+Command 'set -euo pipefail;  
+
+        for mommap in outputs/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg90/hcg90_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_mom0.fits outputs/sofia_pbc/hcg97/hcg97_line60_masked.pb_corr_vopt_mom0.fits; do
+            python workflow/scripts/plot_optical_mom0.py -f $mommap
+        done' returned non-zero exit status 1.
+  File "/data/workflow/rules/plot_optical_mom0.smk", line 38, in __rule_plot_optical_mom0
+  File "/opt/conda_envs/snakemake/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-10-26T161526.245059.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

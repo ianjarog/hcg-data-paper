@@ -1,0 +1,3 @@
+Building DAG of jobs...
+Nothing to be done (all requested files are present and up to date).
+Complete log: .snakemake/log/2024-01-11T060314.243770.snakemake.log

@@ -1,0 +1,3 @@
+IndentationError in file /data/workflow/rules/run_sofia.smk, line 34:
+unexpected indent
+  File "/data/workflow/Snakefile", line 5, in <module>

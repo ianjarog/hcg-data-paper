@@ -1,0 +1,16 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 38, in <module>
+    in_output_section = True
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/rules/plot_segmented_pvdiag.smk", line 32
+    "outputs/publication/figures/hcg16_segmented_pv.pdf",
+SyntaxError: positional argument follows keyword argument
+
+SyntaxError in file /data/workflow/rules/plot_segmented_pvdiag.smk, line 30:
+positional argument follows keyword argument
+  File "/data/workflow/Snakefile", line 20, in <module>

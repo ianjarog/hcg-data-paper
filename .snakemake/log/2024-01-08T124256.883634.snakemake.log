@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 3:
+Error:
+  AttributeError: module 'posixpath' has no attribute 'basenema'
+Wildcards:
+  gal_idx=hcg16
+Traceback:
+  File "/data/workflow/rules/plot_gbt_meerkat_spectra.smk", line 6, in <lambda>

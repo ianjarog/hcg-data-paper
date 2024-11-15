@@ -1,0 +1,26 @@
+Building DAG of jobs...
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 792, in snakemake
+    success = workflow.execute(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 895, in execute
+    dag.init()
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 214, in init
+    job = self.update([job], progress=progress, create_inventory=True)
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 927, in update
+    raise exceptions[0]
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 885, in update
+    self.update_(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/dag.py", line 1046, in update_
+    raise MissingInputException(job, missing_input)
+snakemake.exceptions.MissingInputException: Missing input files for rule tex2pdf_with_bib:
+    output: outputs/publication/hcg_paper.pdf
+    affected files:
+        output_figs = figures[position:]
+
+MissingInputException in rule tex2pdf_with_bib in file /data/workflow/Snakefile, line 84:
+Missing input files for rule tex2pdf_with_bib:
+    output: outputs/publication/hcg_paper.pdf
+    affected files:
+        output_figs = figures[position:]
+unlocking
+removed all locks

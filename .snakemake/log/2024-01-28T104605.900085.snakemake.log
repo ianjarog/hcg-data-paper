@@ -1,0 +1,4 @@
+CreateRuleException in file /data/workflow/rules/plot_segmented_pvdiag.smk, line 17:
+The name plot_moments is already used by another rule
+  File "/data/workflow/Snakefile", line 19, in <module>
+  File "/data/workflow/rules/plot_segmented_pvdiag.smk", line 17, in <module>

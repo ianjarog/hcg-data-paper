@@ -1,0 +1,8 @@
+Building DAG of jobs...
+InputFunctionException in rule plot_gbt_meerkat_spectra in file /data/workflow/rules/plot_gbt_meerkat_spectra.smk, line 9:
+Error:
+  AttributeError: 'Wildcards' object has no attribute 'gal_idx'
+Wildcards:
+
+Traceback:
+  File "/data/workflow/rules/plot_gbt_meerkat_spectra.smk", line 11, in <lambda>

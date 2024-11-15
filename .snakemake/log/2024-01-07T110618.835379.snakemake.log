@@ -1,0 +1,86 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+all                             1
+plot_gbt_meerkat_spectra        3
+plot_sofia_products             1
+tex2pdf_with_bib                1
+total                           6
+
+Select jobs to execute...
+
+[Sun Jan  7 11:06:19 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_mom1.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+
+[Sun Jan  7 11:06:20 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    jobid: 5
+    reason: Missing output files: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg16
+    resources: mem_mb=1069, mem_mib=1020, disk_mb=1069, disk_mib=1020, tmpdir=/tmp
+
+
+[Sun Jan  7 11:06:20 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    jobid: 6
+    reason: Missing output files: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg30
+    resources: mem_mb=1203, mem_mib=1148, disk_mb=1203, disk_mib=1148, tmpdir=/tmp
+
+
+[Sun Jan  7 11:06:20 2024]
+rule plot_gbt_meerkat_spectra:
+    input: data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    jobid: 7
+    reason: Missing output files: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    wildcards: gal_idx=hcg31
+    resources: mem_mb=1890, mem_mib=1803, disk_mb=1890, disk_mib=1803, tmpdir=/tmp
+
+[Sun Jan  7 11:06:20 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 6
+    input: data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg30_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg30/hcg30_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 11:06:20 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 7
+    input: data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg31_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg31/hcg31_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 11:06:20 2024]
+Error in rule plot_gbt_meerkat_spectra:
+    jobid: 5
+    input: data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+    output: results/publication/figures/hcg16_meerkat_gbt_spec.pdf
+    shell:
+        python workflow/scripts/plot_gbt_meerkat_spectra.py --cube data/hcg16/hcg16_line60_masked.pb_corr_vopt.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Jan  7 11:07:57 2024]
+Finished job 4.
+1 of 6 steps (17%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-07T110618.835379.snakemake.log

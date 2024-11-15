@@ -1,0 +1,4 @@
+KeyError in file /data/workflow/rules/plot_velocity_ra.smk, line 8:
+('figure1', 'figure2')
+  File "/data/workflow/Snakefile", line 15, in <module>
+  File "/data/workflow/rules/plot_velocity_ra.smk", line 8, in <module>

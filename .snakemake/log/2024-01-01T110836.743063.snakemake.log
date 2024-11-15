@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+plot_sofia_products        1
+total                      2
+
+Select jobs to execute...
+
+[Mon Jan  1 11:08:37 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_snr.fits
+    output: results/publication/figures/ngc1622_mom0.pdf
+    jobid: 4
+    reason: Missing output files: results/publication/figures/ngc1622_mom0.pdf
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+[Mon Jan  1 11:09:41 2024]
+Error in rule plot_sofia_products:
+    jobid: 4
+    input: data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits, data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_snr.fits
+    output: results/publication/figures/ngc1622_mom0.pdf
+    shell:
+        python workflow/scripts/plot_sofia_products.py --gfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-gfilter.fits --rfilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-rfilter.fits --ifilter data/hcg30/optical/legacystamps_69.152500_-3.186400_ls-dr10-ifilter.fits --contour_file results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits --source_id 7 --input_fits results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_snr.fits
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job plot_sofia_products since they might be corrupted:
+results/publication/figures/ngc1622_mom0.pdf
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-01T110836.743063.snakemake.log

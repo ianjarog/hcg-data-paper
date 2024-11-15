@@ -1,0 +1,21 @@
+Full Traceback (most recent call last):
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/__init__.py", line 671, in snakemake
+    workflow.include(
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/Snakefile", line 38, in <module>
+    in_output_section = True
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/workflow.py", line 1389, in include
+    exec(compile(code, snakefile.get_path_or_uri(), "exec"), self.globals)
+  File "/data/workflow/rules/plot_segmented_pvdiag.smk", line 21, in <module>
+    expand("outputs/publication/figures/{gal_idx}_mom0_pbc_large.pdf", galaxy_indices),
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 1280, in expand
+    return [
+  File "/opt/conda_envs/snakemake/lib/python3.10/site-packages/snakemake/io.py", line 1283, in <listcomp>
+    for comb in map(format_dict, combinator(*flatten(wildcards[filepattern])))
+TypeError: 'list' object is not callable
+
+TypeError in file /data/workflow/rules/plot_segmented_pvdiag.smk, line 20:
+'list' object is not callable
+  File "/data/workflow/Snakefile", line 20, in <module>
+  File "/data/workflow/rules/plot_segmented_pvdiag.smk", line 20, in <module>

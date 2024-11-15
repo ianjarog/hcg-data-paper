@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                         count
+------------------------  -------
+plot_gbt_meerkat_spectra        4
+plot_gbt_vs_meerkat_flux        1
+plot_global_prof                4
+plot_moments                    4
+plot_noise_specaxis             4
+plot_segmented_pvdiag           1
+plot_sofia_products             1
+plot_velocity_ra                4
+tex2pdf_with_bib                1
+total                          24
+
+Select jobs to execute...
+
+[Tue Jan 30 17:50:21 2024]
+rule plot_sofia_products:
+    input: data/hcg30/optical/hcg30legacystamps_69.119180_-2.832390_ls-dr10-gfilter.fits, data/hcg30/optical/hcg30legacystamps_69.119180_-2.832390_ls-dr10-zfilter.fits, data/hcg30/optical/hcg30legacystamps_69.119180_-2.832390_ls-dr10-ifilter.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg16/hcg16_line60_masked.pb_corr_vopt_cubelets/hcg16_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg30/hcg30_line60_masked.pb_corr_vopt_cubelets/hcg30_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg31/hcg31_line60_masked.pb_corr_vopt_cubelets/hcg31_line60_masked.pb_corr_vopt_1_mom0.fits, results/sofia_pbc/hcg91/hcg91_line60_masked.pb_corr_vopt_cubelets/hcg91_line60_masked.pb_corr_vopt_1_mom0.fits
+    output: results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_mom1.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_spec.pdf
+    jobid: 1
+    reason: Missing output files: results/publication/figures/ngc1622_snr.pdf, results/publication/figures/ngc1622_chan.pdf, results/publication/figures/ngc1622_mom0.pdf, results/publication/figures/ngc1622_spec.pdf, results/publication/figures/ngc1622_mom2.pdf, results/publication/figures/ngc1622_mom1.pdf; Set of input files has changed since last execution; Code has changed since last execution
+    resources: mem_mb=1000, mem_mib=954, disk_mb=1000, disk_mib=954, tmpdir=/tmp
+
+RuleException in rule plot_sofia_products in file /data/workflow/rules/plot_sofia_products.smk, line 9:
+AttributeError: 'InputFiles' object has no attribute 'ngc1622_r', when formatting the following:
+python workflow/scripts/plot_sofia_products.py --gfilter {input.ngc1622_g} --ifilter {input.ngc1622_r} --zfilter {input.ngc1622_i} --filetoplot {input.ngc1622_mom0} --source_id {params.source_id}

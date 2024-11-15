@@ -1,0 +1,4 @@
+NameError in file /data/workflow/rules/plot_noise_specaxis.smk, line 18:
+name 'results' is not defined
+  File "/data/workflow/Snakefile", line 16, in <module>
+  File "/data/workflow/rules/plot_noise_specaxis.smk", line 18, in <module>
