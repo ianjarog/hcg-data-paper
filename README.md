@@ -17,12 +17,12 @@ To produce the current paper, all the user has to do is type 'python workflow/ru
 The required data should be put in the data/ folder and they can be retrieved from [Link to be determined].
 The folder should be organized as follows
 
-.
-├── README.md
-├── data # folder to store input data
-├── config # necessary settings
-│   ├── config.yaml
-│   ├── figure_properties.yaml
+.<br />
+├── README.md<br />
+├── data # folder to store input data<br />
+├── config # necessary settings<br />
+│   ├── config.yaml<br />
+│   ├── figure_properties.yaml<br />
 │   ├── figures.yaml
 │   ├── figures_backup.yaml
 │   ├── parameters.yaml
